@@ -1,0 +1,11 @@
+.buttons__favourites {
+  background-image: url(./../../../images/star.svg);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 21px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  margin-right: 29px;
+  margin-top: 30px;
+}

@@ -1,7 +1,9 @@
 @import url(__title/card__title.css);
+@import url(__img/card__img.css);
 
 .card {
     font-family: 'Montserrat',
     Arial,
     sans-serif;
+    margin: 0 auto;
 }

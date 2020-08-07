@@ -1,7 +1,7 @@
 .footer__link {
-    margin: 34px 34px 34px 0;
+    margin: 36px 57px 34px 0;
 }
 
 .footer__link:last-child {
-    margin-right: 0;
+    margin-right: 21px;
 }

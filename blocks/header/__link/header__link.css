@@ -1,10 +1,11 @@
 .header__link {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 .header__link:hover {
-    color: #4A61DD;
-    border-bottom: 2px solid #4A61DD;
-    cursor: pointer;
+  color: #4A61DD;
+  border-bottom: 2px solid #4A61DD;
+  cursor: pointer;
 }
+

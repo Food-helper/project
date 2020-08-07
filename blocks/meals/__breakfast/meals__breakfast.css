@@ -13,3 +13,9 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+@media (max-width: 400px) {
+  .meals__breakfast::before {
+    right: 50px;
+  }
+}

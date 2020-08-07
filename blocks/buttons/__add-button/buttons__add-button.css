@@ -1,0 +1,13 @@
+.buttons__add-button {
+  height: 48px;
+  border-radius: 6px;
+  background-color: #f0f3ff;
+  border: none;
+  color: #4A61DD;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

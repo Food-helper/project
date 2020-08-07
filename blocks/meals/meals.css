@@ -10,3 +10,16 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+@media (max-width: 700px) {
+  .meals {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .meals {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}

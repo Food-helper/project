@@ -16,3 +16,10 @@
   grid-column-gap: 37px;
   justify-content: center;
 }
+
+@media (max-width: 400px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, 300px);
+    ;
+  }
+}

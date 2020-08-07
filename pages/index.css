@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
+@import url(../blocks/body/body.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/main/main.css);
@@ -9,4 +10,6 @@
 @import url(../blocks/meals/meals.css);
 @import url(../blocks/time/time.css);
 @import url(../blocks/author/author.css);
+@import url(../blocks/buttons/buttons.css);
+@import url(../blocks/pages-list/pages-list.css);
 @import url(../blocks/footer/footer.css);

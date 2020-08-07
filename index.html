@@ -12,8 +12,9 @@
   <title lang="en">Food helper</title>
 </head>
 
-<body>
+<body class="body">
   <div class="page">
+
     <!-- header-->
     <header class="header">
       <nav class="header__nav">
@@ -34,8 +35,9 @@
             <li class="header__list-elem">
               <a href=" #" class="header__link">Список покупок</a>
             </li>
+            <li class="header__counter">27</li>
           </ul>
-          <p class="header__counter">27</p>
+          
         </div>
         <ul class="header__links">
           <li class="header__list-elem">
@@ -49,8 +51,8 @@
     </header>
 
     <main>
-      <!-- content-->
 
+      <!-- content-->
       <section class="content">
         <h1 class="content__title">Рецепты</h1>
         <ul class="meals content__meals">
@@ -61,7 +63,6 @@
       </section>
 
       <!--  cards-->
-
       <ul class="cards main__cards">
         <li class="card">
           <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
@@ -70,12 +71,19 @@
             <li class="card__meal card__meal_breakfast">Завтрак</li>
           </ul>
           <div class="time">
-            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <img class="time__logo" src="./images/clock.svg" alt="время" />
             <p class="time__info">20 мин.</p>
           </div>
           <div class="author">
             <img class="author__logo" src="./images/author.svg" alt="автор" />
             <p class="author__info">Вероника Чернова</p>
+          </div>
+          <div class="buttons">
+            <button class="buttons__add-button buttons__add-button_shop" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg">
+              Добавить в покупки</button>
+            <button class="buttons__favourites buttons__favourites_type_active" type="button"
+              aria-label="Избранное"></button>
           </div>
         </li>
         <li class="card">
@@ -85,12 +93,18 @@
             <li class="card__meal card__meal_breakfast">Завтрак</li>
           </ul>
           <div class="time">
-            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <img class="time__logo" src="./images/clock.svg" alt="время" />
             <p class="time__info">20 мин.</p>
           </div>
           <div class="author">
             <img class="author__logo" src="./images/author.svg" alt="автор" />
             <p class="author__info">Вероника Чернова</p>
+          </div>
+          <div class="buttons">
+            <button class="buttons__add-button buttons__add-button_shop" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg">
+              Добавить в покупки</button>
+            <button class="buttons__favourites" type="button" aria-label="Избранное"></button>
           </div>
         </li>
         <li class="card">
@@ -100,55 +114,75 @@
             <li class="card__meal card__meal_breakfast">Завтрак</li>
           </ul>
           <div class="time">
-            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <img class="time__logo" src="./images/clock.svg" alt="время" />
             <p class="time__info">20 мин.</p>
           </div>
           <div class="author">
             <img class="author__logo" src="./images/author.svg" alt="автор" />
             <p class="author__info">Вероника Чернова</p>
           </div>
+          <div class="buttons">
+            <button class="buttons__add-button buttons__add-button_shop" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg">
+              Добавить в покупки</button>
+            <button class="buttons__favourites buttons__favourites_type_active" type="button"
+              aria-label="Избранное"></button>
+          </div>
         </li>
-        <li li class="card">
-          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+        <li class="card">
+          <img class="card__img" src="./images/agava.jpg" alt="фото блюда" />
           <h2 class="card__title">Французский тост с сиропом агавы</h2>
           <ul class="card__meals">
             <li class="card__meal card__meal_breakfast">Завтрак</li>
             <li class="card__meal card__meal_dinner">Обед</li>
           </ul>
           <div class="time">
-            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <img class="time__logo" src="./images/clock.svg" alt="время" />
             <p class="time__info">15 мин.</p>
           </div>
           <div class="author">
             <img class="author__logo" src="./images/author.svg" alt="автор" />
             <p class="author__info">Маша Ульянова</p>
           </div>
+          <div class="buttons  buttons_type_recipe">
+            <button class="buttons__add-button buttons__add-button_recipe" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg">
+              Добавить рецепт</button>
+            <button class="buttons__favourites buttons__favourites_type_active" type="button"
+              aria-label="Избранное"></button>
+          </div>
         </li>
-        <li li class="card">
-          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+        <li class="card">
+          <img class="card__img" src="./images/salmon.jpg" alt="фото блюда" />
           <h2 class="card__title">Вафли с яйцом «Бенедикт» и лососем</h2>
           <ul class="card__meals">
             <li class="card__meal card__meal_breakfast">Завтрак</li>
             <li class="card__meal card__meal_dinner">Обед</li>
           </ul>
           <div class="time">
-            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <img class="time__logo" src="./images/clock.svg" alt="время" />
             <p class="time__info">35 мин.</p>
           </div>
           <div class="author">
             <img class="author__logo" src="./images/author.svg" alt="автор" />
             <p class="author__info">Маша Ульянова</p>
           </div>
+          <div class="buttons  buttons_type_recipe">
+            <button class="buttons__add-button buttons__add-button_recipe" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg">
+              Добавить рецепт</button>
+            <button class="buttons__favourites" type="button" aria-label="Избранное"></button>
+          </div>
         </li>
-        <li li class="card">
-          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+        <li class="card">
+          <img class="card__img" src="./images/kruassan.jpg" alt="фото блюда" />
           <h2 class="card__title">Круассан с омлетом, лососем и голландским соусом</h2>
           <ul class="card__meals">
             <li class="card__meal card__meal_breakfast">Завтрак</li>
             <li class="card__meal card__meal_dinner">Обед</li>
           </ul>
           <div class="time">
-            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <img class="time__logo" src="./images/clock.svg" alt="время" />
             <p class="time__info">15 мин.</p>
           </div>
           <div class="author">
@@ -156,29 +190,45 @@
             <p class="author__info">Вероника Чернова</p>
           </div>
           <div class="buttons">
-            <button class="buttons__add-button" type="button" aria-label="Добавить">
-              <img class="buttons__plus" alt="плюс" src="./images/plus.svg"
-              Добавить рецепт</button>
-            </section>
+            <button class="buttons__add-button buttons__add-button_shop" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg">
+              Добавить в покупки</button>
+            <button class="buttons__favourites buttons__favourites_type_active" type="button"
+              aria-label="Избранное"></button>
           </div>
         </li>
       </ul>
+
+      <!-- pages-list-->
+      <ul class="pages-list">
+        <li><a class="pages-list__number" href="#">
+            <</a> </li> <li><a class="pages-list__number pages-list__number_active" href="#">
+                1</a></li>
+        <li><a class="pages-list__number" href="#">
+            2</a></li>
+        <li><a class="pages-list__number" href="#">
+            3</a></li>
+        <li><a class="pages-list__number" href="#">
+            4</a></li>
+        <li><a class="pages-list__number" href="#">
+            5</a></li>
+        <li><a class="pages-list__number" href="#">
+            ></a></li>
+      </ul>
     </main>
-
-
-    <!-- footer-->
-
-    <footer class="footer">
-      <div class="footer__container">
-        <a class="footer__link">Продуктовый помощник</a>
-        <nav>
-          <a class="footer__link">Об авторе</a>
-          <a class="footer__link">Технологии</a>
-        </nav>
-      </div>
-    </footer>
-
   </div>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__link">Продуктовый помощник</a>
+      <nav>
+        <a class="footer__link">Об авторе</a>
+        <a class="footer__link">Технологии</a>
+      </nav>
+    </div>
+  </footer>
+
   <script src="./script/script.js"></script>
 </body>
 
