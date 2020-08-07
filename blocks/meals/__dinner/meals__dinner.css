@@ -1,10 +1,15 @@
 .meals__dinner {
-margin-left: 24px;
+  position: relative;
+  margin-left: 56px;
 }
 
 .meals__dinner::before {
   content: url(./../../../images/dinner.svg);
   width: 24px;
   height: 24px;
-  padding-right: 7px;
+  position: absolute;
+  right: 53px;
+  top: -18%;
+  top: 50%;
+  transform: translateY(-50%);
 }

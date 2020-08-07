@@ -1,10 +1,15 @@
 .meals__supper {
-  margin-left: 24px;
+  position: relative;
+  margin-left: 56px;
 }
 
 .meals__supper::before {
   content: url(./../../../images/supper.svg);
   width: 24px;
   height: 24px;
-  margin-right: 7px;
+  position: absolute;
+  right: 53px;
+  top: -18%;
+  top: 50%;
+  transform: translateY(-50%);
 }

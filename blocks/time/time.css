@@ -1,0 +1,8 @@
+@import url('./__info/time__info.css');
+@import url('./__logo/time__logo.css');
+
+.time {
+  display: flex;
+  flex-direction: row;
+  margin: 18px 21px 0px;
+}

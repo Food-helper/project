@@ -1,89 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="author"
-      content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова"
-    />
-    <meta
-      name="description"
-      content="This is an App which will help people to find and buy food"
-      lang="en"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <title lang="en">Food helper</title>
-  </head>
 
-  <body>
-    <div class="page">
-      <!-- header-->
-      <header class="header">
-        <nav class="header__nav">
-          <div class="header__container">
-            <ul class="header__links">
-              <li class="header__list-elem">
-                <a href="#" class="header__link">Рецепты</a>
-              </li>
-              <li class="header__list-elem">
-                <a href=" #" class="header__link">Мои подписки</a>
-              </li>
-              <li class="header__list-elem">
-                <a href=" #" class="header__link">Создать рецепт</a>
-              </li>
-              <li class="header__list-elem">
-                <a href=" #" class="header__link">Избранное</a>
-              </li>
-              <li class="header__list-elem">
-                <a href=" #" class="header__link">Список покупок</a>
-              </li>
-            </ul>
-            <p class="header__counter">27</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
+</head>
+
+<body>
+  <div class="page">
+    <!-- header-->
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__container">
           <ul class="header__links">
             <li class="header__list-elem">
-              <a href=" #" class="header__link">Изменить пароль</a>
+              <a href="#" class="header__link">Рецепты</a>
             </li>
             <li class="header__list-elem">
-              <a href=" #" class="header__link">Выход</a>
+              <a href=" #" class="header__link">Мои подписки</a>
+            </li>
+            <li class="header__list-elem">
+              <a href=" #" class="header__link">Создать рецепт</a>
+            </li>
+            <li class="header__list-elem">
+              <a href=" #" class="header__link">Избранное</a>
+            </li>
+            <li class="header__list-elem">
+              <a href=" #" class="header__link">Список покупок</a>
             </li>
           </ul>
-        </nav>
-      </header>
-
-      <main>
-        <!-- content-->
-        <section class="content">
-          <h1 class="content__title">Рецепты</h1>
-          <ul class="meals content__meals">
-            <il class="meals__breakfast"></il
-            >Завтрак
-            <li class="meals__dinner"></li>
-            Обед
-            <li class="meals__supper"></li>
-            Ужин
-          </ul>
-        </section>
-
-        <!-- cards-->
-        <ul class="cards">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <p class="header__counter">27</p>
+        </div>
+        <ul class="header__links">
+          <li class="header__list-elem">
+            <a href=" #" class="header__link">Изменить пароль</a>
+          </li>
+          <li class="header__list-elem">
+            <a href=" #" class="header__link">Выход</a>
+          </li>
         </ul>
-      </main>
-    </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- content-->
+
+      <section class="content">
+        <h1 class="content__title">Рецепты</h1>
+        <ul class="meals content__meals">
+          <li class="meals__breakfast">Завтрак</li>
+          <li class="meals__dinner">Обед</li>
+          <li class="meals__supper">Ужин</li>
+        </ul>
+      </section>
+
+      <!--  cards-->
+
+      <ul class="cards main__cards">
+        <li class="card">
+          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+          <h2 class="card__title">Французские тосты</h2>
+          <ul class="card__meals">
+            <li class="card__meal card__meal_breakfast">Завтрак</li>
+          </ul>
+          <div class="time">
+            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <p class="time__info">20 мин.</p>
+          </div>
+          <div class="author">
+            <img class="author__logo" src="./images/author.svg" alt="автор" />
+            <p class="author__info">Вероника Чернова</p>
+          </div>
+        </li>
+        <li class="card">
+          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+          <h2 class="card__title">Французские тосты</h2>
+          <ul class="card__meals">
+            <li class="card__meal card__meal_breakfast">Завтрак</li>
+          </ul>
+          <div class="time">
+            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <p class="time__info">20 мин.</p>
+          </div>
+          <div class="author">
+            <img class="author__logo" src="./images/author.svg" alt="автор" />
+            <p class="author__info">Вероника Чернова</p>
+          </div>
+        </li>
+        <li class="card">
+          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+          <h2 class="card__title">Французские тосты</h2>
+          <ul class="card__meals">
+            <li class="card__meal card__meal_breakfast">Завтрак</li>
+          </ul>
+          <div class="time">
+            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <p class="time__info">20 мин.</p>
+          </div>
+          <div class="author">
+            <img class="author__logo" src="./images/author.svg" alt="автор" />
+            <p class="author__info">Вероника Чернова</p>
+          </div>
+        </li>
+        <li li class="card">
+          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+          <h2 class="card__title">Французский тост с сиропом агавы</h2>
+          <ul class="card__meals">
+            <li class="card__meal card__meal_breakfast">Завтрак</li>
+            <li class="card__meal card__meal_dinner">Обед</li>
+          </ul>
+          <div class="time">
+            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <p class="time__info">15 мин.</p>
+          </div>
+          <div class="author">
+            <img class="author__logo" src="./images/author.svg" alt="автор" />
+            <p class="author__info">Маша Ульянова</p>
+          </div>
+        </li>
+        <li li class="card">
+          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+          <h2 class="card__title">Вафли с яйцом «Бенедикт» и лососем</h2>
+          <ul class="card__meals">
+            <li class="card__meal card__meal_breakfast">Завтрак</li>
+            <li class="card__meal card__meal_dinner">Обед</li>
+          </ul>
+          <div class="time">
+            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <p class="time__info">35 мин.</p>
+          </div>
+          <div class="author">
+            <img class="author__logo" src="./images/author.svg" alt="автор" />
+            <p class="author__info">Маша Ульянова</p>
+          </div>
+        </li>
+        <li li class="card">
+          <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
+          <h2 class="card__title">Круассан с омлетом, лососем и голландским соусом</h2>
+          <ul class="card__meals">
+            <li class="card__meal card__meal_breakfast">Завтрак</li>
+            <li class="card__meal card__meal_dinner">Обед</li>
+          </ul>
+          <div class="time">
+            <img class="time__logo" src="./images/clock 1.svg" alt="время" />
+            <p class="time__info">15 мин.</p>
+          </div>
+          <div class="author">
+            <img class="author__logo" src="./images/author.svg" alt="автор" />
+            <p class="author__info">Вероника Чернова</p>
+          </div>
+          <div class="buttons">
+            <button class="buttons__add-button" type="button" aria-label="Добавить">
+              <img class="buttons__plus" alt="плюс" src="./images/plus.svg"
+              Добавить рецепт</button>
+            </section>
+          </div>
+        </li>
+      </ul>
+    </main>
+
 
     <!-- footer-->
+
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__link">Продуктовый помощник</a>
@@ -94,6 +178,8 @@
       </div>
     </footer>
 
-    <script src="./script/script.js"></script>
-  </body>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+
 </html>
