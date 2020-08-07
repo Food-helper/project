@@ -1,0 +1,6 @@
+.subscribe__card-item-img {
+  grid-area: picture;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+}
