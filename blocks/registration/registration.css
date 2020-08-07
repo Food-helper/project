@@ -1,0 +1,10 @@
+@import url(__input-block/registration__input-block.css);
+@import url(__subject/registration__subject.css);
+@import url(__box/registration__box.css);
+@import url(__input/registration__input.css);
+@import url(__header/registration__header.css);
+
+
+.registration {
+
+}
