@@ -1,0 +1,10 @@
+.meals__supper {
+  margin-left: 24px;
+}
+
+.meals__supper::before {
+  content: url(./../../../images/supper.svg);
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}

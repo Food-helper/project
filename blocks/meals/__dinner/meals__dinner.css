@@ -1,0 +1,10 @@
+.meals__dinner {
+margin-left: 24px;
+}
+
+.meals__dinner::before {
+  content: url(./../../../images/dinner.svg);
+  width: 24px;
+  height: 24px;
+  padding-right: 7px;
+}

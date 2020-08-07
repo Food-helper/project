@@ -1,0 +1,6 @@
+.meals__breakfast::before {
+content:url(./../../../images/breakfast.svg);
+width: 24px;
+height: 24px;
+padding-right: 7px;
+}

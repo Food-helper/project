@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./pages/index.css"/>
-    <title>Food helper</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
 </head>
+
 <body>
-<div class="page">
+
+  <div class="page">
+
+    <!-- header-->
     <header class="header">
-        <nav>
-            <a class="header__link">Рецепты</a>
-            <a class="header__link">Мои подписки</a>
-            <a class="header__link">Создать рецепт</a>
-            <a class="header__link">Избранное</a>
-            <a class="header__link">Список покупок</a>
-        </nav>
-        <nav>
-            <a class="header__link">Изменить пароль</a>
-            <a class="header__link">Выход</a>
-        </nav>
+      <nav class="header__nav">
+        <div class="header__container">
+          <ul class="header__links">
+            <li class="header__list-elem"><a href="#" class="header__link">Рецепты</a></li>
+            <li class="header__list-elem"><a href=" #" class="header__link">Мои подписки</a></li>
+            <li class="header__list-elem"><a href=" #" class="header__link">Создать рецепт</a></li>
+            <li class="header__list-elem"><a href=" #" class="header__link">Избранное</a></li>
+            <li class="header__list-elem"><a href=" #" class="header__link">Список покупок</a></li>
+          </ul>
+          <p class="header__counter">27</p>
+        </div>
+        <ul class="header__links">
+          <li class="header__list-elem"><a href=" #" class="header__link">Изменить пароль</a></li>
+          <li class="header__list-elem"><a href=" #" class="header__link">Выход</a></li>
+        </ul>
+      </nav>
     </header>
 
-</div>
-<footer class="footer">
-    <div class="footer__container">
-        <nav>
-            <a class="footer__link">Продуктивный помощник</a>
-            <a class="footer__link">Об авторе</a>
-        </nav>
-        <a class="footer__link">Технологии</a>
-    </div>
-</footer>
+    <main>
 
-<script src="./script/script.js"></script>
+      <!-- content-->
+      <section class="content">
+        <h1 class="content__title">Рецепты</h1>
+        <ul class="meals content__meals">
+          <il class="meals__breakfast"></il>Завтрак
+          <li class="meals__dinner"></li>Обед
+          <li class="meals__supper"></li>Ужин
+        </ul>
+      </section>
+
+      <!-- cards-->
+      <ul class="cards">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </main>
+
+
+
+  </div>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="footer__container">
+      <nav>
+        <a class="footer__link">Продуктивный помощник</a>
+        <a class="footer__link">Об авторе</a>
+      </nav>
+      <a class="footer__link">Технологии</a>
+    </div>
+  </footer>
+
+  <script src="./script/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,10 @@
+@import url(__title/content__title.css);
+@import url(__meals/content__meals.css);
+
+.content {
+  font-family: 'Montserrat',
+    Arial,
+    sans-serif;
+  display: flex;
+  justify-content: space-between;
+}

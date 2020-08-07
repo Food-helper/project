@@ -1,13 +1,18 @@
+@import url(__nav/header__nav.css);
+@import url(__container/header__container.css);
+@import url(__links/header__links.css);
+@import url(__list-elem/header__list-elem.css);
 @import url(__link/header__link.css);
+@import url(__counter/header__counter.css);
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 24px;
-    padding-bottom: 60px;
+  font-family: 'Montserrat',
+  Arial,
+  sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 54px;
 }
-

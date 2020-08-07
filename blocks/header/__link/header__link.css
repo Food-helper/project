@@ -1,8 +1,6 @@
 .header__link {
-    margin-right: 28px;
-}
-.header__link:last-child {
-    margin-right: 0;
+    color: #000000;
+    text-decoration: none;
 }
 
 .header__link:hover {
