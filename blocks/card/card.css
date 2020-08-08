@@ -1,5 +1,6 @@
 @import url(__img/card__img.css);
 @import url(__subtitle/card__subtitle.css);
+@import url(__author/card__author.css);
 
 .card {
   font-family: 'Montserrat',
