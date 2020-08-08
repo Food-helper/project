@@ -1,4 +1,4 @@
-.button_registration {
+.input-button {
     width: 206px;
     top: 623px;
     background: #4A61DD;
@@ -7,4 +7,5 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 71px;
 }

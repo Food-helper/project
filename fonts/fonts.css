@@ -1,6 +1,7 @@
 @font-face {
     src: url('../fonts/Montserrat-Regular.ttf') format('ttf'),
     url('../fonts/Montserrat-Regular.otf') format('otf');
+    url('../fonts/Montserrat-Regular.woff') format('woff');
     font-family: 'Montserrat';
     font-weight: 400;/*NORMAL*/
 }

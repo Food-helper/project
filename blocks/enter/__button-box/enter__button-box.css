@@ -1,0 +1,6 @@
+.enter__button-box {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 36%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./pages/index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <title>Food helper</title>
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <nav>
+            <a class="header__link" href="">Рецепты</a>
+            <a class="header__link">Список покупок</a>
+        </nav>
+        <nav>
+            <a class="header__link">Войти</a>
+            <button class="button input-button">Создать аккаунт</button>
+        </nav>
+    </header>
+    <div class="enter">
+        <h1>Войти на сайт</h1>
+        <div class=" box enter__box">
+            <form class="form enter__form" name="form" method="post" action="#">
+
+                <fieldset class="subject enter__subject">
+
+                    <div class="input-box">
+                        <div class="input-block">
+                            <h4 class="input-header">Имя пользователя</h4>
+                            <input class="input registration__input_nickname"
+                                   type="text"
+                                   name="nickname"
+                                   id="nickname-input"
+                            />
+
+                        </div>
+                        <span id="nickname-error" class="input-error"></span>
+                        <div class="input-block">
+                            <h4 class="input-header">Пароль</h4>
+                            <input class="input enter__input enter__input_error"
+                                   type="password"
+                                   name="password"
+                                   id="password-input"
+                            />
+
+                        </div>
+                        <span id="password-error" class="input-error input-error_red">Имя пользователя и пароль не совпадают. Введите правильные данные.</span>
+                    </div>
+                </fieldset>
+                <div class="enter__button-box">
+                    <button type="submit" class="button input-button enter__button">Войти</button>
+                    <a class="enter__link" href="">Забыли пароль?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__container">
+        <nav>
+            <a class="footer__link">Продуктивный помощник</a>
+            <a class="footer__link">Об авторе</a>
+        </nav>
+        <a class="footer__link">Технологии</a>
+    </div>
+</footer>
+
+<script src="./script/script.js"></script>
+</body>
+</html>
