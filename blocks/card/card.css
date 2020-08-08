@@ -1,5 +1,5 @@
-@import url(__title/card__title.css);
 @import url(__img/card__img.css);
+@import url(__subtitle/card__subtitle.css);
 
 .card {
   font-family: 'Montserrat',
@@ -10,7 +10,6 @@
   text-decoration: none;
   color: black;
 }
-
 
 .card:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
