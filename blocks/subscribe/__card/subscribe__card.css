@@ -1,0 +1,11 @@
+.subscribe__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 519px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 23px;
+  margin-bottom: 39px;
+}

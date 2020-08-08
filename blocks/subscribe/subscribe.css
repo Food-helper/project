@@ -1,0 +1,13 @@
+@import url('./__card-title/subscribe__card-title.css');
+@import url('./__card/subscribe__card.css');
+@import url('./__card-item-img/subscribe__card-item-img.css');
+@import url('./__box/subscribe__box.css');
+@import url('./__card-item/subscribe__card-item.css');
+@import url('./__card-item-name/subscribe__card-item-name.css');
+@import url('./__card-link/subscribe__card-link.css');
+@import url('./__card-items/subscribe__card-items.css');
+@import url('./__container/subscribe__container.css');
+
+.subscribe {
+  margin: auto;
+}
