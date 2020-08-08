@@ -3,6 +3,7 @@
 @import url(__box/registration__box.css);
 @import url(__input/registration__input.css);
 @import url(__header/registration__header.css);
+@import url(__form/registration__form.css);
 
 
 .registration {
