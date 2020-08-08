@@ -1,5 +1,9 @@
 @import url('./_subscribe/button_subscribe.css');
+
 @import url('./_registration/button_registration.css');
+
+@import url('./_list/button_list.css');
+
 
 .button {
   min-height: 48px;

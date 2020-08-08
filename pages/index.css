@@ -8,3 +8,6 @@
 @import url('../blocks/registration/registration.css');
 @import url('../blocks/button/button.css');
 @import url('../blocks/button/_registration/button_registration.css');
+
+@import url('../blocks/button/button.css');
+@import url('../blocks/list/list.css');
