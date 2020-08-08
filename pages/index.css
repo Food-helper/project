@@ -5,5 +5,9 @@
 @import url(../blocks/footer/footer.css);
 @import url('../blocks/subscribe/subscribe.css');
 @import url('../blocks/time/time.css');
+@import url('../blocks/registration/registration.css');
+@import url('../blocks/button/button.css');
+@import url('../blocks/button/_registration/button_registration.css');
+
 @import url('../blocks/button/button.css');
 @import url('../blocks/list/list.css');
