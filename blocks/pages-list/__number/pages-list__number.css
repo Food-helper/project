@@ -5,6 +5,8 @@
   line-height: 24px;
   color: #000000;
   margin-right: 40px;
+  -webkit-transition: opacity linear 0.5s;
+  transition: opacity linear 0.5s;
 }
 
 @media (max-width: 500px) {
@@ -12,4 +14,10 @@
     margin-right: 20px;
     ;
   }
+}
+
+.pages-list__number:hover {
+  opacity: .6;
+  font-size: 24px;
+  cursor: pointer;
 }

@@ -11,3 +11,15 @@
   align-items: center;
   text-align: center;
 }
+
+
+.buttons__add-button:hover {
+  -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}

@@ -12,7 +12,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, 364px);
-  grid-row-gap: 72px;
+  grid-row-gap: 52px;
   grid-column-gap: 37px;
   justify-content: center;
 }
