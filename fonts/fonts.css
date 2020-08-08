@@ -27,5 +27,6 @@
     src: url('../fonts/Montserrat-Bold.ttf') format('ttf'),
     url('../fonts/Montserrat-Bold.otf') format('otf');
     font-family: 'Montserrat';
-    font-weight: bold;//700
+    font-weight: bold;/*700*/
+
 }
