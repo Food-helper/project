@@ -1,0 +1,23 @@
+.pages-list__number {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 40px;
+  -webkit-transition: opacity linear 0.5s;
+  transition: opacity linear 0.5s;
+}
+
+@media (max-width: 500px) {
+  .pages-list__number {
+    margin-right: 20px;
+    ;
+  }
+}
+
+.pages-list__number:hover {
+  opacity: .6;
+  font-size: 24px;
+  cursor: pointer;
+}

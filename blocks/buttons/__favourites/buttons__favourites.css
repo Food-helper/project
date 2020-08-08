@@ -1,0 +1,23 @@
+.buttons__favourites {
+  background-image: url(./../../../images/star.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 22px;
+  height: 21px;
+  background-position: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 29px;
+  margin-top: 30px;
+    -webkit-transition: opacity linear 0.5s;
+    transition: opacity linear 0.5s;
+}
+
+.buttons__favourites:hover {
+  opacity: .6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}

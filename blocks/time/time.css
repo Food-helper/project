@@ -4,5 +4,6 @@
 .time {
   display: flex;
   flex-direction: row;
-  margin: 0;
+  margin: 18px 21px 0px;
+
 }
