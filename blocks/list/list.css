@@ -1,0 +1,9 @@
+@import url('./__box/list__box.css');
+@import url('./__delete/list__delete.css');
+@import url('./__img/list__img.css');
+@import url('./__info/list__info.css');
+@import url('./__item/list__item.css');
+
+.list {
+  min-height: 74vh;
+}

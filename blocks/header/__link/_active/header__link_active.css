@@ -1,0 +1,5 @@
+.header__link_active{
+  color: #4A61DD;
+  border-bottom: 2px solid #4A61DD;
+  cursor: pointer;
+}
