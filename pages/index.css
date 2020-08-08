@@ -3,6 +3,8 @@
 @import url(../blocks/body/body.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/button-favourites/button-favourites.css);
+@import url(../blocks/button-favourites/_type/button-favourites_type_active.css);
 @import url(../blocks/main/main.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/title/title.css);
