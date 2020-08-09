@@ -1,0 +1,14 @@
+.header__list-elem {
+  margin-left: 28px;
+}
+
+
+.header__list-elem:first-of-type {
+  margin-left: 0;
+}
+
+@media (max-width: 800px) {
+  .header__list-elem {
+    margin: 0;
+  }
+}

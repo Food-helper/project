@@ -1,5 +1,6 @@
 @import url('../vendor/normalize.css');
 @import url('../fonts/fonts.css');
+@import url(../blocks/body/body.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/footer/footer.css);
@@ -7,6 +8,19 @@
 @import url('../blocks/time/time.css');
 @import url('../blocks/registration/registration.css');
 @import url('../blocks/button/button.css');
+@import url(../blocks/button-favourites/button-favourites.css);
+@import url(../blocks/button-favourites/_type/button-favourites_type_active.css);
+@import url(../blocks/main/main.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/subtitle/subtitle.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/meals/meals.css);
+@import url(../blocks/time/time.css);
+@import url(../blocks/author/author.css);
+@import url(../blocks/buttons/buttons.css);
+@import url(../blocks/pages-list/pages-list.css);
 @import url('../blocks/list/list.css');
 @import url('../blocks/box/box.css');
 @import url('../blocks/form/form.css');
