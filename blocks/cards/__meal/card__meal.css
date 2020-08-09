@@ -1,0 +1,10 @@
+.card__meal {
+  height: 25px;
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

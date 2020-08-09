@@ -1,0 +1,18 @@
+@import url(__img/card__img.css);
+@import url(__subtitle/card__subtitle.css);
+@import url(__author/card__author.css);
+@import url(__time/card__time.css);
+
+.card {
+  font-family: 'Montserrat',
+    Arial,
+    sans-serif;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
