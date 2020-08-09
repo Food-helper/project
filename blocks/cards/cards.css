@@ -1,9 +1,3 @@
-@import url(__meals/card__meals.css);
-@import url(__meal/card__meal.css);
-@import url(__meal/_breakfast/card__meal_breakfast.css);
-@import url(__meal/_dinner/card__meal_dinner.css);
-@import url(__meal/_supper/card__meal_supper.css);
-
 .cards {
   font-family: 'Montserrat',
     Arial,
