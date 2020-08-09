@@ -1,0 +1,13 @@
+.recipe__add-favourite {
+  width: 179px;
+  height: 47px;
+  color: white;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/Union.svg);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

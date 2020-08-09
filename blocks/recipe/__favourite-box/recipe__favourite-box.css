@@ -1,0 +1,10 @@
+.recipe__favourite-box {
+  max-width: 179px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: -20px;
+}

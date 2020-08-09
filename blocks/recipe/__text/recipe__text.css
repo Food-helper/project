@@ -1,0 +1,15 @@
+.recipe__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 625px;
+}
+
+.recipe__text:first-of-type {
+  margin-bottom: 25px;
+}
+
+.recipe__text:last-of-type {
+  margin-bottom: 80px;
+}

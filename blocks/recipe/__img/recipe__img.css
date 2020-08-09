@@ -1,0 +1,4 @@
+.recipe__img {
+  width: 80%;
+  grid-area: "img";
+}

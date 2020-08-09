@@ -1,0 +1,5 @@
+.recipe__box {
+  max-width: 625px;
+  grid-area: "info";
+  position: relative;
+}
