@@ -12,14 +12,27 @@
 </head>
 <body>
 <div class="page">
-    <header class="header">
-        <nav>
-            <a class="header__link" href="">Рецепты</a>
-            <a class="header__link">Список покупок</a>
-        </nav>
-        <nav>
-            <a class="header__link">Войти</a>
-            <button class="button input-button">Создать аккаунт</button>
+    <!-- header-->
+    <header class="header header_margin_small">
+        <nav class="header__nav">
+            <div class="header__container">
+                <ul class="header__links">
+                    <li class="header__list-elem">
+                        <a href="./recipes.html" class="header__link header__link_form">Рецепты</a>
+                    </li>
+                    <li class="header__list-elem">
+                        <a href="./list.html" class="header__link header__link_form">Список покупок</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="header__links">
+                <li class="header__list-elem">
+                    <a href="./enter.html" class="header__link">Войти</a>
+                </li>
+                <li>
+                    <a href="./registration.html" class="button input-button header__button">Создать аккаунт</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div class="enter">
@@ -62,13 +75,15 @@
         </div>
     </div>
 </div>
+
+<!-- footer-->
 <footer class="footer">
     <div class="footer__container">
+        <a class="footer__link" href="#">Продуктовый помощник</a>
         <nav>
-            <a class="footer__link">Продуктивный помощник</a>
-            <a class="footer__link">Об авторе</a>
+            <a class="footer__link" href="#">Об авторе</a>
+            <a class="footer__link" href="#">Технологии</a>
         </nav>
-        <a class="footer__link">Технологии</a>
     </div>
 </footer>
 
