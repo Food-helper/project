@@ -4,10 +4,13 @@
 
 @import url('./_list/button_list.css');
 
-
 .button {
   min-height: 48px;
   border-radius: 6px;
   text-decoration: none; 
   border: none;
+}
+
+.button:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }

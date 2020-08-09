@@ -1,99 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
-  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./pages/index.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова"/>
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"/>
+  <link rel="stylesheet" href="./pages/index.css"/>
   <title lang="en">Food helper</title>
 </head>
-  <body>
-    <div class="page">
-      <header class="header">
-        <nav>
-          <a class="header__link">Рецепты</a>
-          <a class="header__link" href="./subscribe.html">Мои подписки</a>
-          <a class="header__link">Создать рецепт</a>
-          <a class="header__link">Избранное</a>
-          <a class="header__link header__link_active" href="./list.html"
-            >Список покупок</a
-          >
-        </nav>
-        <nav>
-          <a class="header__link">Изменить пароль</a>
-          <a class="header__link">Выход</a>
-        </nav>
-      </header>
-      <section class="list">
-        <h1>Список покупок</h1>
-        <div class="list__box">
-          <div class="list__item">
-            <img class="list__img" src="./images/Ellipse 7 (1).jpg" />
-            <div class="list__info">
-              <p class="subscribe__card-item-name">
-                Французские тосты
-              </p>
-              <div class="time">
-                <img
-                  class="time__logo"
-                  src="./images/clock 1.svg"
-                  alt="clock"
-                />
-                <p class="time__info">20 мин.</p>
-              </div>
-            </div>
-            <button class="list__delete">Удалить</button>
-          </div>
-          <div class="list__item">
-            <img class="list__img" src="./images/Ellipse 7 (1).jpg" />
-            <div class="list__info">
-              <p class="subscribe__card-item-name">
-                Французские тосты
-              </p>
-              <div class="time">
-                <img
-                  class="time__logo"
-                  src="./images/clock 1.svg"
-                  alt="clock"
-                />
-                <p class="time__info">20 мин.</p>
-              </div>
-            </div>
-            <button class="list__delete">Удалить</button>
-          </div>
-          <div class="list__item">
-            <img class="list__img" src="./images/Ellipse 7 (1).jpg" />
-            <div class="list__info">
-              <p class="subscribe__card-item-name">
-                Французские тосты
-              </p>
-              <div class="time">
-                <img
-                  class="time__logo"
-                  src="./images/clock 1.svg"
-                  alt="clock"
-                />
-                <p class="time__info">20 мин.</p>
-              </div>
-            </div>
-            <button class="list__delete">Удалить</button>
+<body>
+<div class="page">
+
+  <!-- header-->
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__container">
+        <ul class="header__links">
+          <li class="header__list-elem">
+            <a href="./recipes.html" class="header__link">Рецепты</a>
+          </li>
+          <li class="header__list-elem">
+            <a href="./subscribe.html" class="header__link">Мои подписки</a>
+          </li>
+          <li class="header__list-elem">
+            <a href=" #" class="header__link">Создать рецепт</a>
+          </li>
+          <li class="header__list-elem">
+            <a href="./favourite.html" class="header__link">Избранное</a>
+          </li>
+          <li class="header__list-elem">
+            <a href="./list.html" class="header__link  header__link_active">Список покупок</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="header__links">
+        <li class="header__list-elem">
+          <a href="./password.html" class="header__link">Изменить пароль</a>
+        </li>
+        <li class="header__list-elem">
+          <a href="./before_login.html" class="header__link">Выход</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="list">
+    <h1>Список покупок</h1>
+    <div class="list__box">
+      <div class="list__item">
+        <img class="list__img" src="./images/Ellipse 7 (1).jpg"/>
+        <div class="list__info">
+          <p class="subscribe__card-item-name">
+            Французские тосты
+          </p>
+          <div class="time">
+            <img
+              class="time__logo"
+              src="./images/clock 1.svg"
+              alt="clock"
+            />
+            <p class="time__info">20 мин.</p>
           </div>
         </div>
-        <button type="button" class="button button_list">Скачать список</button>
-      </section>
-      <footer class="footer">
-        <div class="footer__container">
-          <nav>
-            <a class="footer__link">Продуктивный помощник</a>
-            <a class="footer__link">Об авторе</a>
-          </nav>
-          <a class="footer__link">Технологии</a>
+        <button class="list__delete">Удалить</button>
+      </div>
+      <div class="list__item">
+        <img class="list__img" src="./images/Ellipse 7 (1).jpg"/>
+        <div class="list__info">
+          <p class="subscribe__card-item-name">
+            Французские тосты
+          </p>
+          <div class="time">
+            <img
+              class="time__logo"
+              src="./images/clock 1.svg"
+              alt="clock"
+            />
+            <p class="time__info">20 мин.</p>
+          </div>
         </div>
-      </footer>
+        <button class="list__delete">Удалить</button>
+      </div>
+      <div class="list__item">
+        <img class="list__img" src="./images/Ellipse 7 (1).jpg"/>
+        <div class="list__info">
+          <p class="subscribe__card-item-name">
+            Французские тосты
+          </p>
+          <div class="time">
+            <img
+              class="time__logo"
+              src="./images/clock 1.svg"
+              alt="clock"
+            />
+            <p class="time__info">20 мин.</p>
+          </div>
+        </div>
+        <button class="list__delete">Удалить</button>
+      </div>
     </div>
-    <script src="./script/script.js"></script>
-  </body>
+    <button type="button" class="button button_list">Скачать список</button>
+  </section>
+</div>
+
+<!-- footer-->
+<footer class="footer">
+  <div class="footer__container">
+    <a class="footer__link" href="./before_login.html">Продуктовый помощник</a>
+    <nav>
+      <a class="footer__link" href="#">Об авторе</a>
+      <a class="footer__link" href="#">Технологии</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="./script/script.js"></script>
+</body>
 </html>
