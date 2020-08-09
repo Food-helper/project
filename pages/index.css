@@ -33,10 +33,4 @@
 @import url('../blocks/input-header/_reset/input__header_reset.css');
 @import url('../blocks/input-box/input-box.css');
 @import url('../blocks/enter/enter.css');
-@import url('../blocks/password/password.css');
-@import url('../blocks/reset/reset.css');
-@import url('../blocks/input-box/_reset/input-box_reset.css');
-@import url('../blocks/input-box/_registration/input-box_registration.css');
-@import url('../blocks/input-box/_enter/input-box_enter.css');
-@import url('../blocks/input/_enter/input_enter.css');
 

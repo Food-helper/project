@@ -1,9 +1,11 @@
 .input-button {
     width: 206px;
+    top: 623px;
     background: #4A61DD;
     color: white;
-    font-weight: 600;
+    align-self: center;
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    align-self: center;
+    margin-bottom: 71px;
 }
