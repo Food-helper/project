@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./pages/index.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
     <title>Food helper</title>
 </head>
 <body>
@@ -27,41 +28,49 @@
         <div class="box registration__box">
             <form class="form registration__form" name="form" method="post" action="#">
 
-                <fieldset class="subject registration__subject">
-                    <div class="registration__input-block">
-                        <h4 class="registration__header registration__header_name">Имя</h4>
-                        <input class="registration__input registration__input_name"
-                               type="text"
-                               name="name"
-                               id="name-input"
-                        />
+                <fieldset class="subject">
+                    <div class="input-box input-box_registration">
+                        <div class="input-block">
+                            <h4 class="input-header registration__header registration__header_name">Имя</h4>
+                            <input class="input registration__input registration__input_name"
+                                   type="text"
+                                   name="name"
+                                   id="name-input"
+                            />
+                        </div>
                         <span id="name-error" class="registration__error"></span>
                     </div>
-                    <div class="registration__input-block">
-                        <h4 class="registration__header">Имя пользователя</h4>
-                        <input class="registration__input registration__input_nickname"
-                               type="text"
-                               name="nickname"
-                               id="nickname-input"
-                        />
-                        <span id="nickname-error" class="registration__error"></span>
+                    <div class="input-box input-box_registration">
+                        <div class="input-block">
+                            <h4 class="input-header registration__header">Имя пользователя</h4>
+                            <input class="input registration__input registration__input_nickname"
+                                   type="text"
+                                   name="nickname"
+                                   id="nickname-input"
+                            />
+                        </div>
+                        <span id="nickname-error" class="input-error registration__error"></span>
                     </div>
-                    <div class="registration__input-block">
-                        <h4 class="registration__header">Адрес электронной почты</h4>
-                        <input class="registration__input registration__input_email"
-                               type="email"
-                               name="email"
-                               id="email-input"
-                        />
+                    <div class="input-box input-box_registration">
+                        <div class="input-block">
+                            <h4 class="input-header registration__header">Адрес электронной почты</h4>
+                            <input class="input registration__input registration__input_email"
+                                   type="email"
+                                   name="email"
+                                   id="email-input"
+                            />
+                        </div>
                         <span id="email-error" class="registration__error"></span>
                     </div>
-                    <div class="registration__input-block">
-                        <h4 class="registration__header">Пароль</h4>
-                        <input class="registration__input registration__input_name"
-                               type="password"
-                               name="password"
-                               id="password-input"
-                        />
+                    <div class="input-box input-box_registration">
+                        <div class="input-block">
+                            <h4 class="input-header">Пароль</h4>
+                            <input class="input registration__input registration__input_name"
+                                   type="password"
+                                   name="password"
+                                   id="password-input"
+                            />
+                        </div>
                         <span id="password-error" class="registration__error"></span>
                     </div>
                 </fieldset>

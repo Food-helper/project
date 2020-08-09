@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./pages/index.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
     <title>Food helper</title>
 </head>
 <body>
@@ -16,29 +17,32 @@
         </nav>
         <nav>
             <a class="header__link">Войти</a>
-            <button  class="button input-button">Создать аккаунт</button>
+            <button class="button input-button">Создать аккаунт</button>
         </nav>
     </header>
-    <div class="enter">
+    <div class="reset">
         <h1>Сброс пароля</h1>
         <div class=" box enter__box">
             <form class="form enter__form" name="form" method="post" action="#">
 
                 <fieldset class="subject enter__subject">
 
-                        <h4 class="input-header input-header_reset">Чтобы сбросить старый пароль — введите адрес электронной почты, под которым вы регистрировались.</h4>
+                    <h4 class="input-header input-header_reset">Чтобы сбросить старый пароль — введите адрес электронной
+                        почты, под которым вы регистрировались.</h4>
+                    <div class="input-box input-box_reset">
                         <div class="input-block">
-                            <h4 class="input-header registration__header">Адрес электронной почты</h4>
-                        <input class="registration__input registration__input_email"
-                               type="email"
-                               name="email"
-                               id="email-input"
-                        />
+                            <h4 class="input-header reset__header">Адрес электронной почты</h4>
+                            <input class="input"
+                                   type="email"
+                                   name="email"
+                                   id="email-input"
+                            />
+                        </div>
                         <span id="email-error" class="input-error"></span>
                     </div>
                 </fieldset>
 
-                <button type="submit" class="button input-button">Сбросить пароль</button>
+                <button type="submit" class="button input-button reset__button">Сбросить пароль</button>
             </form>
         </div>
     </div>
