@@ -1,0 +1,15 @@
+.header__list-elem {
+  margin-left: 28px;
+  margin-top: 15px;
+}
+
+.header__list-elem:first-of-type {
+  margin-left: 0;
+}
+
+@media (max-width: 800px) {
+  .header__list-elem {
+    margin: 0;
+    padding-bottom: 12px;
+  }
+}
