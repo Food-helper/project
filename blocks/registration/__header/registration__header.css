@@ -1,4 +1,9 @@
 .registration__header {
-width: 167px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width: 164px;
+    margin-right: 68px;
+    margin-top: 0;
 }
 
