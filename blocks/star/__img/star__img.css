@@ -1,5 +1,3 @@
-@import url('./_recipe/star__img_recipe.css');
-
-.star__img {
-  
+.star__img:hover + .star__about {
+  opacity: 1;
 }
