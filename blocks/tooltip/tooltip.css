@@ -1,0 +1,56 @@
+.tooltip {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  background-image: url(./../../images/star.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 22px;
+  height: 21px;
+  background-position: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-transition: opacity linear 0.5s;
+  transition: opacity linear 0.5s;
+  margin-top: 27px;
+  margin-right: 27px;
+}
+
+.tooltip:hover {
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 179px;
+  height: 42px;
+  background-color: #555e75;
+  box-shadow: 0px 20px 20px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -90px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555e75 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

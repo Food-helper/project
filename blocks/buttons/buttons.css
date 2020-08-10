@@ -2,7 +2,6 @@
 @import url(__add-button/buttons__add-button.css);
 @import url(__add-button/_shop/buttons__add-button_shop.css);
 @import url(__add-button/_recipe/buttons__add-button_recipe.css);
-@import url(__button-favourites/buttons__button-favourites.css);
 @import url(__plus/buttons__plus.css);
 
 .buttons {
