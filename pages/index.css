@@ -44,3 +44,6 @@
 @import url('../blocks/input-box/_enter/input-box_enter.css');
 @import url('../blocks/input/_enter/input_enter.css');
 @import url('../blocks/registration/registration.css');
+@import url(../blocks/input/_description/input_description.css);
+@import url(../blocks/input-block/_download/input-block_download.css);
+@import url(../blocks/input/_amount/input_amount.css);
