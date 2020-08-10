@@ -5,6 +5,8 @@
     border-radius: 16px;
     width: 67%;
     margin: 59px auto 236px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 1000px) {

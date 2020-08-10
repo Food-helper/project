@@ -1,0 +1,7 @@
+@import url('./__link/make__link.css');
+@import url('./__input-container/make__input-container.css');
+@import url('./__delete/make__delete.css');
+
+.make {
+    color: black;
+}

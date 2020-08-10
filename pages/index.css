@@ -47,3 +47,8 @@
 @import url(../blocks/input/_description/input_description.css);
 @import url(../blocks/input-block/_download/input-block_download.css);
 @import url(../blocks/input/_amount/input_amount.css);
+@import url(../blocks/input-header/_span/input-header_span.css);
+@import url(../blocks/input/_ingridients/input_ingridients.css);
+@import url(../blocks/make/__link/make__link.css);
+@import url(../blocks/input-block/_make/input-block_make.css);
+@import url(../blocks/make/make.css);
