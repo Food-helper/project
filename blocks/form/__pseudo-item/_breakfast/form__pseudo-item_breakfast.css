@@ -1,4 +1,13 @@
 .form__pseudo-item_breakfast {
   border: 1px solid #E26C2D;
+  cursor: pointer;
+  box-shadow: 0 0 5px #fff6c5;
 }
 
+.form__pseudo-item_breakfast:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  opacity: .6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
