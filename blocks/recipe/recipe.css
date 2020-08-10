@@ -13,5 +13,12 @@
 .recipe {
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-areas: 'img  info';
+  grid-template-areas: 'img info';
+}
+
+@media (max-width: 860px) {
+  .recipe {
+    display: flex;
+    flex-direction: column;
+  }
 }
