@@ -6,3 +6,9 @@
     height: 42px;
     margin-bottom: 35px;
 }
+
+@media (max-width: 570px) {
+    .registration__input {
+        width: 100%;
+    }
+}
