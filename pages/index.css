@@ -42,12 +42,17 @@
 @import url('../blocks/input-box/_enter/input-box_enter.css');
 @import url('../blocks/input/_enter/input_enter.css');
 @import url('../blocks/registration/registration.css');
+@import url(../blocks/input/_description/input_description.css);
+@import url(../blocks/input-block/_download/input-block_download.css);
+@import url(../blocks/input/_amount/input_amount.css);
+@import url(../blocks/input-header/_span/input-header_span.css);
+@import url(../blocks/input/_ingridients/input_ingridients.css);
+@import url(../blocks/make/__link/make__link.css);
+@import url(../blocks/input-block/_make/input-block_make.css);
+@import url(../blocks/make/make.css);
 @import url('../blocks/star/star.css');
 @import url(../blocks/tooltip/tooltip.css);
 @import url(../blocks/tooltip/_type/tooltip_type_active.css);
 @import url(../blocks/tooltip/_type/tooltip_type_recipe.css);
 @import url(../blocks/tooltiptext/tooltiptext.css);
-
-
-
 
