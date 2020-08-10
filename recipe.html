@@ -48,7 +48,12 @@
     <section class="recipe">
       <img class="recipe__img" src="./images/2020-07-23 16.10 1.jpg" />
       <div class="recipe__box">
-        <h1 class="title">Французские тосты</h1>
+        <div class="title__container">
+          <h1 class="title">Французские тосты</h1>
+          <button class="tooltip tooltip_type_recipe">
+            <span class="tooltiptext">Добавить в избранное</span>
+          </button>
+        </div>
         <ul class="card__meals card__meals_recipe">
           <li class="card__meal card__meal_breakfast">Завтрак</li>
         </ul>
@@ -78,32 +83,6 @@
             <li class="recipe__ingredient">ягоды - 100 гр.</li>
             <li class="recipe__ingredient">сироп топинамбура - 3 ст. л.</li>
           </ul>
-          <div class="time time_recipe">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">20 мин.</p>
-          </div>
-          <div class="author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Вероника Чернова</p>
-          </div>
-          <div class="recipe__buttons">
-            <button class="button button_add-recipe" type="button">
-              + Добавить рецепт
-            </button>
-            <button class="button button_subscribe-author" type="button">
-              Подписаться на автора
-            </button>
-          </div>
-          <div class="recipe__info">
-            <h2 class="subtitle">Ингридиенты:</h2>
-            <ul class="recipe__ingredients">
-              <li class="recipe__ingredient">яйцо - 2 шт.</li>
-              <li class="recipe__ingredient">молоко - 200 мл.</li>
-              <li class="recipe__ingredient">тосты - 4 шт.</li>
-              <li class="recipe__ingredient">сахар - 2 ст. л.</li>
-              <li class="recipe__ingredient">ягоды - 100 гр.</li>
-              <li class="recipe__ingredient">сироп топинамбура - 3 ст. л.</li>
-            </ul>
             <h2 class="subtitle">Описание</h2>
             <p class="recipe__text">
               Смешать молоко с сахаром, добавить яйца, тщательно все взбить.
@@ -114,14 +93,6 @@
               Полить сверху сиропом топинамбура и украсить ягодами.
             </p>
           </div>
-          <div class="star star_recipe">
-            <img class="star__img star__img_recipe" src="./images/star 2.svg">
-            <div class="star__about">Добавить в избранное</div>
-          </div>
-        </div>
-        <div class="recipe__favourite-box">
-          <img class="recipe__favourite-img" src="./images/star 2.svg">
-          <div class="recipe__add-favourite">Добавить в избранное</div>
         </div>
       </div>
     </section>
