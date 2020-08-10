@@ -2,3 +2,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 1321px) {
+    .input-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
