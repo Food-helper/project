@@ -1,0 +1,12 @@
+@import url('./_recipe/star_recipe.css');
+@import url('./__img/star__img.css');
+@import url('./__about/star__about.css');
+
+.star {
+  max-width: 179px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
