@@ -2,6 +2,12 @@
     border: 0.5px solid rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     border-radius: 6px;
-    width: 370px;
+    width: 60%;
     height: 42px;
+}
+
+@media (max-width: 1321px) {
+    .input {
+        width: 80%;
+    }
 }
