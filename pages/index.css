@@ -3,6 +3,7 @@
 @import url(../blocks/body/body.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/_margin/header_margin_small.css);
 @import url(../blocks/footer/footer.css);
 @import url('../blocks/subscribe/subscribe.css');
 @import url('../blocks/time/time.css');
@@ -16,7 +17,6 @@
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/card/card.css);
-@import url(../blocks/meals/meals.css);
 @import url(../blocks/time/time.css);
 @import url(../blocks/author/author.css);
 @import url(../blocks/buttons/buttons.css);
@@ -39,4 +39,6 @@
 @import url('../blocks/input-box/_registration/input-box_registration.css');
 @import url('../blocks/input-box/_enter/input-box_enter.css');
 @import url('../blocks/input/_enter/input_enter.css');
+
+
 
