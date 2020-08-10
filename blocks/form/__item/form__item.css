@@ -1,0 +1,19 @@
+.form__item {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form__item:checked+.form__pseudo-item_breakfast {
+  content: url(./../../../images/breakfast.svg);
+}
+
+.form__item:checked+.form__pseudo-item_dinner {
+  content: url(./../../../images/dinner.svg);
+}
+
+.form__item:checked+.form__pseudo-item_supper {
+  content: url(./../../../images/supper.svg);
+}

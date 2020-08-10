@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
-    <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <title lang="en">Food helper</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
+
 </head>
-<body>
-<div class="page">
-    <header class="header">
-        <nav>
-            <a class="header__link">Рецепты</a>
-            <a class="header__link" href="./subscribe.html">Мои подписки</a>
-            <a class="header__link">Создать рецепт</a>
-            <a class="header__link">Избранное</a>
-            <a class="header__link">Список покупок</a>
-        </nav>
-        <nav>
-            <a class="header__link">Изменить пароль</a>
-            <a class="header__link">Выход</a>
-        </nav>
-    </header>
-    <div class="registration">
-        <h1>Регистрация</h1>
-        <div class="box registration__box">
-            <form class="form registration__form" name="form" method="post" action="#">
 
-                <fieldset class="subject registration__subject">
-                    <div class="registration__input-block">
-                        <h4 class="registration__header registration__header_name">Имя</h4>
-                        <input class="registration__input registration__input_name"
-                               type="text"
-                               name="name"
-                               id="name-input"
-                        />
-                        <span id="name-error" class="registration__error"></span>
-                    </div>
-                    <div class="registration__input-block">
-                        <h4 class="registration__header">Имя пользователя</h4>
-                        <input class="registration__input registration__input_nickname"
-                               type="text"
-                               name="nickname"
-                               id="nickname-input"
-                        />
-                        <span id="nickname-error" class="registration__error"></span>
-                    </div>
-                    <div class="registration__input-block">
-                        <h4 class="registration__header">Адрес электронной почты</h4>
-                        <input class="registration__input registration__input_email"
-                               type="email"
-                               name="email"
-                               id="email-input"
-                        />
-                        <span id="email-error" class="registration__error"></span>
-                    </div>
-                    <div class="registration__input-block">
-                        <h4 class="registration__header">Пароль</h4>
-                        <input class="registration__input registration__input_name"
-                               type="password"
-                               name="password"
-                               id="password-input"
-                        />
-                        <span id="password-error" class="registration__error"></span>
-                    </div>
-                </fieldset>
+<body class="body">
+  <div class="page">
 
-                <button type="submit" class="button button_registration">Создать аккаунт</button>
-            </form>
+    <!-- header-->
+    <header class="header header_margin_small">
+      <nav class="header__nav">
+        <div class="header__container">
+          <ul class="header__links">
+            <li class="header__list-elem">
+              <a href="./before_login.html" class="header__link header__link_form">Рецепты</a>
+            </li>
+            <li class="header__list-elem">
+              <a href="./list.html" class="header__link header__link_form">Список покупок</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="footer__container">
-        <nav>
-            <a class="footer__link">Продуктивный помощник</a>
-            <a class="footer__link">Об авторе</a>
-        </nav>
-        <a class="footer__link">Технологии</a>
-    </div>
-</footer>
+        <ul class="header__links">
+          <li class="header__list-elem">
+            <a href="./enter.html" class="header__link">Войти</a>
+          </li>
+          <li>
+            <a href="./registration.html" class="button input-button header__button">Создать аккаунт</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<script src="./script/script.js"></script>
+    <div class="registration">
+      <h1>Регистрация</h1>
+      <div class="box registration__box">
+        <form class="form registration__form" name="form" method="post" action="#">
+
+          <fieldset class="subject">
+            <div class="input-box input-box_registration">
+              <div class="input-block">
+                <h4 class="input-header registration__header registration__header_name">Имя</h4>
+                <input class="input registration__input registration__input_name" type="text" name="name"
+                  id="name-input" />
+              </div>
+              <span id="name-error" class="registration__error"></span>
+            </div>
+            <div class="input-box input-box_registration">
+              <div class="input-block">
+                <h4 class="input-header registration__header">Имя пользователя</h4>
+                <input class="input registration__input registration__input_nickname" type="text" name="nickname"
+                  id="nickname-input" />
+              </div>
+              <span id="nickname-error" class="input-error registration__error"></span>
+            </div>
+            <div class="input-box input-box_registration">
+              <div class="input-block">
+                <h4 class="input-header registration__header">Адрес электронной почты</h4>
+                <input class="input registration__input registration__input_email" type="email" name="email"
+                  id="email-input" />
+              </div>
+              <span id="email-error" class="registration__error"></span>
+            </div>
+            <div class="input-box input-box_registration">
+              <div class="input-block">
+                <h4 class="input-header">Пароль</h4>
+                <input class="input registration__input registration__input_name" type="password" name="password"
+                  id="password-input" />
+              </div>
+              <span id="password-error" class="registration__error"></span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="button button_registration">Создать аккаунт</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__link" href="./before_login.html">Продуктовый помощник</a>
+      <nav>
+        <a class="footer__link" href="#">Об авторе</a>
+        <a class="footer__link" href="#">Технологии</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./script/script.js"></script>
 </body>
+
 </html>

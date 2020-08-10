@@ -3,9 +3,11 @@
 @import url(__links/header__links.css);
 @import url(__list-elem/header__list-elem.css);
 @import url(__link/header__link.css);
+@import url(__link/_form/header__link_form.css);
 @import url(__link/_active/header__link_active.css);
 @import url(__counter/header__counter.css);
 @import url(__button/header__button.css);
+@import url(_padding/header_padding_small.css);
 
 .header {
   font-family: 'Montserrat',

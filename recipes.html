@@ -33,17 +33,17 @@
               <a href="./favourite.html" class="header__link">Избранное</a>
             </li>
             <li class="header__list-elem">
-              <a href=" #" class="header__link">Список покупок</a>
+              <a href="./list.html" class="header__link">Список покупок</a>
             </li>
             <li class="header__counter">27</li>
           </ul>
         </div>
         <ul class="header__links">
           <li class="header__list-elem">
-            <a href=" #" class="header__link">Изменить пароль</a>
+            <a href="./password.html" class="header__link">Изменить пароль</a>
           </li>
           <li class="header__list-elem">
-            <a href=" #" class="header__link">Выход</a>
+            <a href="./before_login.html" class="header__link">Выход</a>
           </li>
         </ul>
       </nav>
@@ -54,17 +54,31 @@
       <!-- content-->
       <section class="content">
         <h1 class="title">Рецепты</h1>
-        <ul class="meals content__meals">
-          <li class="meals__breakfast">Завтрак</li>
-          <li class="meals__dinner">Обед</li>
-          <li class="meals__supper">Ужин</li>
-        </ul>
+        <form class="form__meals">
+          <fieldset class="form__input-container">
+            <label for="breakfast" class="form__label form__label_direction_right">
+              <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked>
+              <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
+              <span class="form__label-text">Завтрак</span>
+            </label>
+            <label for="dinner" class="form__label form__label_direction_right">
+              <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked>
+              <span class="form__pseudo-item form__pseudo-item_dinner"></span>
+              <span class="form__label-text">Обед</span>
+            </label>
+            <label for="supper" class="form__label form__label_direction_right">
+              <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked>
+              <span class="form__pseudo-item form__pseudo-item_supper"></span>
+              <span class="form__label-text">Ужин</span>
+            </label>
+          </fieldset>
+        </form>
       </section>
 
       <!--  cards-->
       <ul class="cards main__cards">
         <li class="card">
-          <a href="#">
+          <a href="./recipe.html">
             <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
           </a>
           <h2 class="subtitle card__subtitle">Французские тосты</h2>
@@ -88,7 +102,7 @@
           </div>
         </li>
         <li class="card">
-          <a href="#">
+          <a href="./recipe.html">
             <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
           </a>
           <h2 class="subtitle card__subtitle">Французские тосты</h2>
@@ -111,7 +125,7 @@
           </div>
         </li>
         <li class="card">
-          <a href="#">
+          <a href="./recipe.html">
             <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
           </a>
           <h2 class="subtitle card__subtitle">Французские тосты</h2>
@@ -233,7 +247,7 @@
   <!-- footer-->
   <footer class="footer">
     <div class="footer__container">
-      <a class="footer__link" href="#">Продуктовый помощник</a>
+      <a class="footer__link" href="./before_login.html">Продуктовый помощник</a>
       <nav>
         <a class="footer__link" href="#">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
