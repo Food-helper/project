@@ -1,11 +1,8 @@
 @import url('./_subscribe/button_subscribe.css');
 @import url('./_add-recipe/button_add-recipe.css');
 @import url('./_registration/button_registration.css');
-<<<<<<< HEAD
 @import url('./_subscribe-author/button_subscribe-author.css');
-=======
 @import url('./_password/button_password.css');
->>>>>>> b0d3296db321677bf06694e4fc837513dc17c54e
 @import url('./_list/button_list.css');
 
 .button {
