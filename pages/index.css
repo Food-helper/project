@@ -7,6 +7,7 @@
 @import url(../blocks/footer/footer.css);
 @import url('../blocks/subscribe/subscribe.css');
 @import url('../blocks/time/time.css');
+@import url('../blocks/registration/registration.css');
 @import url('../blocks/button/button.css');
 @import url(../blocks/button-favourites/button-favourites.css);
 @import url(../blocks/button-favourites/_type/button-favourites_type_active.css);
@@ -16,12 +17,12 @@
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/card/card.css);
+@import url(../blocks/meals/meals.css);
 @import url(../blocks/time/time.css);
 @import url(../blocks/author/author.css);
 @import url(../blocks/buttons/buttons.css);
 @import url(../blocks/pages-list/pages-list.css);
 @import url('../blocks/list/list.css');
-<<<<<<< HEAD
 @import url('../blocks/box/box.css');
 @import url('../blocks/form/form.css');
 @import url('../blocks/subject/subject.css');
@@ -33,13 +34,9 @@
 @import url('../blocks/input-header/_reset/input__header_reset.css');
 @import url('../blocks/input-box/input-box.css');
 @import url('../blocks/enter/enter.css');
-<<<<<<< HEAD
 @import url('../blocks/recipe/recipe.css');
-=======
 @import url('../blocks/title/title.css');
 @import url('../blocks/subtitle/subtitle.css');
->>>>>>> 0a1bb61c019171f6d1757c5f182ffaa85b5709af
-=======
 @import url('../blocks/password/password.css');
 @import url('../blocks/reset/reset.css');
 @import url('../blocks/input-box/_reset/input-box_reset.css');
@@ -47,6 +44,3 @@
 @import url('../blocks/input-box/_enter/input-box_enter.css');
 @import url('../blocks/input/_enter/input_enter.css');
 @import url('../blocks/registration/registration.css');
-
-
->>>>>>> b0d3296db321677bf06694e4fc837513dc17c54e
