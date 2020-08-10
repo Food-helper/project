@@ -5,9 +5,6 @@
 @import url('./__ingredients/recipe__ingredients.css');
 @import url('./__ingredient/recipe__infredient.css');
 @import url('./__text/recipe__text.css');
-@import url('./__add-favourite/recipe__add-favourite.css');
-@import url('./__favourite-box/recipe__favourite-box.css');
-@import url('./__favourite-img/recipe__favourite-img.css');
 @import url('./__box/recipe__box.css');
 
 .recipe {

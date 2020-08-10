@@ -1,4 +1,4 @@
-.recipe__add-favourite {
+.star__about {
   width: 179px;
   height: 47px;
   color: white;
@@ -10,4 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
