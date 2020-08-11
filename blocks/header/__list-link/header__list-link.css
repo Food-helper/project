@@ -1,12 +1,13 @@
-.header__link {
-  color: #000000;
+.header__list-link {
+  list-style: none;
   text-decoration: none;
+  color: #070707;
+  transition: color .3s ease;
 }
 
-.header__link:hover {
+.header__list-link:hover {
   color: #4A61DD;
   border-bottom: 2px solid #4A61DD;
   cursor: pointer;
   padding-bottom: 12px;
 }
-

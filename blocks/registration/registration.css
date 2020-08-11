@@ -5,7 +5,8 @@
 @import url(__header/registration__header.css);
 @import url(__form/registration__form.css);
 
-
-.registration {
-
+@media (max-width: 900px) {
+  .registration {
+    margin-top: 97px;
+  }
 }

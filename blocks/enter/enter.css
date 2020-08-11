@@ -5,3 +5,8 @@
 @import url('__subject/enter__subject.css');
 @import url('__box/enter__box.css');
 @import url('__input-error/enter__input-error.css');
+
+@media screen and (max-width: 900px) {
+  .enter {
+    margin-top: 97px;
+  }

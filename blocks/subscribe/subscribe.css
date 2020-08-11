@@ -11,3 +11,9 @@
 .subscribe {
   margin: auto;
 }
+
+@media screen and (max-width: 900px) {
+  .subscribe {
+    margin-top: 45px;
+  }
+}
