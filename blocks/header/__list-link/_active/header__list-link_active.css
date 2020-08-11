@@ -1,0 +1,12 @@
+.header__list-link_active {
+  color: #4A61DD;
+  border-bottom: 2px solid #4A61DD;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .header__list-link_active {
+    padding-bottom: 0;
+  }
+}

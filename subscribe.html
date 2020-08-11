@@ -13,38 +13,31 @@
 
 <body class="body">
   <div class="page">
+
     <!-- header-->
-    <header class="header">
-      <nav class="header__nav">
-        <div class="header__container">
-          <ul class="header__links">
-            <li class="header__list-elem">
-              <a href="./recipes.html" class="header__link">Рецепты</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./subscribe.html" class="header__link header__link_active">Мои подписки</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./make.html" class="header__link">Создать рецепт</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./favourite.html" class="header__link">Избранное</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./list.html" class="header__link">Список покупок</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="header__links">
-          <li class="header__list-elem">
-            <a href="./password.html" class="header__link">Изменить пароль</a>
-          </li>
-          <li class="header__list-elem">
-            <a href="./index.html" class="header__link">Выход</a>
-          </li>
+    <header class="header" id="header">
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
+          <li class="header__list-item "><a href="./subscribe.html"
+              class="header__list-link header__list-link_active">Мои подписки</a></li>
+          <li class="header__list-item"><a href="./make.html" class="header__list-link">Создать рецепт</a></li>
+          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
+          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
         </ul>
       </nav>
     </header>
+
+     <!-- subscribe-->
     <section class="subscribe">
       <h1>Мои подписки</h1>
       <div class="subscribe__box">
@@ -57,7 +50,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">20 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" />
+              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -67,7 +60,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">30 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/слососем.jpg" />
+              <img class="subscribe__card-item-img" src="./images/слососем.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -77,7 +70,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">35 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/круассан.jpg" />
+              <img class="subscribe__card-item-img" src="./images/круассан.jpg" alt="красивое фото тарелки с едой" />
             </a>
           </div>
 
@@ -95,7 +88,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">20 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" />
+              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -105,7 +98,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">30 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/слососем.jpg" />
+              <img class="subscribe__card-item-img" src="./images/слососем.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -115,7 +108,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">35 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/круассан.jpg" />
+              <img class="subscribe__card-item-img" src="./images/круассан.jpg" alt="красивое фото тарелки с едой" />
             </a>
           </div>
 
@@ -133,7 +126,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">20 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" />
+              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -143,7 +136,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">30 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/слососем.jpg" />
+              <img class="subscribe__card-item-img" src="./images/слососем.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -153,7 +146,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">35 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/круассан.jpg" />
+              <img class="subscribe__card-item-img" src="./images/круассан.jpg" alt="красивое фото тарелки с едой" />
             </a>
           </div>
 
@@ -171,7 +164,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">20 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" />
+              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -181,7 +174,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">30 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/слососем.jpg" />
+              <img class="subscribe__card-item-img" src="./images/слососем.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -191,7 +184,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">35 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/круассан.jpg" />
+              <img class="subscribe__card-item-img" src="./images/круассан.jpg" alt="красивое фото тарелки с едой" />
             </a>
           </div>
 
@@ -209,7 +202,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">20 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" />
+              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -219,7 +212,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">30 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/слососем.jpg" />
+              <img class="subscribe__card-item-img" src="./images/слососем.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -229,7 +222,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">35 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/круассан.jpg" />
+              <img class="subscribe__card-item-img" src="./images/круассан.jpg"  alt="красивое фото тарелки с едой" />
             </a>
           </div>
 
@@ -247,7 +240,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">20 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" />
+              <img class="subscribe__card-item-img" src="./images/французскиетосты.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -257,7 +250,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">30 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/слососем.jpg" />
+              <img class="subscribe__card-item-img" src="./images/слососем.jpg" alt="красивое фото тарелки с едой" />
             </a>
             <a href="./recipe.html" class="subscribe__card-item">
               <p class="subscribe__card-item-name">
@@ -267,7 +260,7 @@
                 <img class="time__logo" src="./images/clock.svg" alt="clock" />
                 <p class="time__info">35 мин.</p>
               </div>
-              <img class="subscribe__card-item-img" src="./images/круассан.jpg" />
+              <img class="subscribe__card-item-img" src="./images/круассан.jpg" alt="красивое фото тарелки с едой" />
             </a>
           </div>
 
@@ -285,7 +278,7 @@
     <div class="footer__container">
       <a class="footer__link" href="./index.html">Продуктовый помощник</a>
       <nav>
-        <a class="footer__link" href="#">Об авторе</a>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
       </nav>
     </div>

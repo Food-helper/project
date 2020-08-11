@@ -1,0 +1,23 @@
+.header__list-item {
+  margin: 35px 0 76px 28px;
+}
+
+.header__list-item:first-of-type {
+  margin: 35px 0 76px 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .header__list-item {
+    margin: 35px 0 76px 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__list-item {
+    margin: 0 0 40px 0;
+  }
+
+  .header__list-item:first-of-type {
+    margin: 0px 0 40px 0;
+  }
+}

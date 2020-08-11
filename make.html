@@ -13,71 +13,62 @@
 
 <body class="body">
   <div class="page">
+
     <!-- header-->
-    <header class="header">
-      <nav class="header__nav">
-        <div class="header__container">
-          <ul class="header__links">
-            <li class="header__list-elem">
-              <a href="./recipes.html" class="header__link">Рецепты</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./subscribe.html" class="header__link">Мои подписки</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./make.html" class="header__link header__link_active">Создать рецепт</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./favourite.html" class="header__link">Избранное</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./list.html" class="header__link">Список покупок</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="header__links">
-          <li class="header__list-elem">
-            <a href="./password.html" class="header__link">Изменить пароль</a>
-          </li>
-          <li class="header__list-elem">
-            <a href="./before_login.html" class="header__link">Выход</a>
-          </li>
+    <header class="header" id="header">
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
+          <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
+          <li class="header__list-item"><a href="./make.html"
+              class="header__list-link header__list-link_active">Создать рецепт</a></li>
+          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
+          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- make-->
     <div class="make">
       <h1>Создание рецепта</h1>
       <div class="box password__box">
         <form class="form password__form" name="form" method="post" action="#">
-          <fieldset class="subject password__subject">
+          <div class="subject password__subject">
             <div class="input-block">
               <h4 class="input-header">Название рецепта</h4>
               <input class="input" type="text" name="recipe_name" id="recipe_name" placeholder="Оладьи с кабачком" />
             </div>
             <span id="recipe_name-error" class="input-error"></span>
-
             <div class="input-block">
-              <h4 class="input-header">Теги</h4>
-              <form class="form__meals">
-                <fieldset class="form__input-container form__input-container_make">
-                  <label for="breakfast" class="form__label form__label_direction_right">
+              <h4 class="input-header input-header_make">Теги</h4>
+              <div class="form__meals">
+                <div class="form__input-container form__input-container_make">
+                  <label for="breakfast" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked />
                     <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
                     <span class="form__label-text">Завтрак</span>
                   </label>
-                  <label for="dinner" class="form__label form__label_direction_right">
+                  <label for="dinner" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked />
                     <span class="form__pseudo-item form__pseudo-item_dinner"></span>
                     <span class="form__label-text">Обед</span>
                   </label>
-                  <label for="supper" class="form__label form__label_direction_right">
+                  <label for="supper" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked />
                     <span class="form__pseudo-item form__pseudo-item_supper"></span>
                     <span class="form__label-text">Ужин</span>
                   </label>
-                </fieldset>
-              </form>
+                </div>
+              </div>
             </div>
             <div>
               <div class="input-block">
@@ -104,17 +95,15 @@
               <input class="input input_make" type="text" name="description" id="description" />
             </div>
             <span id="description-error" class="input-error"></span>
-
             <div class="input-block input-block_download">
               <h4 class="input-header">Загрузить фото</h4>
               <button class="button">Выбрать файл</button>
               <div class="input-block__delete-box">
                 <p>Cake_12.jpeg</p>
-                <img class="make__delete" src="images/X.png" />
+                <img class="make__delete" src="images/X.png" alt="delete" />
               </div>
             </div>
-          </fieldset>
-
+          </div>
           <button type="submit" class="button button_password input-button">
             Создать рецепт
           </button>
@@ -128,7 +117,7 @@
     <div class="footer__container">
       <a class="footer__link" href="./index.html">Продуктовый помощник</a>
       <nav>
-        <a class="footer__link" href="#">Об авторе</a>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
       </nav>
     </div>

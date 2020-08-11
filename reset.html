@@ -2,7 +2,6 @@
 <html lang="ru">
 
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,35 +9,35 @@
   <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
   <link rel="stylesheet" href="./pages/index.css" />
   <title lang="en">Food helper</title>
-
 </head>
 
 <body class="body">
   <div class="page">
-    <!-- header-->
-    <header class="header header_margin_small">
-      <nav class="header__nav">
-        <div class="header__container">
-          <ul class="header__links">
-            <li class="header__list-elem">
-              <a href="./index.html" class="header__link header__link_form">Рецепты</a>
-            </li>
-            <li class="header__list-elem">
-              <a href="./list.html" class="header__link header__link_form">Список покупок</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="header__links">
-          <li class="header__list-elem">
-            <a href="./enter.html" class="header__link">Войти</a>
-          </li>
-          <li>
-            <a href="./registration.html" class="button input-button header__button">Создать аккаунт</a>
-          </li>
+
+    <!--header-->
+    <header class="header" id="header">
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html"
+              class="header__list-link header__list-link_form">Рецепты
+            </a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link header__list-link_form">Список
+              покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./enter.html" class="header__list-link">Войти</a></li>
+          <li><a href="./registration.html" class="button input-button header__button">Создать
+              аккаунт</a></li>
         </ul>
       </nav>
     </header>
 
+    <!--enter-->
     <div class="enter">
       <h1>Сброс пароля</h1>
       <div class=" box enter__box">
@@ -69,7 +68,7 @@
     <div class="footer__container">
       <a class="footer__link" href="./index.html">Продуктовый помощник</a>
       <nav>
-        <a class="footer__link" href="#">Об авторе</a>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
       </nav>
     </div>
