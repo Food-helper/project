@@ -1,0 +1,9 @@
+.form__label_direction_make {
+  margin-top: -10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.form__label_direction_make:last-of-type {
+  padding-right: 50px;
+}

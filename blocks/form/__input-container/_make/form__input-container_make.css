@@ -1,4 +1,9 @@
 .form__input-container_make {
-  margin: 0 auto;
+  
+  margin: 10px auto;
   padding-left: 53px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

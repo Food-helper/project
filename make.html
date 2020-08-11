@@ -51,34 +51,33 @@
       <h1>Создание рецепта</h1>
       <div class="box password__box">
         <form class="form password__form" name="form" method="post" action="#">
-          <fieldset class="subject password__subject">
+          <div class="subject password__subject">
             <div class="input-block">
               <h4 class="input-header">Название рецепта</h4>
               <input class="input" type="text" name="recipe_name" id="recipe_name" placeholder="Оладьи с кабачком" />
             </div>
             <span id="recipe_name-error" class="input-error"></span>
-
             <div class="input-block">
-              <h4 class="input-header">Теги</h4>
-              <form class="form__meals">
-                <fieldset class="form__input-container form__input-container_make">
-                  <label for="breakfast" class="form__label form__label_direction_right">
+              <h4 class="input-header input-header_make">Теги</h4>
+              <div class="form__meals">
+                <div class="form__input-container form__input-container_make">
+                  <label for="breakfast" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked />
                     <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
                     <span class="form__label-text">Завтрак</span>
                   </label>
-                  <label for="dinner" class="form__label form__label_direction_right">
+                  <label for="dinner" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked />
                     <span class="form__pseudo-item form__pseudo-item_dinner"></span>
                     <span class="form__label-text">Обед</span>
                   </label>
-                  <label for="supper" class="form__label form__label_direction_right">
+                  <label for="supper" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked />
                     <span class="form__pseudo-item form__pseudo-item_supper"></span>
                     <span class="form__label-text">Ужин</span>
                   </label>
-                </fieldset>
-              </form>
+                </div>
+              </div>
             </div>
             <div>
               <div class="input-block">
@@ -105,17 +104,15 @@
               <input class="input input_make" type="text" name="description" id="description" />
             </div>
             <span id="description-error" class="input-error"></span>
-
             <div class="input-block input-block_download">
               <h4 class="input-header">Загрузить фото</h4>
               <button class="button">Выбрать файл</button>
               <div class="input-block__delete-box">
                 <p>Cake_12.jpeg</p>
-                <img class="make__delete" src="images/X.png" />
+                <img class="make__delete" src="images/X.png" alt="delete" />
               </div>
             </div>
-          </fieldset>
-
+          </div>
           <button type="submit" class="button button_password input-button">
             Создать рецепт
           </button>
