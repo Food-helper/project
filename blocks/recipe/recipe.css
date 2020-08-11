@@ -9,7 +9,7 @@
 
 .recipe {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 46% 55%;
   grid-template-areas: 'img info';
 }
 
