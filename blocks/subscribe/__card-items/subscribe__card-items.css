@@ -1,3 +1,5 @@
 .subscribe__card-items {
-  justify-items: start;
+  min-height: 319px;
+  justify-self: start;
+  align-self: start;
 }
