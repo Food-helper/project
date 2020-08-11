@@ -1,0 +1,21 @@
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__list {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__list {
+    flex-direction: column;
+    border-bottom: none;
+  }
+}
+

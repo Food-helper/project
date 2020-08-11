@@ -3,4 +3,11 @@
   align-items: center;
   justify-content: center;
   margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .header__button {
+    margin-left: 0;
+  }
 }
