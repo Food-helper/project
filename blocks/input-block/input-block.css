@@ -1,3 +1,5 @@
+@import url('./__delete-box/input-block__delete-box.css');
+
 .input-block {
     display: flex;
     justify-content: space-between;
