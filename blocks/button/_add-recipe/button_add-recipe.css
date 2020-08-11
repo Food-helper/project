@@ -1,0 +1,12 @@
+.button_add-recipe {
+  background: #4a61dd;
+  width: 213px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.button_add-recipe:hover {
+  background: #2845DF;
+}

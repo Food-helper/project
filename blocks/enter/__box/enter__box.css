@@ -1,0 +1,10 @@
+.enter__box {
+    width: 64.5%;
+}
+
+@media (max-width: 1070px) {
+    .enter__box {
+        width: 100%;
+
+    }
+}

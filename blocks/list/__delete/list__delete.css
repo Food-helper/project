@@ -1,0 +1,12 @@
+.list__delete {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #858383;
+  background: none;
+  border: none;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+  height: 30px;
+}

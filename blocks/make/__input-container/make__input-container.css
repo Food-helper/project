@@ -1,0 +1,6 @@
+.make__input-container {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 29%;
+}

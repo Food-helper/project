@@ -1,0 +1,18 @@
+.footer__link {
+    margin: 36px 57px 34px 0;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: opacity linear 0.5s;
+    transition: opacity linear 0.5s;
+}
+
+.footer__link:last-child {
+    margin-right: 21px;
+}
+
+.footer__link:hover {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- header-->
+    <header class="header" id="header">
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html"
+              class="header__list-link  header__list-link_active">Рецепты </a></li>
+          <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
+          <li class="header__list-item"><a href="./make.html" class="header__list-link">Создать рецепт</a></li>
+          <li class="header__list-item"><a href="./favourite.html"
+              class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
+          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="recipe">
+      <img class="recipe__img" src="./images/рецепт.jpg" alt="Французские тосты" />
+      <div class="recipe__box">
+        <div class="title__container">
+          <h1 class="title">Французские тосты</h1>
+          <button class="tooltip tooltip_type_recipe">
+            <span class="tooltiptext">Добавить в избранное</span>
+          </button>
+        </div>
+        <ul class="card__meals card__meals_recipe">
+          <li class="card__meal card__meal_breakfast">Завтрак</li>
+        </ul>
+        <div class="time time_recipe">
+          <img class="time__logo" src="./images/clock.svg" alt="время" />
+          <p class="time__info">20 мин.</p>
+        </div>
+        <div class="author">
+          <img class="author__logo" src="./images/author.svg" alt="автор" />
+          <p class="author__info">Вероника Чернова</p>
+        </div>
+        <div class="recipe__buttons">
+          <button class="button button_add-recipe" type="button">
+            + Добавить рецепт
+          </button>
+          <button class="button button_subscribe-author" type="button">
+            Подписаться на автора
+          </button>
+        </div>
+        <div class="recipe__info">
+          <h2 class="subtitle">Ингридиенты:</h2>
+          <ul class="recipe__ingredients">
+            <li class="recipe__ingredient">яйцо - 2 шт.</li>
+            <li class="recipe__ingredient">молоко - 200 мл.</li>
+            <li class="recipe__ingredient">тосты - 4 шт.</li>
+            <li class="recipe__ingredient">сахар - 2 ст. л.</li>
+            <li class="recipe__ingredient">ягоды - 100 гр.</li>
+            <li class="recipe__ingredient">сироп топинамбура - 3 ст. л.</li>
+          </ul>
+          <h2 class="subtitle">Описание</h2>
+          <p class="recipe__text">
+            Смешать молоко с сахаром, добавить яйца, тщательно все взбить.
+            Обмакнуть тосты в смесь и жарить на сливочном масле до золотистой
+            корочки.
+          </p>
+          <p class="recipe__text">
+            Полить сверху сиропом топинамбура и украсить ягодами.
+          </p>
+        </div>
+      </div>
+  </section>
+  </div>
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__link" href="./index.html">Продуктовый помощник</a>
+      <nav>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
+        <a class="footer__link" href="#">Технологии</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="./script/script.js"></script>
+</body>
+
+</html>

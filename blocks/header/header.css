@@ -1,0 +1,34 @@
+@import url(__nav/header__nav.css);
+@import url(__button/header__button.css);
+@import url(__list/header__list.css);
+@import url(__list-item/header__list-item.css);
+@import url(__list-link/header__list-link.css);
+@import url(__list-link/_active/header__list-link_active.css);
+@import url(__list-link/_form/header__list-link_form.css);
+@import url(__menu-button/header__menu-button.css);
+@import url(__menu-span/header__menu-span.css);
+@import url(__menu-toggle/header__menu-toggle.css);
+@import url(__counter/header__counter.css);
+
+.header {
+  margin: 0 auto;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .header {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 50px;
+  }
+}

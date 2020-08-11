@@ -1,0 +1,9 @@
+.input_enter {
+    width: 355px;
+}
+
+@media (max-width: 1321px) {
+    .input_enter {
+        width: 100%;
+    }
+}

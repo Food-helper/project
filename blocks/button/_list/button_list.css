@@ -1,0 +1,15 @@
+.button_list {
+  background: #4a61dd;
+  border-radius: 6px;
+  width: 208px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 604px;
+}
+
+.button_list:hover {
+  background: #2845DF;
+}

@@ -1,0 +1,9 @@
+.recipe__ingredients {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 120px;
+  margin-bottom: 40px;
+}

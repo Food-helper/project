@@ -1,0 +1,12 @@
+.form__pseudo-item_supper {
+  border: 1px solid #8775D2;
+  cursor: pointer;
+  }
+
+  .form__pseudo-item_supper:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  opacity: .6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  }

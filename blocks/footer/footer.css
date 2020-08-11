@@ -1,0 +1,16 @@
+@import url(__container/footer__container.css);
+@import url(__link/footer__link.css);
+
+.footer {
+    background: black;
+    height: 89px;
+    color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+.subject {
+    border: none;
+    max-width: 80%;
+    margin: 60px auto 21px 68px;
+    padding: 0;
+}
+
+
+@media (max-width: 1321px) {
+    .subject {
+        max-width: 100%;
+        width: 60%;
+        margin: auto;
+        margin-top: 60px;
+
+    }
+}

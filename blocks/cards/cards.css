@@ -1,0 +1,19 @@
+.cards {
+  font-family: 'Montserrat',
+    Arial,
+    sans-serif;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 364px);
+  grid-row-gap: 52px;
+  grid-column-gap: 37px;
+  justify-content: center;
+}
+
+@media (max-width: 400px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, 300px);
+    ;
+  }
+}

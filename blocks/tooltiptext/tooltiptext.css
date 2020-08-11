@@ -1,0 +1,12 @@
+.tooltiptext {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+@media (max-width: 450px) {
+  .tooltiptext {
+    font-size: 8px;
+    line-height: 20px;
+  }
+}

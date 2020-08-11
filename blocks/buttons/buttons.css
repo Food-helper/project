@@ -1,0 +1,14 @@
+@import url(_type/buttons_type_recipe.css);
+@import url(__add-button/buttons__add-button.css);
+@import url(__add-button/_shop/buttons__add-button_shop.css);
+@import url(__add-button/_recipe/buttons__add-button_recipe.css);
+@import url(__plus/buttons__plus.css);
+
+.buttons {
+  font-family: 'Montserrat',
+  Arial,
+  sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+

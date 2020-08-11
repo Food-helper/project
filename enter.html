@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
+</head>
+
+<body class="body">
+  <div class="page">
+
+    <!--header-->
+    <header class="header" id="header">
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html"
+              class="header__list-link  header__list-link_active">Рецепты
+            </a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link header__list-link_form">Список
+              покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./enter.html" class="header__list-link">Войти</a></li>
+          <li><a href="./registration.html" class="button input-button header__button">Создать
+              аккаунт</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--enter-->
+    <div class="enter">
+      <h1>Войти на сайт</h1>
+      <div class=" box enter__box">
+        <form class="form enter__form" name="form" method="post" action="#">
+
+          <fieldset class="subject enter__subject">
+
+            <div class="input-box input-box_enter">
+              <div class="input-block">
+                <h4 class="input-header">Имя пользователя</h4>
+                <input class="input input_enter" type="text" name="nickname" id="nickname-input" />
+
+              </div>
+            </div>
+            <span id="nickname-error" class="input-error"></span>
+            <div class="input-box">
+              <div class="input-block">
+                <h4 class="input-header enter__header">Пароль</h4>
+                <input class="input input_enter enter__input-error" type="password" name="password"
+                  id="password-input" />
+
+              </div>
+              <span id="password-error" class="input-error input-error_red">Имя пользователя и пароль не совпадают.
+                Введите правильные данные.</span>
+            </div>
+          </fieldset>
+          <div class="enter__button-box">
+            <button type="submit" class="button input-button enter__button">Войти</button>
+            <a class="enter__link" href="./reset.html">Забыли пароль?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__link" href="./index.html">Продуктовый помощник</a>
+      <nav>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
+        <a class="footer__link" href="#">Технологии</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="./script/script.js"></script>
+</body>
+
+</html>
