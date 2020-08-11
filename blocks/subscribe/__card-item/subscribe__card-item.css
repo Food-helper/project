@@ -1,4 +1,7 @@
 .subscribe__card-item {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
   display: grid;
    width: 100%; 
   grid-template-areas: "info picture"

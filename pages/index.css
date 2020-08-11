@@ -55,4 +55,5 @@
 @import url(../blocks/tooltip/_type/tooltip_type_active.css);
 @import url(../blocks/tooltip/_type/tooltip_type_recipe.css);
 @import url(../blocks/tooltiptext/tooltiptext.css);
+@import url('../blocks/button/_subscribe/button_subscribe.css');
 
