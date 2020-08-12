@@ -5,3 +5,17 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 650px) {
+  .list__img {
+    min-width: 60px;
+  width: 60px;
+  height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list__img {
+    margin: auto;
+  }
+}
