@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Api} from "../components/Api.js";
 
 export const token = {
@@ -24,3 +25,16 @@ api.addNewPurchase(id)
     .catch((err) => {
         console.log(err);
     })
+=======
+import {stars} from '../constants.js';
+// import {api} from '../components/Api.js';
+import {selectors} from '../selectors.js';
+
+const handleClick = (evt) => {
+  evt.target.classList.toggle(selectors.tooltip);
+}
+
+stars.forEach(star => {
+  star.addEventListener('click', handleClick);
+})
+>>>>>>> f0e021c... коммит для rebase
