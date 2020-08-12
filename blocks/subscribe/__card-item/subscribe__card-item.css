@@ -21,3 +21,9 @@
 .subscribe__card-item:first-of-type{
   margin-top: 0;
 }
+
+@media screen and (max-width: 850px) {
+  .subscribe__card-item {
+    max-height: 100px;
+  }  
+}

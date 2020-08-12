@@ -7,3 +7,9 @@
   max-height: 120px;
   margin-bottom: 40px;
 }
+
+@media (max-width: 500px) {
+  .recipe__ingredients {
+    flex-wrap: nowrap;
+  }
+}

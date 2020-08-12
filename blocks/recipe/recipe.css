@@ -8,12 +8,12 @@
 @import url('./__box/recipe__box.css');
 
 .recipe {
-  display: grid;
-  grid-template-columns: 46% 55%;
-  grid-template-areas: 'img info';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .recipe {
     display: flex;
     flex-direction: column;

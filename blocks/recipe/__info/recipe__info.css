@@ -1,2 +1,6 @@
-.recipe__info {
+
+@media (max-width: 1000px) {
+  .recipe__info {
+    margin: auto;
+  }
 }

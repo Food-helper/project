@@ -5,3 +5,9 @@
   margin-right: 0;
   margin-top: 5px;
 }
+
+@media (max-width: 500px) {
+  .tooltip_type_recipe {
+    margin-left: 80%;
+  }
+}
