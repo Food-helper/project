@@ -17,18 +17,6 @@ export class Api {
             });
     }
 
-    getSubscriptionsInfo() {
-        return fetch(`${this.baseUrl}/subscriptions`, {
-            headers: this.headers,
-        })
-            .then((res) => {
-                if (res.ok) {
-                    return res.json();
-                }
-                return Promise.reject(`error${res.status}`);
-            });
-    }
-
 
     addNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases`, {
@@ -63,7 +51,7 @@ export class Api {
     }
 
     addNewSubscription(subId) {
-        return fetch(`${this.baseUrl}/subscriptions`, {
+        return fetch(`${this.baseUrl}/subscribtions/${subId}`, {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
@@ -80,7 +68,7 @@ export class Api {
 
 
     deleteNewSubscription(subId) {
-        return fetch(`${this.baseUrl}/subscribtions/${id}`, {
+        return fetch(`${this.baseUrl}/subscribtions/${subId}`, {
             method: 'DELETE',
             headers: this.headers,
 
@@ -93,16 +81,18 @@ export class Api {
             });
 
     }
+
+    search(query) {
+        return fetch(`${this.baseUrl}/ingredients/${query}`, {
+            headers: this.headers,
+        })
+            .then((res) => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject(`error${res.status}`);
+            });
+    }
 }
 ;
 
-/*fetch('https://example.com')
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        console.log(data.user.name); // если мы попали в этот then, data — это объект
-    })
-    .catch((err) => {
-        console.log('Ошибка. Запрос не выполнен: ', err);
-    });*/

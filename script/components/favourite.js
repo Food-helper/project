@@ -19,7 +19,6 @@ api.addNewSubscription(subId)
         console.log(res)
     })
 
-
     .catch((err) => {
         console.log(err);
     })
