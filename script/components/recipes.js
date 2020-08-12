@@ -1,4 +1,6 @@
 import {Api} from "../components/Api.js";
+import {stars} from '../constants.js';
+import {selectors} from '../selectors.js';
 
 export const token = {
     baseUrl: 'http://www.buymebuyme.xyz',
@@ -27,6 +29,7 @@ api.addNewPurchase(id)
     })
 
 
+
 api.addNewSubscription(subId)
     .then((res) => {
         console.log(res)
@@ -46,3 +49,13 @@ api.deleteNewSubscription(subId)
     .catch((err) => {
         console.log(err);
     })
+
+
+const handleClick = (evt) => {
+  evt.target.classList.toggle(selectors.tooltip);
+}
+
+stars.forEach(star => {
+  star.addEventListener('click', handleClick);
+})
+
