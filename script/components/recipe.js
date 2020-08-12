@@ -1,6 +1,8 @@
 import {stars} from '../constants.js';
-// import {api} from '../components/Api.js';
+import {Api} from '../components/Api.js';
 import {selectors} from '../selectors.js';
+
+//тут манипуляции со звездой
 
 const handleClick = (evt) => {
   evt.target.classList.toggle(selectors.tooltip);

@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 import {Api} from "../components/Api.js";
+import {stars} from '../constants.js';
+import {selectors} from '../selectors.js';
 
 export const token = {
     baseUrl: 'http://www.buymebuyme.xyz',
@@ -25,10 +26,8 @@ api.addNewPurchase(id)
     .catch((err) => {
         console.log(err);
     })
-=======
-import {stars} from '../constants.js';
-// import {api} from '../components/Api.js';
-import {selectors} from '../selectors.js';
+
+//тут манипуляции со звездой
 
 const handleClick = (evt) => {
   evt.target.classList.toggle(selectors.tooltip);
@@ -37,4 +36,3 @@ const handleClick = (evt) => {
 stars.forEach(star => {
   star.addEventListener('click', handleClick);
 })
->>>>>>> f0e021c... коммит для rebase
