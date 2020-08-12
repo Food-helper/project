@@ -1,6 +1,13 @@
-import {Api} from "../components/Api.js";
-import {stars} from '../constants.js';
-import {selectors} from '../selectors.js';
+import {
+    Api
+} from "../components/Api.js";
+import {
+    stars,
+    addButtons
+} from '../constants.js';
+import {
+    selectors
+} from '../selectors.js';
 
 export const token = {
     baseUrl: 'http://www.buymebuyme.xyz',
@@ -8,7 +15,6 @@ export const token = {
         'Content-Type': 'application/json'
     },
 };
-
 
 export const api = new Api(token);
 const purchase = document.querySelector('.buttons__add-button');
@@ -50,12 +56,20 @@ api.deleteNewSubscription(subId)
         console.log(err);
     })
 
-
+//тут манипуляции со звездой
 const handleClick = (evt) => {
-  evt.target.classList.toggle(selectors.tooltip);
+    evt.target.classList.toggle(selectors.tooltip);
 }
 
 stars.forEach(star => {
-  star.addEventListener('click', handleClick);
+    star.addEventListener('click', handleClick);
 })
 
+//тут манипуляции с кнопкой "Добавить в покупки"
+const handleClickPurchase = (evt) => {
+    evt.target.classList.toggle(selectors.addButton);
+}
+
+addButtons.forEach(purchase => {
+    purchase.addEventListener('click', handleClickPurchase);
+})
