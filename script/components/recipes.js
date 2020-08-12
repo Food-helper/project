@@ -11,10 +11,11 @@ export const token = {
 
 
 export const api = new Api(token);
-const purchase = document.querySelector('.buttons__add-button_recipe');
-console.log(purchase)
+const purchase = document.querySelector('.buttons__add-button');
 const id = purchase.getAttribute('data-id');
-console.log(id);
+
+const subscribe = document.querySelector('.tooltip');
+const subId = subscribe.getAttribute('data-id');
 
 
 api.addNewPurchase(id)
@@ -27,7 +28,28 @@ api.addNewPurchase(id)
         console.log(err);
     })
 
-//тут манипуляции со звездой
+
+
+api.addNewSubscription(subId)
+    .then((res) => {
+        console.log(res)
+    })
+
+
+    .catch((err) => {
+        console.log(err);
+    })
+
+api.deleteNewSubscription(subId)
+    .then((res) => {
+        console.log(res)
+    })
+
+
+    .catch((err) => {
+        console.log(err);
+    })
+
 
 const handleClick = (evt) => {
   evt.target.classList.toggle(selectors.tooltip);
@@ -36,3 +58,4 @@ const handleClick = (evt) => {
 stars.forEach(star => {
   star.addEventListener('click', handleClick);
 })
+

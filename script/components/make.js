@@ -1,8 +1,28 @@
+import {Api} from "../components/Api.js";
 
+export const token = {
+    baseUrl: 'http://www.buymebuyme.xyz',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+};
+
+
+export const api = new Api(token);
+const input = document.querySelector('.input_ingridients');
+const query = input.textContent;
+
+api.search(query)
+    .then((res) => {
+        console.log(res)
+    })
+
+
+    .catch((err) => {
+        console.log(err);
+    })
 
 const menuToggle = document.querySelector('.header__menu-toggle');
-console.log(menuToggle)
-console.log(menuToggle.checked)
 menuToggle.onclick = function () {
     if (menuToggle.checked) {
         console.log("checked")
