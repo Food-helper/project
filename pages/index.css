@@ -20,6 +20,7 @@
 @import url('../blocks/author/author.css');
 @import url('../blocks/buttons/buttons.css');
 @import url('../blocks/pagination/pagination.css');
+@import url('../blocks/pagination/_subscribe/pagination_subscribe.css');
 @import url('../blocks/list/list.css');
 @import url('../blocks/box/box.css');
 @import url('../blocks/form/form.css');

@@ -16,27 +16,26 @@
 
     <!-- header-->
     <header class="header" id="header">
-        <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
-               aria-expanded="false">
-        <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
-            <span class="header__menu-span"></span>
-        </label>
-        <nav class="header__nav" aria-label="Main menu">
-            <ul class="header__list">
-                <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
-                <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
-                <li class="header__list-item"><a href="./make.html"
-                                                 class="header__list-link header__list-link_active">Создать рецепт</a>
-                </li>
-                <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
-                <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
-            </ul>
-            <ul class="header__list">
-                <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a>
-                </li>
-                <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
-            </ul>
-        </nav>
+
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav header__nav_make" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
+          <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
+          <li class="header__list-item"><a href="./make.html"
+              class="header__list-link header__list-link_active">Создать рецепт</a></li>
+          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
+          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- make-->
@@ -111,6 +110,7 @@
                             <img class="make__delete" src="images/X.png" alt="delete"/>
                         </div>
                     </div>
+
                 </div>
                 <button type="submit" class="button button_password input-button">
                     Создать рецепт
