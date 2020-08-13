@@ -1,7 +1,7 @@
 .enter__button-box {
   display: flex;
   justify-content: space-between;
-  width: 36%;
+  width: calc(770px - 265px - 222px);
   margin: 20px auto auto 260px;
 }
 

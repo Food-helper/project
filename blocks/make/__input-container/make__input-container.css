@@ -1,6 +1,12 @@
 .make__input-container {
-  width: 32%;
+  /* width: 100%; */
+  width: 370px;
   display: flex;
   justify-content: space-between;
-  margin-right: 29%;
+  margin-right: 166px;
+}
+
+.make__input-container:last-of-type {
+  justify-content: start;
+  margin-left: 53px;
 }
