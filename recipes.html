@@ -2,252 +2,278 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
-  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
-  <link rel="stylesheet" href="./pages/index.css" />
-  <title lang="en">Food helper</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова"/>
+    <meta name="description" content="This is an App which will help people to find and buy food" lang="en"/>
+    <link rel="stylesheet" href="./pages/index.css"/>
+    <title lang="en">Food helper</title>
 </head>
 
 <body class="body">
-  <div class="page">
+<div class="page">
 
     <!--header-->
     <header class="header" id="header">
-      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
-        aria-expanded="false">
-      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
-        <span class="header__menu-span"></span>
-      </label>
-      <nav class="header__nav" aria-label="Main menu">
-        <ul class="header__list">
-          <li class="header__list-item"><a href="./recipes.html"
-              class="header__list-link  header__list-link_active">Рецепты </a></li>
-          <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
-          <li class="header__list-item"><a href="./make.html" class="header__list-link">Создать рецепт</a></li>
-          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
-          <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
-          <li class="header__counter">27</li>
-        </ul>
-        <ul class="header__list">
-          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
-          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
-        </ul>
-      </nav>
+        <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+               aria-expanded="false">
+        <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+            <span class="header__menu-span"></span>
+        </label>
+        <nav class="header__nav" aria-label="Main menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="./recipes.html"
+                                                 class="header__list-link  header__list-link_active">Рецепты </a></li>
+                <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
+                <li class="header__list-item"><a href="./make.html" class="header__list-link">Создать рецепт</a></li>
+                <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
+                <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
+                <li class="header__counter">27</li>
+            </ul>
+            <ul class="header__list">
+                <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a>
+                </li>
+                <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
-      <!-- content-->
-      <section class="content">
-        <h1 class="title">Рецепты</h1>
-        <form class="form__meals">
-          <fieldset class="form__input-container">
-            <label for="breakfast" class="form__label form__label_direction_right">
-              <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked>
-              <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
-              <span class="form__label-text">Завтрак</span>
-            </label>
-            <label for="dinner" class="form__label form__label_direction_right">
-              <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked>
-              <span class="form__pseudo-item form__pseudo-item_dinner"></span>
-              <span class="form__label-text">Обед</span>
-            </label>
-            <label for="supper" class="form__label form__label_direction_right">
-              <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked>
-              <span class="form__pseudo-item form__pseudo-item_supper"></span>
-              <span class="form__label-text">Ужин</span>
-            </label>
-          </fieldset>
-        </form>
-      </section>
+        <!-- content-->
+        <section class="content">
+            <h1 class="title">Рецепты</h1>
+            <form class="form__meals">
+                <fieldset class="form__input-container">
+                    <label for="breakfast" class="form__label form__label_direction_right">
+                        <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked>
+                        <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
+                        <span class="form__label-text">Завтрак</span>
+                    </label>
+                    <label for="dinner" class="form__label form__label_direction_right">
+                        <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked>
+                        <span class="form__pseudo-item form__pseudo-item_dinner"></span>
+                        <span class="form__label-text">Обед</span>
+                    </label>
+                    <label for="supper" class="form__label form__label_direction_right">
+                        <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked>
+                        <span class="form__pseudo-item form__pseudo-item_supper"></span>
+                        <span class="form__label-text">Ужин</span>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
 
-      <!--  cards -->
-      <ul class="cards main__cards">
-        <li class="card">
-          <a href="./recipe.html" class="card__link">
-            <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
-            <h2 class="subtitle card__subtitle">Французские тосты</h2>
-          </a>
-          <ul class="card__meals">
-            <li class="card__meal card__meal_breakfast">Завтрак</li>
-          </ul>
-          <div class="time card__time">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">20 мин.</p>
-          </div>
-          <div class="author card__author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Вероника Чернова</p>
-          </div>
-          <div class="buttons">
-            <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
-              data-id='1'></button>
-            <button class="tooltip tooltip_type_active" data-id='1'>
-              <span class="tooltip__text">Добавить в избранное</span>
-            </button>
-          </div>
-        </li>
-        <li class="card">
-          <a href="./recipe.html" class="card__link">
-            <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
-            <h2 class="subtitle card__subtitle">Французские тосты</h2>
-          </a>
-          <ul class="card__meals">
-            <li class="card__meal card__meal_breakfast">Завтрак</li>
-          </ul>
-          <div class="time card__time">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">20 мин.</p>
-          </div>
-          <div class="author card__author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Вероника Чернова</p>
-          </div>
-          <div class="buttons">
-            <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
-              data-id='2'></button>
-            <button class="tooltip" data-id='2'>
-              <span class="tooltip__text">Добавить в избранное</span>
-            </button>
-          </div>
-        </li>
-        <li class="card">
-          <a href="./recipe.html" class="card__link">
-            <img class="card__img" src="./images/dish1.jpg" alt="фото блюда" />
-            <h2 class="subtitle card__subtitle">Французские тосты</h2>
-          </a>
-          <ul class="card__meals">
-            <li class="card__meal card__meal_breakfast">Завтрак</li>
-          </ul>
-          <div class="time card__time">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">20 мин.</p>
-          </div>
-          <div class="author card__author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Вероника Чернова</p>
-          </div>
-          <div class="buttons">
-            <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
-              data-id='3'></button>
-            <button class="tooltip tooltip_type_active" data-id='3'>
-              <span class="tooltip__text">Добавить в избранное</span>
-            </button>
-          </div>
-        </li>
-        <li class="card">
-          <a href="#" class="card__link">
-            <img class="card__img" src="./images/agava.jpg" alt="фото блюда" />
-            <h2 class="subtitle card__subtitle">Французский тост с сиропом агавы</h2>
-          </a>
-          <ul class="card__meals">
-            <li class="card__meal card__meal_breakfast">Завтрак</li>
-            <li class="card__meal card__meal_dinner">Обед</li>
-          </ul>
-          <div class="time card__time">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">15 мин.</p>
-          </div>
-          <div class="author card__author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Маша Ульянова</p>
-          </div>
-          <div class="buttons  buttons_type_recipe">
-            <button class="add-button buttons__add-button_recipe" type="button" aria-label="Добавить"
-              data-id='4'></button>
-            <button class="tooltip tooltip_type_active" data-id='4'>
-              <span class="tooltip__text">Добавить в избранное</span>
-            </button>
-          </div>
-        </li>
-        <li class="card">
-          <a href="#" class="card__link">
-            <img class="card__img" src="./images/salmon.jpg" alt="фото блюда" />
-            <h2 class="subtitle card__subtitle">Вафли с яйцом «Бенедикт» и лососем</h2>
-          </a>
-          <ul class="card__meals">
-            <li class="card__meal card__meal_breakfast">Завтрак</li>
-            <li class="card__meal card__meal_dinner">Обед</li>
-          </ul>
-          <div class="time card__time">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">35 мин.</p>
-          </div>
-          <div class="author card__author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Маша Ульянова</p>
-          </div>
-          <div class="buttons  buttons_type_recipe">
-            <button class="add-button buttons__add-button_recipe" type="button" aria-label="Добавить"
-              data-id='5'></button>
-            <button class="tooltip" data-id='5'>
-              <span class="tooltip__text">Добавить в избранное</span>
-            </button>
-          </div>
-        </li>
-        <li class="card">
-          <a href="#" class="card__link">
-            <img class="card__img" src="./images/kruassan.jpg" alt="фото блюда" />
-            <h2 class="subtitle card__subtitle">Круассан с омлетом, лососем и голландским соусом</h2>
-          </a>
-          <ul class="card__meals">
-            <li class="card__meal card__meal_breakfast">Завтрак</li>
-            <li class="card__meal card__meal_dinner">Обед</li>
-          </ul>
-          <div class="time card__time">
-            <img class="time__logo" src="./images/clock.svg" alt="время" />
-            <p class="time__info">15 мин.</p>
-          </div>
-          <div class="author card__author">
-            <img class="author__logo" src="./images/author.svg" alt="автор" />
-            <p class="author__info">Вероника Чернова</p>
-          </div>
-          <div class="buttons">
-            <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
-              data-id='6'></button>
-            <button class="tooltip tooltip_type_active" data-id='6'>
-              <span class="tooltip__text">Добавить в избранное</span>
-            </button>
-          </div>
-        </li>
-      </ul>
+        <!--  cards -->
+        <ul class="cards main__cards">
+            <li class="card">
+                <a href="./recipe.html" class="card__link">
+                    <img class="card__img" src="./images/dish1.jpg" alt="фото блюда"/>
+                </a>
+                <div class="cards__box">
+                    <div class="cards__text">
+                        <h2 class="subtitle card__subtitle">Французские тосты</h2>
+                        <ul class="card__meals">
+                            <li class="card__meal card__meal_breakfast">Завтрак</li>
+                        </ul>
+                        <div class="time card__time">
+                            <img class="time__logo" src="./images/clock.svg" alt="время"/>
+                            <p class="time__info">20 мин.</p>
+                        </div>
+                        <div class="author card__author">
+                            <img class="author__logo" src="./images/author.svg" alt="автор"/>
+                            <p class="author__info">Вероника Чернова</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
+                                data-id='1'></button>
+                        <button class="tooltip tooltip_type_active" data-id='1'>
+                            <span class="tooltip__text">Добавить в избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="./recipe.html" class="card__link">
+                    <img class="card__img" src="./images/dish1.jpg" alt="фото блюда"/>
+                </a>
+                <div class="cards__box">
+                    <div class="cards__text">
+                        <h2 class="subtitle card__subtitle">Французские тосты</h2>
+                        <ul class="card__meals">
+                            <li class="card__meal card__meal_breakfast">Завтрак</li>
+                        </ul>
+                        <div class="time card__time">
+                            <img class="time__logo" src="./images/clock.svg" alt="время"/>
+                            <p class="time__info">20 мин.</p>
+                        </div>
+                        <div class="author card__author">
+                            <img class="author__logo" src="./images/author.svg" alt="автор"/>
+                            <p class="author__info">Вероника Чернова</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
+                                data-id='2'></button>
+                        <button class="tooltip" data-id='2'>
+                            <span class="tooltip__text">Добавить в избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="./recipe.html" class="card__link">
+                    <img class="card__img" src="./images/dish1.jpg" alt="фото блюда"/>
+                </a>
+                <div class="cards__box">
+                    <div class="cards__text">
+                        <h2 class="subtitle card__subtitle">Французские тосты</h2>
+                        <ul class="card__meals">
+                            <li class="card__meal card__meal_breakfast">Завтрак</li>
+                        </ul>
+                        <div class="time card__time">
+                            <img class="time__logo" src="./images/clock.svg" alt="время"/>
+                            <p class="time__info">20 мин.</p>
+                        </div>
+                        <div class="author card__author">
+                            <img class="author__logo" src="./images/author.svg" alt="автор"/>
+                            <p class="author__info">Вероника Чернова</p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
+                                data-id='3'></button>
+                        <button class="tooltip tooltip_type_active" data-id='3'>
+                            <span class="tooltip__text">Добавить в избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__link">
+                    <img class="card__img" src="./images/agava.jpg" alt="фото блюда"/>
+                </a>
+                <div class="cards__box">
+                    <div class="cards__text">
+                        <h2 class="subtitle card__subtitle">Французский тост с сиропом агавы</h2>
+                        <ul class="card__meals">
+                            <li class="card__meal card__meal_breakfast">Завтрак</li>
+                            <li class="card__meal card__meal_dinner">Обед</li>
+                        </ul>
+                        <div class="time card__time">
+                            <img class="time__logo" src="./images/clock.svg" alt="время"/>
+                            <p class="time__info">15 мин.</p>
+                        </div>
+                        <div class="author card__author">
+                            <img class="author__logo" src="./images/author.svg" alt="автор"/>
+                            <p class="author__info">Маша Ульянова</p>
+                        </div>
+                    </div>
+                    <div class="buttons  buttons_type_recipe">
+                        <button class="add-button buttons__add-button_recipe" type="button" aria-label="Добавить"
+                                data-id='4'></button>
+                        <button class="tooltip tooltip_type_active" data-id='4'>
+                            <span class="tooltip__text">Добавить в избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__link">
+                    <img class="card__img" src="./images/salmon.jpg" alt="фото блюда"/>
+                </a>
+                <div class="cards__box">
+                    <div class="cards__text">
+                        <h2 class="subtitle card__subtitle">Вафли с яйцом «Бенедикт» и лососем</h2>
+                        <ul class="card__meals">
+                            <li class="card__meal card__meal_breakfast">Завтрак</li>
+                            <li class="card__meal card__meal_dinner">Обед</li>
+                        </ul>
+                        <div class="time card__time">
+                            <img class="time__logo" src="./images/clock.svg" alt="время"/>
+                            <p class="time__info">35 мин.</p>
+                        </div>
+                        <div class="author card__author">
+                            <img class="author__logo" src="./images/author.svg" alt="автор"/>
+                            <p class="author__info">Маша Ульянова</p>
+                        </div>
+                    </div>
+                    <div class="buttons  buttons_type_recipe">
+                        <button class="add-button buttons__add-button_recipe" type="button" aria-label="Добавить"
+                                data-id='5'></button>
+                        <button class="tooltip" data-id='5'>
+                            <span class="tooltip__text">Добавить в избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__link">
+                    <img class="card__img" src="./images/kruassan.jpg" alt="фото блюда"/>
+                </a>
+                <div class="cards__box">
+                    <div class="cards__text">
+                        <h2 class="subtitle card__subtitle">Круассан с омлетом, лососем и голландским соусом</h2>
+                        <ul class="card__meals">
+                            <li class="card__meal card__meal_breakfast">Завтрак</li>
+                            <li class="card__meal card__meal_dinner">Обед</li>
+                        </ul>
+                        <div class="time card__time">
+                            <img class="time__logo" src="./images/clock.svg" alt="время"/>
+                            <p class="time__info">15 мин.</p>
+                        </div>
+                        <div class="author card__author">
+                            <img class="author__logo" src="./images/author.svg" alt="автор"/>
+                            <p class="author__info">Вероника Чернова</p>
+                        </div>
+                    </div>
+                        <div class="buttons">
 
-      <!--  pagination-->
-      <ul class="pagination">
-        <li><a class="pagination__arrow" href="#">&LT;</a>
-        </li>
-        <li><a class="pagination__number  pagination__number_active" href="#">
-            1</a></li>
-        <li><a class="pagination__number" href="#">
-            2</a></li>
-        <li><a class="pagination__number" href="#">
-            3</a></li>
-        <li><a class="pagination__number" href="#">
-            4</a></li>
-        <li><a class="pagination__number" href="#">
-            5</a></li>
-        <li><a class="pagination__arrow" href="#">
-            &GT;</a></li>
-      </ul>
-      </section>
+                        <button class="add-button buttons__add-button_shop" type="button" aria-label="Добавить"
+                                data-id='6'></button>
+                        <button class="tooltip tooltip_type_active" data-id='6'>
+                            <span class="tooltip__text">Добавить в избранное</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!--  pagination-->
+        <ul class="pagination">
+            <li><a class="pagination__arrow" href="#">&LT;</a>
+            </li>
+            <li><a class="pagination__number  pagination__number_active" href="#">
+                1</a></li>
+            <li><a class="pagination__number" href="#">
+                2</a></li>
+            <li><a class="pagination__number" href="#">
+                3</a></li>
+            <li><a class="pagination__number" href="#">
+                4</a></li>
+            <li><a class="pagination__number" href="#">
+                5</a></li>
+            <li><a class="pagination__arrow" href="#">
+                &GT;</a></li>
+        </ul>
+        </section>
     </main>
-  </div>
+</div>
 
-  <!-- footer-->
-  <footer class="footer">
+<!-- footer-->
+<footer class="footer">
     <div class="footer__container">
-      <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-      <div>
-        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
-        <a class="footer__link" href="#">Технологии</a>
-      </div>
+        <a class="footer__link" href="./index.html">Продуктовый помощник</a>
+        <div>
+            <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
+            <a class="footer__link" href="#">Технологии</a>
+        </div>
     </div>
-  </footer>
+</footer>
 
-  <script type="module" src="./script/components/recipes.js"></script>
+<script type="module" src="./script/components/recipes.js"></script>
 </body>
 
 </html>

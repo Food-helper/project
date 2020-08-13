@@ -4,6 +4,7 @@
 @import url('./_subscribe-author/_active/button_subscribe-author_active.css');
 @import url('./_password/button_password.css');
 @import url('./_list/button_list.css');
+@import url('./_download/button_download.css');
 
 .button {
   min-height: 48px;
@@ -14,4 +15,5 @@
 
 .button:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
