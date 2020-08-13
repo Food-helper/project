@@ -1,5 +1,5 @@
 import {
-	Api
+	api
 } from "../components/Api.js";
 import {
 	stars,
@@ -9,15 +9,6 @@ import {
 	selectors
 } from '../selectors.js';
 
-export const token = {
-	baseUrl: 'http://www.buymebuyme.xyz',
-	headers: {
-		'Content-Type': 'application/json'
-	},
-};
-
-
-export const api = new Api(token);
 const addFavouritePurchase = document.querySelector('.tooltip');
 
 console.log(addFavouritePurchase)

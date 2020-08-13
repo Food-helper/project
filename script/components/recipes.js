@@ -1,22 +1,15 @@
 import {
-    Api
+    api
 } from "../components/Api.js";
 import {
     stars,
-    addButtons
+    addButtons,
+    token
 } from '../constants.js';
 import {
     selectors
 } from '../selectors.js';
 
-export const token = {
-    baseUrl: 'http://www.buymebuyme.xyz',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-};
-
-export const api = new Api(token);
 const purchase = document.querySelector('.buttons__add-button');
 const id = purchase.getAttribute('data-id');
 

@@ -1,6 +1,9 @@
 import {stars} from '../constants.js';
-import {Api} from '../components/Api.js';
+import {api} from '../components/Api.js';
 import {selectors} from '../selectors.js';
+import {
+  token
+} from '../constants.js';
 
 //тут манипуляции со звездой
 
