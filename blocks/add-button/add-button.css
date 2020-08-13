@@ -1,17 +1,16 @@
-.buttons__add-button {
+.add-button {
   height: 48px;
   border-radius: 6px;
-  background-image: url(./../../../images/add.jpg);
+  background-image: url('./../../images/add.jpg');
   background-repeat: no-repeat;
   background-position: center;
   border: none;
   outline: none;
-  width: 224px;
 }
 
-.buttons__add-button:hover {
+.add-button:hover {
   -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
-  background-image: url(./../../../images/hover.jpg)
+  background-image: url('./../../images/hover.jpg')
 }
