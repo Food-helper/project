@@ -5,6 +5,6 @@
 
 @media (max-width: 500px) {
   .title__container {
-   flex-direction: column;
+    flex-direction: column;
   }
 }

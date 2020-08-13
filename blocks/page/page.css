@@ -1,6 +1,6 @@
 .page {
-    width: 81%;
-    margin: auto;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 16px;
+  max-width: 1170px;
+  margin: auto;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
 }

@@ -11,7 +11,7 @@
   <title lang="en">Food helper</title>
 </head>
 
-<body>
+<body class="body">
   <div class="page">
 
     <!-- header-->
@@ -27,8 +27,7 @@
               class="header__list-link  header__list-link_active">Рецепты </a></li>
           <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
           <li class="header__list-item"><a href="./make.html" class="header__list-link">Создать рецепт</a></li>
-          <li class="header__list-item"><a href="./favourite.html"
-              class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
           <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
         </ul>
         <ul class="header__list">
@@ -38,13 +37,14 @@
       </nav>
     </header>
 
+    <!-- recipe-->
     <section class="recipe">
       <img class="recipe__img" src="./images/рецепт.jpg" alt="Французские тосты" />
       <div class="recipe__box">
         <div class="title__container">
           <h1 class="title">Французские тосты</h1>
           <button class="tooltip tooltip_type_recipe">
-            <span class="tooltiptext">Добавить в избранное</span>
+            <span class="tooltip__text">Добавить в избранное</span>
           </button>
         </div>
         <ul class="card__meals card__meals_recipe">
@@ -59,7 +59,7 @@
           <p class="author__info">Вероника Чернова</p>
         </div>
         <div class="recipe__buttons">
-          <button class="button button_add-recipe" type="button" >
+          <button class="button button_add-recipe" type="button">
             + Добавить в покупки
           </button>
           <button class="button button_subscribe-author" type="button">
@@ -87,15 +87,17 @@
           </p>
         </div>
       </div>
-  </section>
+    </section>
   </div>
+
+  <!-- footer-->
   <footer class="footer">
     <div class="footer__container">
       <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-      <nav>
+      <div>
         <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
-      </nav>
+      </div>
     </div>
   </footer>
 

@@ -1,6 +1,6 @@
-@import url(__breakfast/meals__breakfast.css);
-@import url(__dinner/meals__dinner.css);
-@import url(__supper/meals__supper.css);
+@import url('__breakfast/meals__breakfast.css');
+@import url('__dinner/meals__dinner.css');
+@import url('__supper/meals__supper.css');
 
 .meals {
   display: flex;

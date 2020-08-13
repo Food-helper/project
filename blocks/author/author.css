@@ -1,5 +1,4 @@
-@import url(__logo/author__logo.css);
-@import url(__info/author__info.css);
+@import url('__logo/author__logo.css');
 
 .author {
   font-family: 'Montserrat',

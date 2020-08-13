@@ -1,7 +1,8 @@
-@import url(__number/pages-list__number.css);
-@import url(__number/_active/pages-list__number_active.css);
+@import url('__number/pagination__number.css');
+@import url('__number/_active/pagination__number_active.css');
+@import url('__arrow/pagination__arrow.css');
 
-.pages-list {
+.pagination {
   font-family: 'Montserrat',
     Arial,
     sans-serif;
