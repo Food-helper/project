@@ -1,3 +1,5 @@
+@import url('__text/tooltip__text.css');
+
 .tooltip {
   position: relative;
   text-decoration: none;
@@ -21,7 +23,7 @@
   cursor: pointer;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltip__text {
   visibility: hidden;
   width: 179px;
   height: 42px;
@@ -40,7 +42,7 @@
   margin-left: -90px;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip .tooltip__text::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -51,12 +53,12 @@
   border-color: transparent transparent #555e75 transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltip__text {
   visibility: visible;
 }
 
 @media (max-width: 450px) {
-  .tooltip .tooltiptext {
+  .tooltip .tooltip__text {
     width: 77px;
     margin-left: -39px;
     height: 30px;
