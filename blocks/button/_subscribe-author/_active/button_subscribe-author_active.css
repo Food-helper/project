@@ -1,0 +1,8 @@
+.button_subscribe-author_active {
+    background-image: url('./../../../../images/отписаться.jpg');
+    height: 48px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
