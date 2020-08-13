@@ -23,7 +23,7 @@ class Api {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
-                id: {id}
+                id: id
             }),
         })
             .then((res) => {
@@ -82,6 +82,7 @@ class Api {
             .then((data) => data);
 
     }
+
 
     search(query) {
         return fetch(`${this.baseUrl}/ingredients/${query}`, {

@@ -17,14 +17,14 @@ const handleClickPurchase = (evt) => {
 
 function addPurchase(evt) {
   const id = evt.target.getAttribute('data-id');
-  api.addNewPurchase(evt, id)
+  api.addNewPurchase(id)
     .then((res) => {
-      console.log(id);
-      handleClickPurchase(evt);
+      console.log(res);
     })
     .catch((err) => {
       console.log(err);
     })
+    handleClickPurchase(evt);
 }
 
 api.getPurchasesInfo()
@@ -36,6 +36,5 @@ api.getPurchasesInfo()
   });
 
 addButtons.forEach(button => {
-  
   button.addEventListener("click", (evt) => addPurchase(evt));
 });
