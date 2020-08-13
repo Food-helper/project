@@ -19,7 +19,7 @@ export class Api {
 
 
     addNewPurchase(id) {
-        return fetch(`${this.baseUrl}/purchases`, {
+        return fetch(`${this.baseUrl}/purchases/${id}`, {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
@@ -82,7 +82,7 @@ export class Api {
             .then((data) => data);
 
     }
-
+//поисковая строка
     search(query) {
         return fetch(`${this.baseUrl}/ingredients/${query}`, {
             headers: this.headers,
