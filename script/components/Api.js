@@ -49,7 +49,7 @@ class Api {
             });
 
     }
-
+//тут что-то не так
     addNewSubscription(subId) {
         return fetch(`${this.baseUrl}/subscribtions/${subId}`, {
             method: 'POST',
@@ -66,7 +66,7 @@ class Api {
             });
     }
 
-
+//а тут все прекрасно!
     deleteNewSubscription(subId) {
         return fetch(`${this.baseUrl}/subscribtions/${subId}`, {
             method: 'DELETE',
