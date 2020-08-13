@@ -1,0 +1,21 @@
+.pagination__number_active {
+  background-color: #4A61DD;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  margin-right: 30px;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .pagination__number_active {
+    margin-right: 20px;
+    ;
+  }
+}

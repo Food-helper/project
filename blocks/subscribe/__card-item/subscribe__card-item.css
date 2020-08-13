@@ -3,27 +3,26 @@
   color: black;
   cursor: pointer;
   display: grid;
-   width: 100%; 
+  width: 100%;
   grid-template-areas: "info picture"
-  "time picture";
+    "time picture";
   justify-content: space-between;
   margin: auto;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEE;
   padding: 16px 0;
   max-height: 72px;
-  
 }
 
 .subscribe__card-item:last-of-type {
   border-bottom: none;
 }
 
-.subscribe__card-item:first-of-type{
+.subscribe__card-item:first-of-type {
   margin-top: 0;
 }
 
 @media screen and (max-width: 850px) {
   .subscribe__card-item {
     max-height: 100px;
-  }  
+  }
 }

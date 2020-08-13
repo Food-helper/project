@@ -1,14 +1,14 @@
-@import url(__img/card__img.css);
-@import url(__subtitle/card__subtitle.css);
-@import url(__author/card__author.css);
-@import url(__time/card__time.css);
-@import url(__meals/card__meals.css);
-@import url(__meal/card__meal.css);
-@import url(__meal/_breakfast/card__meal_breakfast.css);
-@import url(__meal/_dinner/card__meal_dinner.css);
-@import url(__meal/_supper/card__meal_supper.css);
-@import url(__meals/_recipe/card__meals_recipe.css);
-@import url(__link/card__link.css);
+@import url('__img/card__img.css');
+@import url('__subtitle/card__subtitle.css');
+@import url('__author/card__author.css');
+@import url('__time/card__time.css');
+@import url('__meals/card__meals.css');
+@import url('__meal/card__meal.css');
+@import url('__meal/_breakfast/card__meal_breakfast.css');
+@import url('__meal/_dinner/card__meal_dinner.css');
+@import url('__meal/_supper/card__meal_supper.css');
+@import url('__meals/_recipe/card__meals_recipe.css');
+@import url('__link/card__link.css');
 
 .card {
   font-family: 'Montserrat',
