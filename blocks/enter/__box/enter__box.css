@@ -1,5 +1,11 @@
 .enter__box {
-  width: 64.5%;
+  width: 770px;
+}
+
+@media (max-width: 1200px) {
+  .enter__box {
+    width: 70%;
+  }
 }
 
 @media (max-width: 1070px) {
