@@ -15,10 +15,11 @@ const handleClickPurchase = (evt) => {
   evt.target.disabled = true;
 }
 
-function addPurchase(evt, id) {
+function addPurchase(evt) {
+  const id = evt.target.getAttribute('data-id');
   api.addNewPurchase(evt, id)
     .then((res) => {
-      console.log(res);
+      console.log(id);
       handleClickPurchase(evt);
     })
     .catch((err) => {
@@ -35,8 +36,6 @@ api.getPurchasesInfo()
   });
 
 addButtons.forEach(button => {
-  const id = button.getAttribute('data-id');
-  button.addEventListener("click", (evt) => {
-    addPurchase(evt, id);
-  });
+  
+  button.addEventListener("click", (evt) => addPurchase(evt));
 });

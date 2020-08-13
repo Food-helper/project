@@ -23,7 +23,7 @@ class Api {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
-                id: id
+                id: {id}
             }),
         })
             .then((res) => {
