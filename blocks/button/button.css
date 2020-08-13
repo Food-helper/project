@@ -1,6 +1,7 @@
 @import url('./_add-recipe/button_add-recipe.css');
 @import url('./_registration/button_registration.css');
 @import url('./_subscribe-author/button_subscribe-author.css');
+@import url('./_subscribe-author/_active/button_subscribe-author_active.css');
 @import url('./_password/button_password.css');
 @import url('./_list/button_list.css');
 

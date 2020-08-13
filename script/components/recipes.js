@@ -12,16 +12,17 @@ import {
 
 const purchase = document.querySelector('.add-button');
 const id = purchase.getAttribute('data-id');
+
 const subscribe = document.querySelector('.tooltip');
 const subId = subscribe.getAttribute('data-id');
 
-
 //тут манипуляции с кнопкой "Добавить в покупки"
-const handleClickPurchase = (evt) => { //при нажатии на кнопку меняет классы и блокирует ее
+const handleClickPurchase = (evt, sum) => { //при нажатии на кнопку меняет классы и блокирует ее
   evt.target.classList.toggle(selectors.addButton);
   evt.target.classList.toggle(selectors.addButtonActive);
   evt.target.disabled = true;
 }
+
 
 function addPurchase(evt) {
   const id = evt.target.getAttribute('data-id');

@@ -1,8 +1,17 @@
 .button_subscribe-author {
-  background: #f0f3ff;
   width: 215px;
-  color: #4a61dd;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  height: 48px;
+  border-radius: 6px;
+  background-image: url('./../../../images/подписаться.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+}
+
+.button_subscribe-author:hover {
+  -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.3);
+  background-image: url('./../../../images/ховер.jpg')
 }
