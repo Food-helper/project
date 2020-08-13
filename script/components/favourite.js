@@ -9,24 +9,28 @@ import {
 	selectors
 } from '../selectors.js';
 
-const addFavouritePurchase = document.querySelector('.tooltip');
+//тут манипуляции со звездой
+//если кнопка активна - запрос на удаление, если пассивна - запрос на добавление
 
-console.log(addFavouritePurchase)
-const subId = addFavouritePurchase.getAttribute('data-id');
-console.log(subId);
-
-api.addNewSubscription(subId)
+const handleClick = (evt) => {
+	const subId = evt.target.getAttribute('data-id');
+	if (evt.target.classList.contains(selectors.tooltip)) {
+		api.deleteNewSubscription(subId)
 	.then((res) => {
 		console.log(res)
 	})
-
 	.catch((err) => {
 		console.log(err);
-	})
-
-//тут манипуляции со звездой
-
-const handleClick = (evt) => {
+	});
+	} else {
+		api.addNewSubscription(subId)
+		.then((res) => {
+			console.log(res)
+		})
+		.catch((err) => {
+			console.log(err);
+		})
+	};
 	evt.target.classList.toggle(selectors.tooltip);
 }
 
@@ -36,9 +40,23 @@ stars.forEach(star => {
 
 //тут манипуляции с кнопкой "Добавить в покупки"
 const handleClickPurchase = (evt) => {
-	evt.target.classList.toggle(selectors.addButton);
+  evt.target.classList.toggle(selectors.addButton);
+  evt.target.classList.toggle(selectors.addButtonActive);
+  evt.target.disabled = true;
 }
 
-addButtons.forEach(purchase => {
-	purchase.addEventListener('click', handleClickPurchase);
-})
+function addPurchase(evt) {
+  const id = evt.target.getAttribute('data-id');
+  api.addNewPurchase(id)
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    handleClickPurchase(evt);
+}
+
+addButtons.forEach(button => {
+  button.addEventListener("click", (evt) => addPurchase(evt));
+});

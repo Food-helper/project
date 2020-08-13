@@ -6,3 +6,4 @@ export const token = {
     'Content-Type': 'application/json'
   },
 };
+export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');

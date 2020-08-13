@@ -15,7 +15,7 @@ const id = purchase.getAttribute('data-id');
 
 const subscribe = document.querySelector('.tooltip');
 const subId = subscribe.getAttribute('data-id');
-
+//требует исправлений как в  index.js и subscribe.js
 
 api.addNewPurchase(id)
     .then((res) => {

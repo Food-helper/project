@@ -17,13 +17,13 @@ class Api {
                 return Promise.reject(`error${res.status}`);
             });
     }
-
+//здесь все прекрасно работает, не трогать без необходимости!
     addNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases`, {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
-                id: {id}
+                id: id
             }),
         })
             .then((res) => {
@@ -34,7 +34,7 @@ class Api {
             });
     }
 
-
+//здесь все прекрасно работает, не трогать без необходимости!
     deleteNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases/${id}`, {
             method: 'DELETE',
@@ -82,6 +82,7 @@ class Api {
             .then((data) => data);
 
     }
+
 
     search(query) {
         return fetch(`${this.baseUrl}/ingredients/${query}`, {
