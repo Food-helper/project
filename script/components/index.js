@@ -1,3 +1,4 @@
+
 import {
   Api
 } from "../components/Api.js";
@@ -21,7 +22,7 @@ const recipe = document.querySelector('.card')
 const purchaseAddButton = recipe.querySelector('.buttons__add-button');
 const id = purchaseAddButton.getAttribute('data-id');
 
-
+//добавляет карточку в массив
 function addPurchase  ()  {
 
 
@@ -32,9 +33,10 @@ function addPurchase  ()  {
         .catch((err) => {
             console.log(err);
         })
+        //-добавить кнопке disabled
 }
 
-
+//забирает массив покупок и показывает что там лежит
 api.getPurchasesInfo()
     .then((data) => {
         console.log(data);
