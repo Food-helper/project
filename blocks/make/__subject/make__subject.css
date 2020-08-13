@@ -1,11 +1,11 @@
-.password__subject {
+.make__subject {
   margin: 60px auto 21px 68px;
   padding: 0;
   width: 624px;
 }
 
 @media (max-width: 1321px) {
-  .password__subject {
+  .make__subject {
     width: 80%;
     margin: 60px auto 50px;
   }

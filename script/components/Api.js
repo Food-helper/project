@@ -1,4 +1,4 @@
-import {token} from '../constants.js';
+import {config} from '../constants.js';
 
 class Api {
     constructor(options) {
@@ -98,4 +98,4 @@ class Api {
 }
 ;
 
-export const api = new Api(token);
+export const api = new Api(config);

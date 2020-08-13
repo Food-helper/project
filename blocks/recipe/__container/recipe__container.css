@@ -1,0 +1,10 @@
+.recipe__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .recipe__container {
+    flex-direction: column;
+  }
+}

@@ -6,6 +6,9 @@
 @import url('./__ingredient/recipe__infredient.css');
 @import url('./__text/recipe__text.css');
 @import url('./__box/recipe__box.css');
+@import url('./__container/recipe__container.css');
+@import url('./__meals/recipe__meals.css');
+@import url('./__meal/recipe__meal.css');
 
 .recipe {
   display: flex;
