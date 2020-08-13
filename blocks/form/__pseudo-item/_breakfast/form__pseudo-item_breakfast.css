@@ -2,6 +2,7 @@
   border: 1px solid #E26C2D;
   cursor: pointer;
   box-shadow: 0 0 5px #fff6c5;
+  transition: transform 1s ease;
 }
 
 .form__pseudo-item_breakfast:hover {
