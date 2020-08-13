@@ -7,7 +7,7 @@ import {
 import {
   selectors
 } from '../selectors.js';
-
+//здесь все прекрасно работает, не трогать без необходимости!
 //при нажатии на кнопку меняет классы и блокирует ее
 const handleClickPurchase = (evt) => {
   evt.target.classList.toggle(selectors.addButton);

@@ -17,7 +17,7 @@ class Api {
                 return Promise.reject(`error${res.status}`);
             });
     }
-
+//здесь все прекрасно работает, не трогать без необходимости!
     addNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases`, {
             method: 'POST',
@@ -34,7 +34,7 @@ class Api {
             });
     }
 
-
+//здесь все прекрасно работает, не трогать без необходимости!
     deleteNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases/${id}`, {
             method: 'DELETE',
