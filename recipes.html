@@ -42,29 +42,33 @@
 
     <main>
 
-        <!-- content-->
-        <section class="content">
-            <h1 class="title">Рецепты</h1>
-            <form class="form__meals">
-                <fieldset class="form__input-container">
-                    <label for="breakfast" class="form__label form__label_direction_right">
-                        <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked>
-                        <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
-                        <span class="form__label-text">Завтрак</span>
-                    </label>
-                    <label for="dinner" class="form__label form__label_direction_right">
-                        <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked>
-                        <span class="form__pseudo-item form__pseudo-item_dinner"></span>
-                        <span class="form__label-text">Обед</span>
-                    </label>
-                    <label for="supper" class="form__label form__label_direction_right">
-                        <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked>
-                        <span class="form__pseudo-item form__pseudo-item_supper"></span>
-                        <span class="form__label-text">Ужин</span>
-                    </label>
-                </fieldset>
-            </form>
-        </section>
+
+      <!-- content-->
+      <section class="content">
+        <h1 class="title">Рецепты</h1>
+        <div class="forms">
+          <form class="form__meals">
+            <fieldset class="form__input-container">
+              <label for="breakfast" class="form__label form__label_direction_right">
+                <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked>
+                <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
+                <span class="form__label-text">Завтрак</span>
+              </label>
+              <label for="dinner" class="form__label form__label_direction_right">
+                <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" checked>
+                <span class="form__pseudo-item form__pseudo-item_dinner"></span>
+                <span class="form__label-text">Обед</span>
+              </label>
+              <label for="supper" class="form__label form__label_direction_right">
+                <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" checked>
+                <span class="form__pseudo-item form__pseudo-item_supper"></span>
+                <span class="form__label-text">Ужин</span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
 
         <!--  cards -->
         <ul class="cards main__cards">

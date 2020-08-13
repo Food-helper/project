@@ -1,7 +1,4 @@
 import {api} from "../components/Api.js";
-import {
-    token
-} from '../constants.js';
 
 const input = document.querySelector('.input_ingridients');
 const query = input.textContent;

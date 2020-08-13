@@ -1,11 +1,11 @@
 .subscribe__box {
   padding-top: 35px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 31.5%);
+  grid-template-columns: repeat(auto-fill, 364px);
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .subscribe__box {
     grid-template-columns: repeat(auto-fill, 48%);
   }

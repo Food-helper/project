@@ -3,8 +3,7 @@ import {
 } from "../components/Api.js";
 import {
   stars,
-  addButtons,
-  token
+  addButtons
 } from '../constants.js';
 import {
   selectors
