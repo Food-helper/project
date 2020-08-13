@@ -15,8 +15,7 @@
   background-color: transparent;
   -webkit-transition: opacity linear 0.5s;
   transition: opacity linear 0.5s;
-  margin-top: 27px;
-  margin-right: 27px;
+  align-self: center;
 }
 
 .tooltip:hover {
