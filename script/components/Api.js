@@ -19,11 +19,11 @@ class Api {
     }
 
     addNewPurchase(id) {
-        return fetch(`${this.baseUrl}/purchases`, {
+        return fetch(`${this.baseUrl}/purchases${id}`, {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
-                id: {id}
+                id: id
             }),
         })
             .then((res) => {
@@ -39,6 +39,9 @@ class Api {
         return fetch(`${this.baseUrl}/purchases/${id}`, {
             method: 'DELETE',
             headers: this.headers,
+            body: JSON.stringify({
+                id: id
+            }),
 
         })
             .then((res) => {

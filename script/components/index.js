@@ -1,6 +1,4 @@
-import {
-  api
-} from "../components/Api.js";
+import {api} from "../components/Api.js";
 import {
   addButtons
 } from '../constants.js';
@@ -19,7 +17,7 @@ function addPurchase(evt) {
   const id = evt.target.getAttribute('data-id');
   api.addNewPurchase(evt, id)
     .then((res) => {
-      console.log(id);
+      console.log(res);
       handleClickPurchase(evt);
     })
     .catch((err) => {
