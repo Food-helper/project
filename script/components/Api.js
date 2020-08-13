@@ -1,7 +1,8 @@
-export class Api {
+import {token} from '../constants.js';
+
+class Api {
     constructor(options) {
         this.baseUrl = options.baseUrl;
-
         this.headers = options.headers;
     }
 
@@ -16,7 +17,6 @@ export class Api {
                 return Promise.reject(`error${res.status}`);
             });
     }
-
 
     addNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases`, {
@@ -97,3 +97,4 @@ export class Api {
 }
 ;
 
+export const api = new Api(token);

@@ -1,5 +1,5 @@
 import {
-  Api
+  api
 } from "../components/Api.js";
 import {
   addButtons
@@ -8,53 +8,35 @@ import {
   selectors
 } from '../selectors.js';
 
-export const token = {
-  baseUrl: 'http://www.buymebuyme.xyz',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-};
-
-
-export const api = new Api(token);
-const recipe = document.querySelector('.card')
-const purchaseAddButton = recipe.querySelector('.buttons__add-button');
-const id = purchaseAddButton.getAttribute('data-id');
-
-
-function addPurchase  ()  {
-
-
-    api.addNewPurchase(id)
-        .then((res) => {
-            console.log(res)
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+//при нажатии на кнопку меняет классы и блокирует ее
+const handleClickPurchase = (evt) => {
+  evt.target.classList.toggle(selectors.addButton);
+  evt.target.classList.toggle(selectors.addButtonActive);
+  evt.target.disabled = true;
 }
 
-
-api.getPurchasesInfo()
-    .then((data) => {
-        console.log(data);
-
+function addPurchase(evt, id) {
+  api.addNewPurchase(evt, id)
+    .then((res) => {
+      console.log(res);
+      handleClickPurchase(evt);
     })
     .catch((err) => {
-        console.log(err);
-    });
+      console.log(err);
+    })
+}
 
-
-purchaseAddButton.addEventListener("click", () => addPurchase());
-
-
-
-  //тут манипуляции с кнопкой "Добавить в покупки"
-  const handleClickPurchase = (evt) => {
-    evt.target.classList.toggle(selectors.addButton);
-  }
-
-  addButtons.forEach(purchase => {
-    purchase.addEventListener('click', handleClickPurchase);
+api.getPurchasesInfo()
+  .then((data) => {
+    console.log(data);
   })
+  .catch((err) => {
+    console.log(err);
+  });
 
+addButtons.forEach(button => {
+  const id = button.getAttribute('data-id');
+  button.addEventListener("click", (evt) => {
+    addPurchase(evt, id);
+  });
+});

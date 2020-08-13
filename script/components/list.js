@@ -1,14 +1,8 @@
-import {Api} from "../components/Api.js";
+import {api} from "../components/Api.js";
+import {
+    token
+} from '../constants.js';
 
-export const token = {
-    baseUrl: 'http://www.buymebuyme.xyz',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-};
-
-
-export const api = new Api(token);
 const deletePurchase = document.querySelector('.list__delete');
 console.log(deletePurchase)
 const id = deletePurchase.getAttribute('data-id');
