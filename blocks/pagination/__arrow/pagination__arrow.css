@@ -17,7 +17,5 @@
 }
 
 .pagination__arrow:hover {
-  opacity: .6;
-  font-size: 24px;
   cursor: pointer;
 }
