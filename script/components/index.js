@@ -17,30 +17,37 @@ export const token = {
 
 
 export const api = new Api(token);
-const purchase = document.querySelector('.buttons__add-button');
-console.log(purchase)
-const id = purchase.getAttribute('data-id');
-console.log(id);
+const recipe = document.querySelector('.card')
+const purchaseAddButton = recipe.querySelector('.buttons__add-button');
+const id = purchaseAddButton.getAttribute('data-id');
 
 
-api.addNewPurchase(id)
-  .then((res) => {
-    console.log(res)
-  })
+function addPurchase  ()  {
 
 
-  .catch((err) => {
-    console.log(err);
-  })
+    api.addNewPurchase(id)
+        .then((res) => {
+            console.log(res)
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+}
+
 
 api.getPurchasesInfo()
-  .then((data) => {
-    console.log(data);
+    .then((data) => {
+        console.log(data);
 
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+
+purchaseAddButton.addEventListener("click", () => addPurchase());
+
+
 
   //тут манипуляции с кнопкой "Добавить в покупки"
   const handleClickPurchase = (evt) => {
@@ -50,3 +57,4 @@ api.getPurchasesInfo()
   addButtons.forEach(purchase => {
     purchase.addEventListener('click', handleClickPurchase);
   })
+

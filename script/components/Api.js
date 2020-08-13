@@ -78,7 +78,8 @@ export class Api {
                     return res.json();
                 }
                 return Promise.reject(`error${res.status}`);
-            });
+            })
+            .then((data) => data);
 
     }
 

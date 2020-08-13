@@ -12,6 +12,8 @@ export const api = new Api(token);
 const input = document.querySelector('.input_ingridients');
 const query = input.textContent;
 
+
+
 api.search(query)
     .then((res) => {
         console.log(res)
