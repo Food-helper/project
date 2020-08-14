@@ -3,7 +3,7 @@
   flex-direction: row;
   padding: 17px 0;
   border-bottom: 1px solid #EEE;
-  width: 52%;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
