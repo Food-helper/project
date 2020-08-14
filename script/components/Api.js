@@ -34,6 +34,54 @@ class Api {
             });
     }
 
+    addNewFavourite(subId) {
+        return fetch(`${this.baseUrl}/favorites`, {
+            method: 'POST',
+            headers: this.headers,
+            body: JSON.stringify({
+                id: subId
+            }),
+        })
+            .then((res) => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject(`error${res.status}`);
+            });
+    }
+
+    addNewAuthor(authorId) {
+        return fetch(`${this.baseUrl}/subscriptions`, {
+            method: 'POST',
+            headers: this.headers,
+            body: JSON.stringify({
+                id: authorId
+            }),
+        })
+            .then((res) => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject(`error${res.status}`);
+            });
+    }
+
+    deleteNewAuthor(authorId) {
+        return fetch(`${this.baseUrl}/purchases/${authorId}`, {
+            method: 'DELETE',
+            headers: this.headers,
+
+        })
+            .then((res) => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject(`error${res.status}`);
+            });
+
+    }
+
+
 //здесь все прекрасно работает, не трогать без необходимости!
     deleteNewPurchase(id) {
         return fetch(`${this.baseUrl}/purchases/${id}`, {
@@ -49,28 +97,16 @@ class Api {
             });
 
     }
-//тут что-то не так
-    addNewSubscription(subId) {
-        return fetch(`${this.baseUrl}/subscribtions/${subId}`, {
-            method: 'POST',
+
+
+//а тут все прекрасно!
+    deleteNewFavourite(subId) {
+        return fetch(`${this.baseUrl}/favorites/${subId}`, {
+            method: 'DELETE',
             headers: this.headers,
             body: JSON.stringify({
                 id: subId
-            }),
-        })
-            .then((res) => {
-                if (res.ok) {
-                    return res.json();
-                }
-                return Promise.reject(`error${res.status}`);
-            });
-    }
-
-//а тут все прекрасно!
-    deleteNewSubscription(subId) {
-        return fetch(`${this.baseUrl}/subscribtions/${subId}`, {
-            method: 'DELETE',
-            headers: this.headers,
+            })
 
         })
             .then((res) => {
@@ -96,6 +132,6 @@ class Api {
             });
     }
 }
-;
+
 
 export const api = new Api(config);

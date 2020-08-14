@@ -6,4 +6,6 @@ export const config = {
     'Content-Type': 'application/json'
   },
 };
-export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');
+export const buttonsSubscribe = document.querySelectorAll('.button_subscribe-author');
+
+export const authorSubscribe = document.querySelectorAll('.button_subscribe');

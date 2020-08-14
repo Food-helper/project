@@ -1,4 +1,9 @@
-import {api} from "../components/Api.js";
+import {
+    api
+} from "../components/Api.js";
+
+//работает, все удаляется, не трогать
+
 
 const deletePurchases = document.querySelectorAll('.list__delete');
 
