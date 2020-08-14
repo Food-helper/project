@@ -3,7 +3,8 @@ import {
 } from "../components/Api.js";
 import {
   stars,
-  addButtons
+  addButtons,
+  buttonsSubscribe
 } from '../constants.js';
 import {
   selectors
@@ -51,7 +52,7 @@ addButtons.forEach(button => {
 const handleClick = (evt) => {
   const subId = evt.target.getAttribute('data-id');
   if (evt.target.classList.contains(selectors.tooltip)) {
-    api.deleteNewSubscription(subId)
+    api.deleteNewFavourite(subId)
       .then((res) => {
         console.log(res)
       })
@@ -59,7 +60,7 @@ const handleClick = (evt) => {
         console.log(err);
       });
   } else {
-    api.addNewSubscription(subId)
+    api.addNewFavourite(subId)
       .then((res) => {
         console.log(res)
       })
@@ -70,6 +71,29 @@ const handleClick = (evt) => {
   evt.target.classList.toggle(selectors.tooltip);
 }
 
+/*const handleClickSubscribe = (evt) => { //при нажатии на кнопку меняет классы и блокирует ее
+  evt.target.classList.toggle(selectors.subscribe);
+  evt.target.classList.toggle(selectors.subscribe);
+  evt.target.disabled = true;
+}*/
+
+function addAuthor(evt) {
+  const id = evt.target.getAttribute('data-id');
+  api.addNewAuthor(id)
+      .then((res) => {
+        console.log(res);
+        evt.target.disabled = true;
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  evt.target.disabled = true;
+}
+
+
 stars.forEach(star => {
   star.addEventListener('click', handleClick);
+})
+buttonsSubscribe.forEach(buttonSubscribe => {
+  buttonSubscribe.addEventListener('click', addAuthor);
 })
