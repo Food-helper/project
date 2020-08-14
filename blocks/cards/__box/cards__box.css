@@ -7,4 +7,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: space-between;
+    height: 262px;
 }
