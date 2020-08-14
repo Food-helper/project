@@ -1,6 +1,7 @@
 .enter__link {
   font-size: 16px;
   line-height: 20px;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: black;
   padding-top: 15px;
@@ -9,6 +10,7 @@
 @media (max-width: 1374px) {
   .enter__link {
     padding-top: 15px;
+    -ms-flex-item-align: center;
     align-self: center;
   }
 }

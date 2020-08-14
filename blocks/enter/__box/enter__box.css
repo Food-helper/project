@@ -1,5 +1,6 @@
 .enter__box {
   width: 770px;
+  margin: 0 auto 365px;
 }
 
 @media (max-width: 1200px) {

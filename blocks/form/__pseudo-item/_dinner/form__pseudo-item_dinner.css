@@ -1,7 +1,10 @@
 .form__pseudo-item_dinner {
   border: 1px solid #49B64E;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 .form__pseudo-item_dinner:hover {
