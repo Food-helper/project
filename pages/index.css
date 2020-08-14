@@ -71,6 +71,10 @@
 @import url('../blocks/add-button/_active/add-button_active.css');
 @import url('../blocks/input-error/_enter/input-error_enter.css');
 @import url('../blocks/input-text/input-text.css');
+<<<<<<< HEAD
 @import url('../blocks/button/_make/button_make.css');
 @import url('../blocks/select/select.css');
 @import url('../blocks/input/_ingridients-list/input_ingridients-list.css');
+=======
+@import url('../blocks/ingridients-list/ingridients-list.css');
+>>>>>>> f329a35... инпуты
