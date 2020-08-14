@@ -1,7 +1,6 @@
 .make__subject {
-  margin: 60px auto 21px 68px;
-  padding: 0;
-  width: 624px;
+  box-sizing: border-box;
+  padding: 56px 105px 65px 75px;
 }
 
 @media (max-width: 1321px) {
