@@ -8,3 +8,7 @@ export const config = {
 };
 export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');
 export const counter = document.querySelector('.header__counter');
+export const ingridientInput = document.querySelector('.input_ingridients');
+export const amountInput = document.querySelector('.input_amount');
+export const ingridientSpan = document.querySelector('.input-header_span');
+export const addIngridients = document.querySelector('.make__link');

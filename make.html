@@ -41,18 +41,18 @@
 
     <!-- make-->
     <div class="make">
-      <h1 class="title">Создание рецепта</h1>
+      <h1 class="title title_make">Создание рецепта</h1>
       <div class="box password__box">
         <form class="form password__form" name="form" method="post" action="#">
-          <div class="subject password__subject">
+          <div class="subject make__subject">
             <div class="input-block">
               <h4 class="input-header">Название рецепта</h4>
-              <input class="input" type="text" name="recipe_name" id="recipe_name" placeholder="Оладьи с кабачком" />
+              <input class="input input_make" type="text" name="recipe_name" id="recipe_name" placeholder="Оладьи с кабачком" />
             </div>
             <span id="recipe_name-error" class="input-error"></span>
             <div class="input-block">
               <h4 class="input-header input-header_make">Теги</h4>
-              <div class="form__meals">
+              <div class="form__meals form__meals_make">
                 <div class="form__input-container form__input-container_make">
                   <label for="breakfast" class="form__label form__label_direction_right form__label_direction_make">
                     <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked />
@@ -75,7 +75,7 @@
             <div>
               <div class="input-block">
                 <h4 class="input-header">Ингредиенты</h4>
-                <div>
+                <div id="inputs">
                   <input class="input input_ingridients" type="text" name="title" id="title" />
                   <input class="input input_amount" type="text" name="dimension" id="dimension" />
                   <span class="input-header input-header_span">шт.</span>
@@ -106,10 +106,10 @@
                 <img class="make__delete" src="images/X.png" alt="delete" />
               </div>
             </div>
+            <button type="submit" class="button button_password input-button">
+              Создать рецепт
+            </button>
           </div>
-          <button type="submit" class="button button_password input-button">
-            Создать рецепт
-          </button>
         </form>
       </div>
     </div>

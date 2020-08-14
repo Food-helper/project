@@ -1,3 +1,5 @@
+@import url('./_ingridients-list/input_ingridients-list.css');
+
 .input {
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
