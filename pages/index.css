@@ -8,8 +8,7 @@
 @import url('../blocks/time/time.css');
 @import url('../blocks/registration/registration.css');
 @import url('../blocks/button/button.css');
-@import url('../blocks/button/_file/.button_file.css');
-@import url('../blocks/main/main.css');
+@import url('../blocks/tooltip/__text/tooltip__text.css');
 @import url('../blocks/content/content.css');
 @import url('../blocks/title/title.css');
 @import url('../blocks/subtitle/subtitle.css');
@@ -35,6 +34,10 @@
 @import url('../blocks/enter/enter.css');
 @import url('../blocks/recipe/recipe.css');
 @import url('../blocks/title/title.css');
+@import url('../blocks/title/_recipes/title_recipes.css');
+@import url('../blocks/title/_form/title_form.css');
+@import url('../blocks/title/_list/title_list.css');
+@import url('../blocks/title/_recipe/title_recipe.css');
 @import url('../blocks/subtitle/subtitle.css');
 @import url('../blocks/password/password.css');
 @import url('../blocks/reset/reset.css');
@@ -58,5 +61,3 @@
 @import url('../blocks/button/_subscribe/button_subscribe.css');
 @import url('../blocks/add-button/add-button.css');
 @import url('../blocks/add-button/_active/add-button_active.css');
-
-

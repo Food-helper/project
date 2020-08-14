@@ -1,21 +1,26 @@
 @import url('__box/cards__box.css');
 @import url('__text/cards__text.css');
+
 .cards {
   font-family: 'Montserrat',
     Arial,
     sans-serif;
   list-style-type: none;
   padding: 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (364px)[auto-fill];
   grid-template-columns: repeat(auto-fill, 364px);
-  grid-row-gap: 16px;
+  grid-row-gap: 21px;
   grid-column-gap: 37px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 @media (max-width: 400px) {
   .cards {
+    -ms-grid-columns: (300px)[auto-fill];
     grid-template-columns: repeat(auto-fill, 300px);
-    ;
   }
 }

@@ -1,5 +1,10 @@
 .cards__box {
-    padding: 24px 24px 32px 24px;
+    padding: 18px 27px 32px 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }

@@ -1,7 +1,10 @@
 .form__pseudo-item_supper {
   border: 1px solid #8775D2;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 .form__pseudo-item_supper:hover {

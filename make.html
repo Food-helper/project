@@ -2,17 +2,17 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова"/>
-    <meta name="description" content="This is an App which will help people to find and buy food" lang="en"/>
-    <link rel="stylesheet" href="./pages/index.css"/>
-    <title lang="en">Food helper</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
 </head>
 
 <body class="body">
-<div class="page">
+  <div class="page">
 
     <!-- header-->
     <header class="header" id="header">
@@ -26,8 +26,8 @@
         <ul class="header__list">
           <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
           <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
-          <li class="header__list-item"><a href="./make.html"
-              class="header__list-link header__list-link_active">Создать рецепт</a></li>
+          <li class="header__list-item"><a href="./make.html" class="header__list-link header__list-link_active">Создать
+              рецепт</a></li>
           <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
           <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
         </ul>
@@ -40,7 +40,7 @@
 
     <!-- make-->
     <div class="make">
-      <h1 class="title">Создание рецепта</h1>
+      <h1 class="title title_form">Создание рецепта</h1>
       <div class="box make__box">
         <form class="form" name="form" method="post" action="#">
           <div class="subject make__subject">
@@ -59,12 +59,12 @@
                     <span class="form__label-text">Завтрак</span>
                   </label>
                   <label for="dinner" class="form__label form__label_direction_right form__label_direction_make">
-                    <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item"  />
+                    <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" />
                     <span class="form__pseudo-item form__pseudo-item_dinner"></span>
                     <span class="form__label-text">Обед</span>
                   </label>
                   <label for="supper" class="form__label form__label_direction_right form__label_direction_make">
-                    <input type="checkbox" name="meals" id="supper" value="supper" class="form__item"  />
+                    <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" />
                     <span class="form__pseudo-item form__pseudo-item_supper"></span>
                     <span class="form__label-text">Ужин</span>
                   </label>
@@ -80,25 +80,27 @@
                   <span class="input-header input-header_span">шт.</span>
                 </div>
                 <button type="submit" class="button button_password input-button">
-                    Создать рецепт
+                  Создать рецепт
                 </button>
-            </form>
-        </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-</div>
-
-<!-- footer-->
-<footer class="footer">
+  </div>
+  <!-- footer-->
+  <footer class="footer">
     <div class="footer__container">
-        <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-        <div>
-            <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
-            <a class="footer__link" href="#">Технологии</a>
-        </div>
+      <a class="footer__link" href="./index.html">Продуктовый помощник</a>
+      <div>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
+        <a class="footer__link" href="#">Технологии</a>
+      </div>
     </div>
-</footer>
+  </footer>
 
-<script type="module" src="./script/components/make.js"></script>
+  <script type="module" src="./script/components/make.js"></script>
 </body>
 
 </html>
