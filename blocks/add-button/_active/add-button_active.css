@@ -1,9 +1,11 @@
 .add-button_active {
-  background-image: url('./../../../images/dobavlen.jpg');
   height: 48px;
   border-radius: 6px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
-  border: none;
+  background: #ffffff url('./../../../images/tick.svg') no-repeat left;
+  background-position-x: 10%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4A61DD;
+  border: 1px solid #DEE2F2;
 }

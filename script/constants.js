@@ -1,5 +1,7 @@
 export const stars = document.querySelectorAll('.tooltip');
 export const addButtons = document.querySelectorAll('.add-button');
+export const addButtonsFavourites = document.querySelectorAll('.buttons__add-button_shop');
+
 export const config = {
   baseUrl: 'http://www.buymebuyme.xyz',
   headers: {

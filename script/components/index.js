@@ -2,16 +2,17 @@ import {
   api
 } from "../components/Api.js";
 import {
-  addButtons
+  addButtonsFavourites
 } from '../constants.js';
 import {
   selectors
 } from '../selectors.js';
 
+
 //здесь все прекрасно работает, не трогать без необходимости!
 //при нажатии на кнопку меняет классы и блокирует ее
 const handleClickPurchase = (evt) => {
-  evt.target.classList.toggle(selectors.addButton);
+  evt.target.classList.toggle(selectors.addButtonFavourite);
   evt.target.classList.toggle(selectors.addButtonActive);
   evt.target.disabled = true;
 }
@@ -26,6 +27,7 @@ function addPurchase(evt) {
       console.log(err);
     })
     handleClickPurchase(evt);
+  evt.target.innerHTML =  "Рецепт добавлен";
 }
 
 api.getPurchasesInfo()
@@ -36,6 +38,6 @@ api.getPurchasesInfo()
     console.log(err);
   });
 
-addButtons.forEach(button => {
+addButtonsFavourites.forEach(button => {
   button.addEventListener("click", (evt) => addPurchase(evt));
 });

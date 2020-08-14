@@ -33,6 +33,7 @@ function addPurchase(evt) {
       console.log(err);
     })
   handleClickPurchase(evt);
+  evt.target.innerHTML =  "Рецепт добавлен";
 }
 
 api.getPurchasesInfo()
@@ -76,7 +77,39 @@ const handleClick = (evt) => {
   evt.target.classList.toggle(selectors.subscribe);
   evt.target.disabled = true;
 }*/
+const handleAuthorClick = (evt) => {
+  const id = evt.target.getAttribute('data-id');
+  if (evt.target.classList.contains(selectors.unSubscribe)) {
+    api.deleteNewAuthor(id)
+        .then((res) => {
+          console.log(res)
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+    evt.target.classList.toggle(selectors.unSubscribe);
+    evt.target.classList.toggle(selectors.subscribe);
+    evt.target.innerHTML =  "Подписаться на автора";
+  } else {
+    api.addNewAuthor(id)
+        .then((res) => {
+          console.log(res)
+        })
 
+        .catch((err) => {
+          console.log(err);
+        })
+    evt.target.classList.toggle(selectors.subscribe);
+    evt.target.classList.toggle(selectors.unSubscribe);
+    evt.target.innerHTML =  "Отписаться от автора";}
+
+
+
+}
+
+
+
+/*
 function addAuthor(evt) {
   const id = evt.target.getAttribute('data-id');
   api.addNewAuthor(id)
@@ -87,13 +120,17 @@ function addAuthor(evt) {
       .catch((err) => {
         console.log(err);
       })
-  evt.target.disabled = true;
-}
+  evt.target.classList.toggle(selectors.subscribe);
+  evt.target.classList.toggle(selectors.unSubscribe);
+  evt.target.innerHTML =  "Отписаться от автора";
+
+
+}*/
 
 
 stars.forEach(star => {
   star.addEventListener('click', handleClick);
 })
 buttonsSubscribe.forEach(buttonSubscribe => {
-  buttonSubscribe.addEventListener('click', addAuthor);
+  buttonSubscribe.addEventListener('click', handleAuthorClick)
 })
