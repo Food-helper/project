@@ -3,7 +3,8 @@ import {
 } from "../components/Api.js";
 import {
   stars,
-  addButtons
+  addButtons,
+  counter
 } from '../constants.js';
 import {
   selectors
@@ -16,19 +17,21 @@ import {
 //const subId = subscribe.getAttribute('data-id');
 
 //тут манипуляции с кнопкой "Добавить в покупки"
-const handleClickPurchase = (evt, sum) => { //при нажатии на кнопку меняет классы и блокирует ее
+const handleClickPurchase = (evt) => { //при нажатии на кнопку меняет классы и блокирует ее
   evt.target.classList.toggle(selectors.addButton);
   evt.target.classList.toggle(selectors.addButtonActive);
   evt.target.disabled = true;
 }
 const star = document.querySelector('.tooltip');
 const elemId = star.getAttribute('data-id');
+
 function addPurchase(evt) {
   const id = evt.target.getAttribute('data-id');
 
   api.addNewPurchase(id)
     .then((res) => {
       console.log(res);
+      counter.textContent = res.length;
     })
     .catch((err) => {
       console.log(err);
@@ -38,10 +41,11 @@ function addPurchase(evt) {
 
 api.getPurchasesInfo()
   .then((data) => {
-console.log(data);
-//этот код проходит по массиву и пишет имеющиеся id. Как связать id с атрибутом и покрасить звездочку?
-//for (let i = 0; i<data.length; i++) {
- //   console.log(data[i].id)
+    console.log(data);
+    counter.textContent = data.length;
+    //этот код проходит по массиву и пишет имеющиеся id. Как связать id с атрибутом и покрасить звездочку?
+    //for (let i = 0; i<data.length; i++) {
+    //   console.log(data[i].id)
 
 
   })
