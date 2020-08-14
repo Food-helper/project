@@ -11,7 +11,7 @@ import {
 function deleteAuthor(evt) {
     console.log('52')
     const id = evt.target.getAttribute('data-id');
-    api.addNewAuthor(id)
+    api.deleteNewAuthor(id)
         .then((res) => {
             console.log(res);
             evt.target.disabled = true;
