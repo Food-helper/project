@@ -1,4 +1,5 @@
 @import url('./_make/input-header_make.css');
+@import url('./_password/input-header_password.css');
 
 .input-header {
   font-weight: normal;

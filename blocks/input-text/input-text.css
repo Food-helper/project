@@ -1,0 +1,5 @@
+.input-text {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+}
