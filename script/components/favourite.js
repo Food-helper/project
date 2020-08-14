@@ -3,7 +3,7 @@ import {
 } from "../components/Api.js";
 import {
 	stars,
-	addButtons
+	addButtonsFavourites
 } from '../constants.js';
 import {
 	selectors
@@ -15,7 +15,7 @@ import {
 const handleClick = (evt) => {
 	const subId = evt.target.getAttribute('data-id');
 	if (evt.target.classList.contains(selectors.tooltip)) {
-		api.deleteNewSubscription(subId)
+		api.deleteNewFavourite(subId)
 	.then((res) => {
 		console.log(res)
 	})
@@ -23,7 +23,7 @@ const handleClick = (evt) => {
 		console.log(err);
 	});
 	} else {
-		api.addNewSubscription(subId)
+		api.addNewFavourite(subId)
 		.then((res) => {
 			console.log(res)
 		})
@@ -40,7 +40,7 @@ stars.forEach(star => {
 
 //тут манипуляции с кнопкой "Добавить в покупки"
 const handleClickPurchase = (evt) => {
-  evt.target.classList.toggle(selectors.addButton);
+  evt.target.classList.toggle(selectors.addButtonFavourite);
   evt.target.classList.toggle(selectors.addButtonActive);
   evt.target.disabled = true;
 }
@@ -55,8 +55,9 @@ function addPurchase(evt) {
       console.log(err);
     })
     handleClickPurchase(evt);
+	evt.target.innerHTML =  "Рецепт добавлен";
 }
 
-addButtons.forEach(button => {
+addButtonsFavourites.forEach(button => {
   button.addEventListener("click", (evt) => addPurchase(evt));
 });

@@ -67,7 +67,7 @@ class Api {
     }
 
     deleteNewAuthor(authorId) {
-        return fetch(`${this.baseUrl}/purchases/${authorId}`, {
+        return fetch(`${this.baseUrl}/subscriptions/${authorId}`, {
             method: 'DELETE',
             headers: this.headers,
 

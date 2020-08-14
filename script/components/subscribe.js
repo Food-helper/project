@@ -9,12 +9,12 @@ import {
 } from '../selectors.js';
 
 function deleteAuthor(evt) {
-    console.log('52')
     const id = evt.target.getAttribute('data-id');
     api.deleteNewAuthor(id)
         .then((res) => {
             console.log(res);
             evt.target.disabled = true;
+
         })
         .catch((err) => {
             console.log(err);
