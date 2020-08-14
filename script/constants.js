@@ -7,3 +7,4 @@ export const config = {
   },
 };
 export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');
+export const counter = document.querySelector('.header__counter');

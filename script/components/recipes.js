@@ -3,7 +3,8 @@ import {
 } from "../components/Api.js";
 import {
   stars,
-  addButtons
+  addButtons,
+  counter
 } from '../constants.js';
 import {
   selectors
@@ -28,6 +29,7 @@ function addPurchase(evt) {
   api.addNewPurchase(id)
     .then((res) => {
       console.log(res);
+      counter.textContent = res.length;
     })
     .catch((err) => {
       console.log(err);
@@ -38,6 +40,7 @@ function addPurchase(evt) {
 api.getPurchasesInfo()
   .then((data) => {
     console.log(data);
+    counter.textContent = data.length;
   })
   .catch((err) => {
     console.log(err);
