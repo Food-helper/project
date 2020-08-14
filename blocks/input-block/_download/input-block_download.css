@@ -1,7 +1,6 @@
 .input-block_download {
-  width: 95%;
-  margin-bottom: 72px;
-  margin-top: 54px;
+  margin-bottom: 70px;
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
 }

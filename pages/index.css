@@ -26,10 +26,12 @@
 @import url('../blocks/subject/subject.css');
 @import url('../blocks/input-block/input-block.css');
 @import url('../blocks/input-header/input-header.css');
+@import url('../blocks/input-header/_make/input-header_make.css');
 @import url('../blocks/input/input.css');
 @import url('../blocks/input-error/input-error.css');
 @import url('../blocks/input-button/input-button.css');
 @import url('../blocks/input-header/_reset/input__header_reset.css');
+@import url('../blocks/input-header/_download/input-header_download.css');
 @import url('../blocks/input-box/input-box.css');
 @import url('../blocks/enter/enter.css');
 @import url('../blocks/recipe/recipe.css');
@@ -38,6 +40,7 @@
 @import url('../blocks/title/_form/title_form.css');
 @import url('../blocks/title/_list/title_list.css');
 @import url('../blocks/title/_recipe/title_recipe.css');
+@import url('../blocks/title/_make/title_make.css');
 @import url('../blocks/subtitle/subtitle.css');
 @import url('../blocks/password/password.css');
 @import url('../blocks/reset/reset.css');
@@ -48,10 +51,13 @@
 @import url('../blocks/input/_enter/input_enter.css');
 @import url('../blocks/registration/registration.css');
 @import url('../blocks/input/_description/input_description.css');
+@import url('../blocks/input/_make/input_make.css');
+@import url('../blocks/input/_make/_description/input_make_description.css');
 @import url('../blocks/input-block/_download/input-block_download.css');
 @import url('../blocks/input/_amount/input_amount.css');
 @import url('../blocks/input-header/_span/input-header_span.css');
 @import url('../blocks/input/_ingridients/input_ingridients.css');
+@import url('../blocks/input/_time/input_time.css');
 @import url('../blocks/make/__link/make__link.css');
 @import url('../blocks/input-block/_make/input-block_make.css');
 @import url('../blocks/input-block/_password/input-block_password.css');
@@ -65,3 +71,5 @@
 @import url('../blocks/add-button/_active/add-button_active.css');
 @import url('../blocks/input-error/_enter/input-error_enter.css');
 @import url('../blocks/input-text/input-text.css');
+@import url('../blocks/button/_make/button_make.css');
+@import url('../blocks/select/select.css');
