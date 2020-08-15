@@ -1,149 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
-  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
-  <link rel="stylesheet" href="./pages/index.css" />
-  <title lang="en">Food helper</title>
-</head>
-
-<body class="body">
-  <div class="page">
-
-    <!-- header-->
-    <header class="header" id="header">
-      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
-        aria-expanded="false">
-      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
-        <span class="header__menu-span"></span>
-      </label>
-      <nav class="header__nav" aria-label="Main menu">
-        <ul class="header__list">
-          <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
-          <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
-          <li class="header__list-item"><a href="./make.html" class="header__list-link header__list-link_active">Создать
-              рецепт</a>
-          </li>
-          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
-          <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
-        </ul>
-        <ul class="header__list">
-          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a>
-          </li>
-          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- make-->
-    <div class="make">
-      <h1 class="title title_make">Создание рецепта</h1>
-      <div class="box make__box">
-        <form class="form password__form" name="form" method="post" action="#">
-          <div class="subject make__subject">
-            <div class="input-block">
-              <h4 class="input-header input-header_make">Название рецепта</h4>
-              <input class="input input_make" type="text" name="recipe_name" id="recipe_name"
-                placeholder="Оладьи с кабачком" />
-            </div>
-            <span id="recipe_name-error" class="input-error"></span>
-            <div class="input-block">
-              <h4 class="input-header input-header_make">Теги</h4>
-              <div class="form__meals form__meals_make">
-                <div class="form__input-container form__input-container_make">
-                  <label for="breakfast" class="form__label form__label_direction_right form__label_direction_make">
-                    <input type="checkbox" name="meals" id="breakfast" value="breakfast" class="form__item" checked />
-                    <span class="form__pseudo-item form__pseudo-item_breakfast"></span>
-                    <span class="form__label-text">Завтрак</span>
-                  </label>
-                  <label for="dinner" class="form__label form__label_direction_right form__label_direction_make">
-                    <input type="checkbox" name="meals" id="dinner" value="dinner" class="form__item" />
-                    <span class="form__pseudo-item form__pseudo-item_dinner"></span>
-                    <span class="form__label-text">Обед</span>
-                  </label>
-                  <label for="supper" class="form__label form__label_direction_right form__label_direction_make">
-                    <input type="checkbox" name="meals" id="supper" value="supper" class="form__item" />
-                    <span class="form__pseudo-item form__pseudo-item_supper"></span>
-                    <span class="form__label-text">Ужин</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div class="input-block">
-                <h4 class="input-header">Ингредиенты</h4>
-                <div>
-
-
-
-                  <input class="input input_ingridients" type="text" name="ingridients" id="input-ingridients"
-                    autocomplete="OFF" />
-                  <ul class="select select_hidden" id="ingridient-result" size=10>
-                   
-                  </ul>
-
-
-
-                  <input class="input input_amount" type="text" name="dimension" id="dimension" />
-                  <span class="input-header input-header_span">шт.</span>
-                </div>
-              </div>
-              <span id="ingridients-error" class="input-error"></span>
-            </div>
-
-            <button class="make__link" type="submit">Добавить ингредиент</button>
-            <div class="input-block input-block_make">
-              <h4 class="input-header">Время приготовления</h4>
-              <div class="make__input-container">
-                <input class="input input_amount input_time" type="text" name="time" id="time" placeholder="30" />
-                <span class="input-header input-header_span input-header_span_time">минут</span>
-              </div>
-            </div>
-            <span id="time-error" class="input-error"></span>
-            <div class="input-block">
-              <h4 class="input-header">Описание</h4>
-              <label for="description"></label><textarea class="input input_make input_make_description" type="text"
-                name="description" id="description"></textarea>
-            </div>
-            <span id="description-error" class="input-error"></span>
-            <div class="input-block input-block_download">
-              <h4 class="input-header input-header_download">Загрузить фото</h4>
-              <button class="button button_download">Выбрать файл</button>
-              <div class="input-block__delete-box">
-                <p>Cake_12.jpeg</p>
-                <img class="make__delete" src="images/X.png" alt="delete" />
-              </div>
-            </div>
-            <button type="submit" class="button button_make input-button">
-              Создать рецепт
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer-->
-  <footer class="footer">
-    <div class="footer__container">
-      <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-      <div>
-        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
-        <a class="footer__link" href="#">Технологии</a>
-      </div>
-    </div>
-  </footer>
-
-  <script type="module" src="./script/components/make.js"></script>
-</body>
-
-=======
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -221,10 +75,21 @@
             <div>
               <div class="input-block">
                 <h4 class="input-header">Ингредиенты</h4>
-                <div id="inputs">
-                  <input class="input input_ingridients" type="text" name="title" id="title" />
+                <div>
+
+
+
+                  <input class="input input_ingridients" type="text" name="ingridients" id="input-ingridients"
+                    autocomplete="OFF" />
+                  <ul class="select select_hidden" id="ingridient-result" size=10>
+               
+                  </ul>
+
+
+
                   <input class="input input_amount" type="text" name="dimension" id="dimension" />
                   <span class="input-header input-header_span">шт.</span>
+
                 </div>
               </div>
               <span id="ingridients-error" class="input-error"></span>
@@ -275,5 +140,4 @@
   <script type="module" src="./script/components/make.js"></script>
 </body>
 
->>>>>>> f329a3544a3ce2de68b2d4fcd2114a5df271b607
 </html>
