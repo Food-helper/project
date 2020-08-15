@@ -46,7 +46,6 @@
 @import url('../blocks/reset/reset.css');
 @import url('../blocks/input-box/_reset/input-box_reset.css');
 @import url('../blocks/input-box/_registration/input-box_registration.css');
-@import url('../blocks/input-box/_enter/input-box_enter.css');
 @import url('../blocks/input-box/_password/input-box_password.css');
 @import url('../blocks/input/_enter/input_enter.css');
 @import url('../blocks/registration/registration.css');
@@ -71,6 +70,11 @@
 @import url('../blocks/add-button/_active/add-button_active.css');
 @import url('../blocks/input-error/_enter/input-error_enter.css');
 @import url('../blocks/input-text/input-text.css');
+<<<<<<< HEAD
 @import url('../blocks/button/_make/button_make.css');
 @import url('../blocks/select/select.css');
 @import url('../blocks/input/_ingridients-list/input_ingridients-list.css');
+@import url('../blocks/hide/hide.css');
+=======
+@import url('../blocks/ingridients-list/ingridients-list.css');
+>>>>>>> f329a3544a3ce2de68b2d4fcd2114a5df271b607
