@@ -49,6 +49,7 @@ addButtonsFavourites.forEach(button => {
 
 api.getPurchasesInfo()
   .then((data) => {
+
     counter.textContent = data.length;
   })
   .catch((err) => {

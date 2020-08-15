@@ -18,5 +18,3 @@ export const amountInput = document.querySelector('.input_amount');
 export const ingridientSpan = document.querySelector('.input-header_span');
 export const addIngridients = document.querySelector('.make__link');
 
-// export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');
-
