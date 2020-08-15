@@ -3,17 +3,9 @@ import {
 } from "../components/Api.js";
 import {
   stars,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  addButtonsFavourites
-=======
+  addButtonsFavourites,
   addButtons,
   counter
->>>>>>> 28fa59d... добавила счетчик
-=======
-  addButtons,
-  counter
->>>>>>> f329a3544a3ce2de68b2d4fcd2114a5df271b607
 } from '../constants.js';
 import {
   selectors
@@ -30,24 +22,25 @@ const handleClickPurchase = (evt) => {
 function addPurchase(evt) {
   const id = evt.target.getAttribute('data-id');
   api.addNewPurchase(id)
-<<<<<<< HEAD
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-=======
     .then((res) => {
       console.log(res);
-      counter.textContent = res.length;
     })
     .catch((err) => {
       console.log(err);
     })
->>>>>>> 28fa59d... добавила счетчик
   handleClickPurchase(evt);
   evt.target.innerHTML =  "Рецепт добавлен";
+    api.getPurchasesInfo()
+        .then((data) => {
+            console.log(data);
+//этот код проходит по массиву и пишет имеющиеся id.
+//for (let i = 0; i<data.length; i++) {
+            //   console.log(data[i].id)
+            counter.textContent = data.length;
+        })
+        .catch((err) => {
+            console.log(err);
+        });
 }
 
 addButtonsFavourites.forEach(button => {
@@ -56,20 +49,7 @@ addButtonsFavourites.forEach(button => {
 
 api.getPurchasesInfo()
   .then((data) => {
-<<<<<<< HEAD
-console.log(data);
-//этот код проходит по массиву и пишет имеющиеся id. Как связать id с атрибутом и покрасить звездочку?
-//for (let i = 0; i<data.length; i++) {
- //   console.log(data[i].id)
-
-
-=======
-    console.log(data);
     counter.textContent = data.length;
-<<<<<<< HEAD
->>>>>>> 28fa59d... добавила счетчик
-=======
->>>>>>> f329a3544a3ce2de68b2d4fcd2114a5df271b607
   })
   .catch((err) => {
     console.log(err);
