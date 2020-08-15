@@ -4,8 +4,14 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: rgba(234, 146, 99, 0.12);
   color: #E26C2D;

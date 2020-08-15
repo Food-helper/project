@@ -1,5 +1,6 @@
 .subscribe__card-items {
   min-height: 319px;
   justify-self: start;
+  -ms-flex-item-align: start;
   align-self: start;
 }
