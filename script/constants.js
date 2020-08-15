@@ -8,7 +8,6 @@ export const config = {
     'Content-Type': 'application/json'
   },
 };
-<<<<<<< HEAD
 export const buttonsSubscribe = document.querySelectorAll('.button_subscribe-author');
 
 export const authorSubscribe = document.querySelectorAll('.button_subscribe');
@@ -19,14 +18,5 @@ export const ingridientInput = document.querySelector('.input_ingridients');
 export const amountInput = document.querySelector('.input_amount');
 export const ingridientSpan = document.querySelector('.input-header_span');
 export const addIngridients = document.querySelector('.make__link');
-=======
-export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');
-export const counter = document.querySelector('.header__counter');
-<<<<<<< HEAD
->>>>>>> 28fa59d... добавила счетчик
-=======
-export const ingridientInput = document.querySelector('.input_ingridients');
-export const amountInput = document.querySelector('.input_amount');
-export const ingridientSpan = document.querySelector('.input-header_span');
-export const addIngridients = document.querySelector('.make__link');
->>>>>>> f329a35... инпуты
+// export const buttonsSubscribe = document.querySelectorAll('.button_subscribe');
+

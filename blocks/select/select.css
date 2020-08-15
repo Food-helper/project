@@ -1,5 +1,6 @@
+@import url('./_hidden/select_hidden.css');
+
 .select {
-  visibility: hidden;
   margin: 0;
   list-style-type: none;
   font-weight: normal;
