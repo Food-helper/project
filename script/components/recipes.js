@@ -4,11 +4,16 @@ import {
 import {
   stars,
 <<<<<<< HEAD
+<<<<<<< HEAD
   addButtonsFavourites
 =======
   addButtons,
   counter
 >>>>>>> 28fa59d... добавила счетчик
+=======
+  addButtons,
+  counter
+>>>>>>> f329a3544a3ce2de68b2d4fcd2114a5df271b607
 } from '../constants.js';
 import {
   selectors
@@ -61,7 +66,10 @@ console.log(data);
 =======
     console.log(data);
     counter.textContent = data.length;
+<<<<<<< HEAD
 >>>>>>> 28fa59d... добавила счетчик
+=======
+>>>>>>> f329a3544a3ce2de68b2d4fcd2114a5df271b607
   })
   .catch((err) => {
     console.log(err);
