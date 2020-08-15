@@ -2,18 +2,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
 @media screen and (max-width: 1023px) {
   .header__list {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
 
 @media screen and (max-width: 900px) {
   .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     border-bottom: none;
   }

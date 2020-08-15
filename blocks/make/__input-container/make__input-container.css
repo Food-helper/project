@@ -1,5 +1,5 @@
 .make__input-container {
-  width: 370px;
+  max-width: 370px;
   display: flex;
   justify-content: space-between;
   margin-right: 166px;
@@ -9,3 +9,8 @@
   justify-content: start;
   margin-left: 104px;
 }
+
+@media (max-width: 1321px) {
+  .make__input-container:last-of-type {
+    margin-left: 0;
+  }

@@ -2,3 +2,15 @@
   margin-left: 217px;
   width: 200px;
 }
+
+@media (max-width: 1321px) {
+  .button_make {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .button_make {
+    width: 135px;
+  }
+}

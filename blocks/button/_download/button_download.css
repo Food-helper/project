@@ -5,3 +5,15 @@
   line-height: 22px;
   margin-left: 50px;
 }
+
+@media (max-width: 1321px) {
+  .button_download {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .button_download {
+    width: 135px;
+  }
+}

@@ -3,9 +3,13 @@
   line-height: 20px;
   text-decoration-line: underline;
   color: black;
-  padding-top: 15px;
   margin-left: 40%;
   border: none;
   cursor: pointer;
   background-color: transparent;
 }
+
+@media (max-width: 1321px) {
+  .make__link {
+    margin-left: 0;
+  }

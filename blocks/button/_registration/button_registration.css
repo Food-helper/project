@@ -9,9 +9,15 @@
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 71px;
-  margin-left: 50px;
+  margin-left: 224px;
 }
 
 .button_registration:hover {
   background-color: #2845DF;
+}
+
+@media (max-width: 645px) {
+  .button_registration {
+    margin-left: 0;
+  }
 }

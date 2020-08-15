@@ -7,6 +7,7 @@
   border: none;
   cursor: pointer;
   justify-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   height: 30px;
 }

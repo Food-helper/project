@@ -3,6 +3,7 @@
   max-width: 480px;
   margin: auto;
   padding-bottom: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-right: 60px;
   border-radius: 16px;
