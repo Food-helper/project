@@ -6,9 +6,14 @@ import {
   ingridientSpan,
   addIngridients,
 } from "../constants.js";
+//import {stars} from "../constants";
+
 
 const query = ingridientInput.textContent;
-
+const add = (evt) => { //при нажатии на кнопку меняет классы и блокирует ее
+    console.log('5');
+    evt.target.textContent = query;
+}
 api
   .search(query)
   .then((res) => {
@@ -27,16 +32,24 @@ api
     let array = Object.values(document.querySelectorAll(".select li"));
     console.log(array);
 
+      array.forEach(elem => {
+          console.log('1')
+          elem.addEventListener('click', add);
+      })
     ingridientInput.oninput = function () {
       let val = this.value.trim(); //значение инпута без пробелов
       
-      if (val != "") {
+      if (val !== "") {
           console.log(val);
         array.forEach((elem) => {
-          if (elem.innerHTML.toLowerCase().search(val) == -1) {
+          if (elem.innerHTML.toLowerCase().search(val) === -1) {
             elem.classList.add("hide");
           } else {
             elem.classList.remove("hide");
+            console.log(elem.textContent);
+            //добавить класс этим элементам, искать по классу и навесить слушатели.
+
+            elem.addEventListener('click', add)
             // меняет весовые значения НЕ ОТТЕСТИРОВАЛА, ТАК КАК ЛОГИКА ЗАВЯЗАНА НА 
             //МАССИВ, А НЕ РЕС
             // ingridientSpan.textContent = res(
