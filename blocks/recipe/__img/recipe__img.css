@@ -2,11 +2,12 @@
   width: 100%;
   max-width: 480px;
   margin: auto;
-  padding-bottom: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  margin-right: 60px;
+  margin-right: 55px;
   border-radius: 16px;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 @media screen and (max-width:1300px) {
@@ -15,7 +16,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .recipe__img {
     padding-bottom: 0;
     margin: auto;
