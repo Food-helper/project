@@ -13,7 +13,7 @@ import {
 
 
 //тут манипуляции с кнопкой "Добавить в покупки"
-const handleClickPurchase = (evt) => {
+const handleClickPurchase = (evt,sum) => {
   evt.target.classList.toggle(selectors.addButtonFavourite);
   evt.target.classList.toggle(selectors.addButtonActive);
   evt.target.disabled = true;
