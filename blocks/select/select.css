@@ -1,4 +1,5 @@
 @import url('./_hidden/select_hidden.css');
+@import url('./__item/select__item.css');
 
 .select {
   margin: 0;
@@ -9,6 +10,7 @@
   position: absolute;
   z-index: 999;
   background: #FFFFFF;
+  width: 214px;
   border: 1px solid rgba(98, 98, 98, 0.2);
   padding-left: 0;
 }
