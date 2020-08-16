@@ -3,3 +3,9 @@
   grid-area: "info";
   position: relative;
 }
+
+@media (max-width: 1200px) {
+  .recipe__box {
+    margin-left: 30px;
+  }
+}

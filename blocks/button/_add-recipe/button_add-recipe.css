@@ -11,3 +11,9 @@
   color: white;
   border: none;
 }
+
+@media (max-width: 594px) {
+  .button_add-recipe {
+    margin-bottom: 15px;
+  }
+}
