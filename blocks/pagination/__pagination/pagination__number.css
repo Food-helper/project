@@ -19,6 +19,5 @@
 .pages-list__number:hover {
   opacity: .6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  font-size: 24px;
   cursor: pointer;
 }
