@@ -9,14 +9,21 @@ import {
 } from "../constants.js";
 //import {stars} from "../constants";
 let query = ingridientInput.textContent;
-const add = (evt) => { //при нажатии на кнопку меняет классы и блокирует ее
-  ingridientInput.value = evt.target.textContent
-  document.getElementById("ingridient-result").classList.toggle('select_hidden');
-}
 api
   .search(query)
   .then((res) => {
     console.log(res);
+    const arr = res.map((item) => item.title);
+    console.log(arr);
+    const add = (evt) => { //при нажатии на кнопку меняет классы и блокирует ее
+      ingridientInput.value = evt.target.textContent;
+      document.getElementById("ingridient-result").classList.toggle('select_hidden');
+      const index = arr.indexOf(ingridientInput.value);
+      console.log(index);
+      if (index !== -1) {
+        ingridientSpan.textContent = res[index].dimension;
+      }
+    }
     //создаем в контейнере с id result список ul с перечислением ингридиентов
     let ingridientsList = "";
     for (let i = 0; i < res.length; i++) {
@@ -29,6 +36,7 @@ api
     //для каждого элемента - если он не содержит значения инпута, то он скрывается классом hide
     //запускается при любом изменении инпута - так что если буква появилась - он появляется
     let array = Object.values(document.querySelectorAll(".select li"));
+
     array.forEach(elem => {
       elem.addEventListener('mousedown', add);
     })
