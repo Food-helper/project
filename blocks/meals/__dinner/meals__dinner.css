@@ -4,7 +4,7 @@
 }
 
 .meals__dinner::before {
-  content: url(./../../../images/dinner.svg);
+  content: url('./../../../images/dinner.svg');
   width: 24px;
   height: 24px;
   position: absolute;
@@ -17,4 +17,4 @@
 @media (max-width: 400px) {
   .meals__dinner::before {
     right: 35px;
-}
+  }

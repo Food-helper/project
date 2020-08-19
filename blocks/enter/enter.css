@@ -4,9 +4,12 @@
 @import url('__header/enter__header.css');
 @import url('__subject/enter__subject.css');
 @import url('__box/enter__box.css');
+@import url('__box/_reset/enter__box_reset.css');
 @import url('__input-error/enter__input-error.css');
+@import url('__form/enter__form.css');
 
 @media screen and (max-width: 900px) {
   .enter {
     margin-top: 97px;
   }
+}

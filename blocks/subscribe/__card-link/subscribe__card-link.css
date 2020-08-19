@@ -6,5 +6,11 @@
   text-decoration: none;
   margin: 0;
   padding-top: 16px;
-  border-top: 1px solid #EEEEEE;
+  border-top: 1px solid #EEE;
+}
+
+@media screen and (max-width: 850px) {
+  .subscribe__card-link {
+    margin-bottom: 15px;
+  }
 }

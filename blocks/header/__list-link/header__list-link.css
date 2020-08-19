@@ -2,6 +2,7 @@
   list-style: none;
   text-decoration: none;
   color: #070707;
+  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 

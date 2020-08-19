@@ -6,7 +6,6 @@
 @import url('./__card-item-name/subscribe__card-item-name.css');
 @import url('./__card-link/subscribe__card-link.css');
 @import url('./__card-items/subscribe__card-items.css');
-@import url('./__container/subscribe__container.css');
 
 .subscribe {
   margin: auto;

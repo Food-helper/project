@@ -2,19 +2,20 @@
   position: relative;
 }
 
-.meals__breakfast::before {
-  content: url(./../../../images/breakfast.svg);
+.meals__breakfast:before {
+  content: url('./../../../images/breakfast.svg');
   width: 24px;
   height: 24px;
   position: absolute;
   right: 76px;
   top: -18%;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 @media (max-width: 400px) {
-  .meals__breakfast::before {
+  .meals__breakfast:before {
     right: 50px;
   }
 }

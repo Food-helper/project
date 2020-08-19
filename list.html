@@ -1,108 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="author"
-      content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова"
-    />
-    <meta
-      name="description"
-      content="This is an App which will help people to find and buy food"
-      lang="en"
-    />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <title lang="en">Food helper</title>
-  </head>
-  <body class="body">
-    <div class="page">
-      <!-- header-->
-      <header class="header" id="header">
-        <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
-          aria-expanded="false">
-        <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
-          <span class="header__menu-span"></span>
-        </label>
-        <nav class="header__nav" aria-label="Main menu">
-          <ul class="header__list">
-            <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
-            <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
-            <li class="header__list-item"><a href="./make.html"
-                class="header__list-link ">Создать рецепт</a></li>
-            <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
-            <li class="header__list-item header__list-link_active"><a href="./list.html" class="header__list-link">Список покупок</a></li>
-          </ul>
-          <ul class="header__list">
-            <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
-            <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <section class="list">
-        <h1 class="title">Список покупок</h1>
-        <div class="list__box">
-          <div class="list__item">
-            <img
-              class="list__img"
-              src="./images/французскиетосты.jpg"
-              alt="Французские тосты"
-            />
-            <div class="list__info">
-              <p class="subscribe__card-item-name">
-                Французские тосты
-              </p>
-              <div class="time">
-                <img class="time__logo" src="./images/clock.svg" alt="clock" />
-                <p class="time__info">20 мин.</p>
-              </div>
-            </div>
-            <button class="list__delete">Удалить</button>
-          </div>
-          <div class="list__item">
-            <img class="list__img" src="./images/слососем.jpg" alt="красивое фото еды" />
-            <div class="list__info">
-              <p class="subscribe__card-item-name">
-                Французский тост с сиропом агавы
-              </p>
-              <div class="time">
-                <img class="time__logo" src="./images/clock.svg" alt="clock" />
-                <p class="time__info">30 мин.</p>
-              </div>
-            </div>
-            <button class="list__delete">Удалить</button>
-          </div>
-          <div class="list__item">
-            <img class="list__img" src="./images/круассан.jpg" alt="красивое фото еды" />
-            <div class="list__info">
-              <p class="subscribe__card-item-name">
-                Вафли с яйцом «Бенедикт» и лососем
-              </p>
-              <div class="time">
-                <img class="time__logo" src="./images/clock.svg" alt="clock" />
-                <p class="time__info">35 мин.</p>
-              </div>
-            </div>
-            <button class="list__delete">Удалить</button>
-          </div>
-        </div>
-        <button type="button" class="button button_list">Скачать список</button>
-      </section>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Марина Кузнецова, Алина Вигдорова, Ольга Альбукова" />
+  <meta name="description" content="This is an App which will help people to find and buy food" lang="en" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title lang="en">Food helper</title>
+</head>
 
-    <!-- footer-->
-    <footer class="footer">
-      <div class="footer__container">
-        <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-        <nav>
-          <a class="footer__link" href="#">Об авторе</a>
-          <a class="footer__link" href="#">Технологии</a>
-        </nav>
+<body class="body">
+  <div class="page">
+    <!-- header-->
+    <header class="header" id="header">
+      <input type="checkbox" class="header__menu-toggle" id="header__menu-toggle" role="button" aria-pressed="false"
+        aria-expanded="false">
+      <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
+        <span class="header__menu-span"></span>
+      </label>
+      <nav class="header__nav header__nav_list" aria-label="Main menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./recipes.html" class="header__list-link">Рецепты </a></li>
+          <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
+          <li class="header__list-item"><a href="./make.html" class="header__list-link ">Создать рецепт</a></li>
+          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./list.html" class="header__list-link  header__list-link_active">Список
+              покупок</a></li>
+        </ul>
+        <ul class="header__list">
+          <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
+          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="list">
+      <h1 class="title title_list">Список покупок</h1>
+      <ul class="list__box">
+        <li class="list__item">
+          <img class="list__img" src="./images/dish1.jpg" alt="Французские тосты" />
+          <div class="list__info">
+            <p class="subscribe__card-item-name">
+              Французские тосты
+            </p>
+            <div class="time">
+              <img class="time__logo" src="./images/clock.svg" alt="clock" />
+              <p class="time__info">20 мин.</p>
+            </div>
+          </div>
+          <button class="list__delete" data-id="1">Удалить</button>
+        </li>
+        <li class="list__item">
+          <img class="list__img" src="./images/agava.jpg" alt="красивое фото еды" />
+          <div class="list__info">
+            <p class="subscribe__card-item-name">
+              Французский тост с сиропом агавы
+            </p>
+            <div class="time">
+              <img class="time__logo" src="./images/clock.svg" alt="clock" />
+              <p class="time__info">30 мин.</p>
+            </div>
+          </div>
+          <button class="list__delete" data-id="2">Удалить</button>
+        </li>
+        <li class="list__item">
+          <img class="list__img" src="./images/salmon.jpg" alt="красивое фото еды" />
+          <div class="list__info">
+            <p class="subscribe__card-item-name">
+              Вафли с яйцом «Бенедикт» и лососем
+            </p>
+            <div class="time">
+              <img class="time__logo" src="./images/clock.svg" alt="clock" />
+              <p class="time__info">35 мин.</p>
+            </div>
+          </div>
+          <button class="list__delete" data-id="3">Удалить</button>
+        </li>
+      </ul>
+      <button type="button" class="button button_list">Скачать список</button>
+    </section>
+  </div>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__link" href="./index.html">Продуктовый помощник</a>
+      <div>
+        <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
+        <a class="footer__link" href="#">Технологии</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script type="module" src="./script/script.js"></script>
-  </body>
+  <script type="module" src="./script/components/list.js"></script>
+</body>
+
 </html>

@@ -1,15 +1,23 @@
 .button_registration {
-    width: 206px;
-    top: 623px;
-    background-color: #4A61DD;
-    color: white;
-    align-self: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 71px;
+  width: 206px;
+  top: 623px;
+  background-color: #4A61DD;
+  color: white;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 71px;
+  margin-left: 224px;
 }
 
 .button_registration:hover {
-    background-color: #2845DF;
+  background-color: #2845DF;
+}
+
+@media (max-width: 645px) {
+  .button_registration {
+    margin-left: 0;
+  }
 }

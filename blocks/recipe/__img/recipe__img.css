@@ -1,3 +1,25 @@
 .recipe__img {
-  grid-area: "img";
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 55px;
+  border-radius: 16px;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media screen and (max-width:1300px) {
+  .recipe__img {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .recipe__img {
+    padding-bottom: 0;
+    margin: auto;
+    margin-bottom: 30px;
+  }
 }

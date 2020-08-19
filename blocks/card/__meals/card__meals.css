@@ -1,6 +1,9 @@
 .card__meals {
   list-style-type: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding-left: 22px;
+  margin-bottom: 18px;
+  margin-top: 13px;
 }

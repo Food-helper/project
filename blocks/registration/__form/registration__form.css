@@ -1,5 +1,19 @@
 .registration__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 55px 104px 0px 73px;
+}
+
+@media (max-width: 645px) {
+  .registration__form {
+    padding: 0 0 0 30px;
+  }
 }

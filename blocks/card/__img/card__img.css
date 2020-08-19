@@ -1,8 +1,9 @@
 .card__img {
-cursor: pointer;
+  border-radius: 8px 8px 0px 0px;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
   .card__img {
     width: 300px;
-}
+  }

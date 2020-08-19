@@ -1,10 +1,4 @@
 .reset__button {
-    margin-bottom: 71px;
-}
-
-@media (max-width: 1321px) {
-    .reset__button {
-        margin-top: 56px;
-        margin-left: -51px;
-    }
+  width: 219px;
+  margin-left: 36px;
 }

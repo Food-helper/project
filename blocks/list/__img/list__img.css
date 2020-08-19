@@ -3,5 +3,23 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-right: 47px;
+}
+
+@media screen and (max-width: 650px) {
+  .list__img {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list__img {
+    margin: auto;
+  }
 }

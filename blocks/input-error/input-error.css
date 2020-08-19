@@ -1,15 +1,15 @@
 @import url('./_red/input-error_red.css');
 
 .input-error {
-    width: 66%;
-    margin-left: 41%;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+  width: 66%;
+  margin-left: 38%;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @media (max-width: 1321px) {
-    .input-error {
-        margin-left: 0;
-    }
+  .input-error {
+    margin-left: 0;
+  }
 }

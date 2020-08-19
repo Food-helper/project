@@ -1,15 +1,23 @@
-@import url(__input-container/form__input-container.css);
-@import url(__input-container/_make/form__input-container_make.css);
-@import url(__meals/form__meals.css);
-@import url(__item/form__item.css);
-@import url('./__label/form__label.css');
-@import url(__pseudo-item/form__pseudo-item.css);
-@import url(__pseudo-item/_breakfast/form__pseudo-item_breakfast.css);
-@import url(__pseudo-item/_dinner/form__pseudo-item_dinner.css);
-@import url(__pseudo-item/_supper/form__pseudo-item_supper.css);
+@import url('__input-container/form__input-container.css');
+@import url('__input-container/_make/form__input-container_make.css');
+@import url('__meals/form__meals.css');
+@import url('__meals/_make/form__meals_make.css');
+@import url('__item/form__item.css');
+@import url('__label/form__label.css');
+@import url('__pseudo-item/form__pseudo-item.css');
+@import url('__pseudo-item/_breakfast/form__pseudo-item_breakfast.css');
+@import url('__pseudo-item/_dinner/form__pseudo-item_dinner.css');
+@import url('__pseudo-item/_supper/form__pseudo-item_supper.css');
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }

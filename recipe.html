@@ -11,7 +11,7 @@
   <title lang="en">Food helper</title>
 </head>
 
-<body>
+<body class="body">
   <div class="page">
 
     <!-- header-->
@@ -27,28 +27,30 @@
               class="header__list-link  header__list-link_active">Рецепты </a></li>
           <li class="header__list-item"><a href="./subscribe.html" class="header__list-link">Мои подписки</a></li>
           <li class="header__list-item"><a href="./make.html" class="header__list-link">Создать рецепт</a></li>
-          <li class="header__list-item"><a href="./favourite.html"
-              class="header__list-link">Избранное</a></li>
+          <li class="header__list-item"><a href="./favourite.html" class="header__list-link">Избранное</a></li>
           <li class="header__list-item"><a href="./list.html" class="header__list-link">Список покупок</a></li>
         </ul>
         <ul class="header__list">
           <li class="header__list-item"><a href="./password.html" class="header__list-link">Изменить пароль</a></li>
-          <li class="header__list-item"><a href="./index.htmll" class="header__list-link">Выход</a></li>
+          <li class="header__list-item"><a href="./index.html" class="header__list-link">Выход</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- recipe-->
     <section class="recipe">
-      <img class="recipe__img" src="./images/рецепт.jpg" alt="Французские тосты" />
+      <div>
+        <img class="recipe__img" src="./images/рецепт.jpg" alt="Французские тосты" />
+      </div>
       <div class="recipe__box">
-        <div class="title__container">
-          <h1 class="title">Французские тосты</h1>
-          <button class="tooltip tooltip_type_recipe">
-            <span class="tooltiptext">Добавить в избранное</span>
+        <div class="recipe__container">
+          <h1 class="title title_recipe">Французские тосты</h1>
+          <button class="tooltip tooltip_type_recipe" data-id="6">
+            <span class="tooltip__text">Добавить в избранное</span>
           </button>
         </div>
-        <ul class="card__meals card__meals_recipe">
-          <li class="card__meal card__meal_breakfast">Завтрак</li>
+        <ul class="recipe__meals">
+          <li class="recipe__meal">Завтрак</li>
         </ul>
         <div class="time time_recipe">
           <img class="time__logo" src="./images/clock.svg" alt="время" />
@@ -59,12 +61,9 @@
           <p class="author__info">Вероника Чернова</p>
         </div>
         <div class="recipe__buttons">
-          <button class="button button_add-recipe" type="button">
-            + Добавить рецепт
+          <button class="button add-button button_add-recipe" data-id="777" type="button">Добавить в покупки
           </button>
-          <button class="button button_subscribe-author" type="button">
-            Подписаться на автора
-          </button>
+          <button class="button button_subscribe-author" type="button" data-id="777">Подписаться на автора</button>
         </div>
         <div class="recipe__info">
           <h2 class="subtitle">Ингридиенты:</h2>
@@ -87,19 +86,21 @@
           </p>
         </div>
       </div>
-  </section>
+    </section>
   </div>
+
+  <!-- footer-->
   <footer class="footer">
     <div class="footer__container">
       <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-      <nav>
+      <div>
         <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
-      </nav>
+      </div>
     </div>
   </footer>
 
-  <script type="module" src="./script/script.js"></script>
+  <script type="module" src="./script/components/recipe.js"></script>
 </body>
 
 </html>

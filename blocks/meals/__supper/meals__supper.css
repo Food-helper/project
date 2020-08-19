@@ -4,7 +4,7 @@
 }
 
 .meals__supper::before {
-  content: url(./../../../images/supper.svg);
+  content: url('./../../../images/supper.svg');
   width: 24px;
   height: 24px;
   position: absolute;

@@ -1,14 +1,21 @@
 .enter__button-box {
-    display: flex;
-    justify-content: space-between;
-    width: 36%;
-    margin: 20px auto auto 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: calc(770px - 265px - 222px);
+  margin: 20px auto auto 200px;
 }
 
 @media (max-width: 1374px) {
-    .enter__button-box {
-        width: 50%;
-        flex-direction: column;
-        margin: auto auto 25px;
-    }
+  .enter__button-box {
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto auto 25px;
+  }
 }

@@ -1,0 +1,16 @@
+.make__subject {
+  box-sizing: border-box;
+  padding: 56px 105px 65px 75px;
+}
+
+@media (max-width: 1321px) {
+  .make__subject {
+    margin: 60px auto 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .make__subject {
+    padding: 0px 40px 40px 40px;
+  }
+}

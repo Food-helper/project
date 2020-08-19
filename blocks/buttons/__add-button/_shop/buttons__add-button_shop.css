@@ -1,4 +1,14 @@
 .buttons__add-button_shop {
-  margin: 16px 17px 0px;
+  background: #F0F3FF url('./../../../../images/plus.svg') no-repeat left 13px;
   padding-left: 9px;
+  background-position-x: 5%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  width: 224px;
+  height: 48px;
+  color: #4A61DD;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }

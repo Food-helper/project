@@ -1,5 +1,5 @@
-@import url(__logo/author__logo.css);
-@import url(__info/author__info.css);
+@import url('__logo/author__logo.css');
+@import url('__info/author__info.css');
 
 .author {
   font-family: 'Montserrat',
@@ -8,6 +8,11 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }

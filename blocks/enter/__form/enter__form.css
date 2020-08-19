@@ -1,0 +1,10 @@
+.enter__form {
+  padding: 54px 98px 67px 67px;
+}
+
+
+@media (max-width: 600px) {
+  .enter__form {
+    padding: 55px 20px 70px 20px;
+  }
+}

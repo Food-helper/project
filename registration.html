@@ -23,16 +23,18 @@
       <label for="header__menu-toggle" class="header__menu-button" aria-label="Main menu button">
         <span class="header__menu-span"></span>
       </label>
-      <nav class="header__nav" aria-label="Main menu">
+      <nav class="header__nav header__nav_form" aria-label="Main menu">
         <ul class="header__list">
-          <li class="header__list-item"><a href="./recipes.html"
+          <li class="header__list-item header__list-item_form"><a href="./recipes.html"
               class="header__list-link header__list-link_form">Рецепты
             </a></li>
-          <li class="header__list-item"><a href="./list.html" class="header__list-link header__list-link_form">Список
+          <li class="header__list-item header__list-item_form"><a href="./list.html"
+              class="header__list-link header__list-link_form">Список
               покупок</a></li>
         </ul>
         <ul class="header__list">
-          <li class="header__list-item"><a href="./enter.html" class="header__list-link">Войти</a></li>
+          <li class="header__list-item header__list-item_form"><a href="./enter.html"
+              class="header__list-link">Войти</a></li>
           <li><a href="./registration.html" class="button input-button header__button">Создать
               аккаунт</a></li>
         </ul>
@@ -40,7 +42,7 @@
     </header>
 
     <div class="registration">
-      <h1>Регистрация</h1>
+      <h1 class="title title_form">Регистрация</h1>
       <div class="box registration__box">
         <form class="form registration__form" name="form" method="post" action="#">
 
@@ -48,7 +50,7 @@
             <div class="input-box input-box_registration">
               <div class="input-block">
                 <h4 class="input-header registration__header registration__header_name">Имя</h4>
-                <input class="input registration__input registration__input_name" type="text" name="name"
+                <input class="input registration__input" type="text" name="name"
                   id="name-input" />
               </div>
               <span id="name-error" class="registration__error"></span>
@@ -77,9 +79,8 @@
               </div>
               <span id="password-error" class="registration__error"></span>
             </div>
+            <button type="submit" class="button button_registration">Создать аккаунт</button>
           </fieldset>
-
-          <button type="submit" class="button button_registration">Создать аккаунт</button>
         </form>
       </div>
     </div>
@@ -89,14 +90,14 @@
   <footer class="footer">
     <div class="footer__container">
       <a class="footer__link" href="./index.html">Продуктовый помощник</a>
-      <nav>
+      <div>
         <a class="footer__link" href="https://github.com/Food-helper/project">Об авторе</a>
         <a class="footer__link" href="#">Технологии</a>
-      </nav>
+      </div>
     </div>
   </footer>
 
-  <script type="module" src="./script/script.js"></script>
+  <script type="module" src="./script/components/registration.js"></script>
 </body>
 
 </html>

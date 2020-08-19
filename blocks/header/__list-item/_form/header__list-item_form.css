@@ -1,0 +1,9 @@
+.header__list-item_form {
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 900px) {
+  .header__list-item_form {
+    padding-left: 0;
+  }
+}
